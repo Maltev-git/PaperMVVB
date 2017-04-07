@@ -72,8 +72,8 @@ encoding=UTF-8
 highlight=LaTeX
 line=0
 mode=LaTeX
-open=false
-order=2
+open=true
+order=4
 
 [item:papermvvb.kilepr]
 archive=true
@@ -87,10 +87,10 @@ order=-1
 
 [item:sections/abstract.tex]
 archive=true
-column=194
+column=358
 encoding=UTF-8
 highlight=LaTeX
-line=16
+line=15
 mode=LaTeX
 open=true
 order=1
@@ -117,10 +117,10 @@ order=-1
 
 [item:sections/content.tex]
 archive=true
-column=84
+column=8
 encoding=UTF-8
 highlight=LaTeX
-line=281
+line=547
 mode=LaTeX
 open=true
 order=0
@@ -152,10 +152,10 @@ JumpList=
 ViMarks=.,10,1,[,10,1,],10,1
 
 [view-settings,view=0,item:sections/abstract.tex]
-CursorColumn=194
-CursorLine=16
+CursorColumn=358
+CursorLine=15
 JumpList=
-ViMarks=.,15,243,[,15,243,],15,243
+ViMarks=.,15,358,[,15,358,],15,358
 
 [view-settings,view=0,item:sections/acknowledgments.tex]
 CursorColumn=88
@@ -170,10 +170,10 @@ JumpList=
 ViMarks=.,3,0,[,3,0,],3,0
 
 [view-settings,view=0,item:sections/content.tex]
-CursorColumn=84
-CursorLine=281
+CursorColumn=8
+CursorLine=547
 JumpList=
-ViMarks=.,281,83,[,281,78,],281,83
+ViMarks=.,547,7,[,547,7,],547,7
 
 [view-settings,view=0,item:sections/literature_bibtex.bib]
 CursorColumn=0
