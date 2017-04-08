@@ -446,7 +446,7 @@ with the solar distance $r$ for the regression fit of the median and mean. The f
 %fit result table and figure
 With $r$ in astronomical units we get the fit coefficients ($a_\text{med}$, $a_\text{avg}$, $b_\text{med}$ and $b_\text{avg}$) as given in Table~\ref{tab:mean_median_fit_parameter}.\\
 \begin{table*}
-	\caption{These are the fit coefficients for the median and mean solar distance dependencies of the four parameters from the combined Helios data set. The errors in brackets are the estimated standard deviations of each fit parameter. The crossing distance is the point where median and mean intersect.}
+	\caption{These are the fit coefficients for the median and mean solar distance dependencies of the four parameters from the combined Helios data set. The errors in brackets are the estimated standard deviations of each fit parameter. The crossing distance is the point where the fitted median and mean intersect.}
 	\label{tab:mean_median_fit_parameter}
 	\centering
 	\begin{tabular}{l
@@ -541,42 +541,45 @@ L-> high value plots... (refer to histogram zoom in Fig.~\ref{fig:histogram_fits
 This model represents the Helios time frame around the rise of solar cycle~21.\\
 
 study time/cycle variations\\
+indications for that: fig. + theory + studies/papers...\\
+assuming the distance scaling laws are time independent, which we deduced...? which is an approximation.\\
+
 
 \section{General solar wind model}
 \label{sec:general_solar_wind_model}
 
-Finally, we combine the obtained solar activity and distance dependencies for shifting the frequency distributions. The result will be an empirical solar wind model for the inner heliosphere.\\
+Finally, we combine the obtained solar activity and distance dependencies for shifting the frequency distributions. The result is an empirical solar wind model for the inner heliosphere.\\
 
 %are the exponents time-independent?
-Under the assumption that the exponential falloff laws do not change with time/solar activity, they can be used in general (indications for that: fig. + theory + studies/papers...).\\
-assuming the distance scaling laws are time independent, which we deduced...? which is an approximation.\\
+Under the assumption that the exponential falloff laws do not change with time/solar activity (as shown above...), they can be used in general.\\
 
-
-We combine the fit coefficients of the median relation for solar activity dependence (\ref{eq:median_with_ssn}) with the ones from the exponential distance dependency (\ref{eq:exponential_function}):
+We combine the fit coefficients of the median relation for solar activity dependence (\ref{eq:median_with_ssn}) with the ones from the exponential distance dependence (\ref{eq:exponential_function})
 \begin{align}
-	x_\text{med}(ssn,r) &= (a_\text{med} \cdot ssn + b_\text{med}) \cdot r^b\,.
+	x_\text{med}(ssn,r) &= (a_\text{med} \cdot ssn + b_\text{med}) \cdot r^b
 \end{align}
 
-the combined model function $W''(x,ssn,r)$\\
-
-...and double lognormal function for the velocity\\
+to get the combined model function $W''(x,ssn,r)$. And for the velocity $W_{II}''(x,ssn,r)$ with the double lognormal function.\\
 
 %model errors
-give model errors sizes/uncertainties (sigmas); $W''_\text{err}(x,ssn,r)$
+give model errors sizes/uncertainties (sigmas); $W''_\text{err}(x,ssn,r)$, $x_\text{med\_err}(ssn,r)$
 
 
 \section{Model extrapolation to SPP orbital time and position}
 To estimate the solar wind environment at SPP's planned orbital positions during its mission time, SSN predictions and extrapolations to the SPP perihelion region are included into the general solar wind model.\\
 
-SPP orbit description, Venus flybys, ecliptic, \citep{Fox2015}, see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_b_plot}\\
+%SPP orbit
+SPP orbit description, Venus flybys, within ecliptic, \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_b_plot})\\
+
+%SSN prediction
 choosing SSN prediction source as input (SIDC + SWPC + previous cycle), (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_b_plot})\\
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_orbit_predicted_SSN_overview_b_plot.pdf}}
-	\caption{SPP's solar distance during its mission time (top). Consecutive Venus flybys bring its perihelia nearer to the Sun. Actual and predicted SSN (bottom), i.e. 13-month smoothed monthly actual SSN and SIDC prediction, SWPC prediction and simply shifted SSN from previous cycle~24.}
+	\caption{SPP's solar distance during its mission time (top). Consecutive Venus flybys bring its perihelia nearer to the Sun. Actual and predicted SSN (bottom), i.e. SIDC 13-month smoothed monthly actual SSN, SIDC prediction, SWPC prediction and simply shifted SSN from previous cycle~24, together with two alternative trends of half and twice the amplitude.}
 	\label{fig:SPP_orbit_predicted_SSN_overview_b_plot}
 \end{figure}
 
-plot of SPP's estimated solar wind environment from predicted SSN; zoom into first and nearest perihelion (Fig.~\ref{fig:SPP_perihelia_prediction_plot})\\
+Implementing the orbital distance data and predicted SSN for the mission time we get SPP's estimated solar wind environment.\\
+A zoom into the first and the nearest perihelia shows... (Fig.~\ref{fig:SPP_perihelia_prediction_plot}).\\
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_plot.pdf}}
 	\caption{Estimated B-field median during the first and nearest perihelia in 2018 and 2024.}
@@ -590,11 +593,10 @@ extrapolation errors...\\
 
 velocity:\\
 %critical surfaces
-in direction to the Sun is at $\sim$2.5~Rs the source surface (Schatten1969)\\
-
-sonic and Alfvénic critical point positions (see \citet{Sittler1999})\\
 Alfvénic critical surface i.e. source surface (see Fox before 2.1)\\
-
+in direction to the Sun is at $\sim$2.5~Rs the source surface (Schatten1969)\\
+sonic and Alfvénic critical point positions (see \citet{Sittler1999})\\
+sonic point and slow solar wind origin \citep{Sheeley1997}\\
 approaching these regions, acceleration plays a role\\
 
 The near-Sun (SPP perihelion) solar wind velocity is expected to be slower than our model estimates, because the position of the source (Alfvénic critical) surface is predicted to lie between 15--30~Rs (Schatten1969, Sittler1999, Exarhos2000, Katsikas2010, Goelzer2014; choose references...), up to which the solar wind is believed to be accelerated.\\
@@ -606,6 +608,24 @@ The density distance dependency scales with $r^{-2}$, but steepens below 10~Rs w
 magnetic field and temperature:\\
 crossing distance effect\\
 
+Comparison with existing near-Sun models (renew extrapolation figure to 1-column):\\
+
+\citet{Wang2000}, sources of slow solar wind + IMF regulation mechanism + blobs; compare with our slow V lognormal part\\
+
+% comparison with other Helios studies (Schwenn, Bougeret)
+\citet{Schwenn1983,Schwenn1990}, who derived the distance dependencies for both Helios spacecraft separately ($v_\text{H1}(r) \propto r^{0.083}$ and $v_\text{H2}(r) \propto r^{0.036}$), average or median? fits well...\\
+Helios results, radial gradients see \citet{Schwenn1990} p.~155\\
+
+The electron density distance function, which \citet{Bougeret1984} derived from Helios data and normed to the 1976 1~au density ($n(r) = 6.14\,r^{-2.10(4)}\,\text{cm}^{-3}$) also fits well...\\
+
+\citet{Sheeley1997} -> LASCO coronagraph observed speed profile of coronal features tracing the slow solar wind, 2--30~Rs\\
+- parabolic eq.~(2) and exponential eq.~(3)\\
+- sonic point 5--6~Rs\\
+- slow solar wind origin 3--4~Rs\\
+
+The model of \citet{Sittler1999} is based on Skylab coronagraph and Ulysses data. it is a 2d semiempirical MHD model (time static)\\
+L-> compare with their radial density function eq. (18a); B-field function eq. (19a+b); V(r) eq. (24); T(r)...\\
+
 \subsection{Model requirements and limits}
 
 model requirements:\\
@@ -613,15 +633,14 @@ model requirements:\\
 - modeling the distance dependency with sufficient accuracy -> error size (different scaling law at smaller distances?)\\
 - possibility to extrapolate model down to 0.0459~au\\
 
-%model boundaries
-model boundaries (spherical coordinates):\\
-- mean solar wind of the Helios time range -> error size (determine deviation from average)\\
+%model limits
+model limits (spherical coordinates):\\
 - heliocentric distance range 0.29--0.98~au\\
 - rotational symmetry\\
-- confined to ecliptic\\
+- confined to ecliptic +-7.2 degrees\\
 model constrictions:\\
 - solar distance dependency function\\
-- frequency distribution function\\
+- frequency distribution functions\\
 - neglected influence from heliolatitude variation\\
 
 
@@ -640,58 +659,18 @@ error sources:\\
 - lognormal model\\
 - SSN variance\\
 
-all estimates outside these boundaries are extrapolations with large uncertainties. see Sect.~\ref{sec:model_validity_and_errors}\\
+all estimates outside these boundaries are extrapolations with large uncertainties.\\
 
 discuss high value zoom figures\\
 
-Generally, the use of hourly data instead of higher resolution data (less than 1~min) should not have significant influence on the results. The minutely OMNI~2 data's frequency distributions are almost congruent and differ only slightly at their extreme ends (we tested that...).\\
-
+The use of hourly data instead of higher resolution data (less than 1~min) has no significant influence on the bulk results. The minutely OMNI data frequency distributions are almost congruent and differ only slightly at their extreme ends.\\
 The many hourly Helios data points which contain only a few measurements, contribute with a larger scatter to the frequency distributions \citep[p.~491]{Schwenn1983}.\\
 
-The OMNI~2 data is time-shifted to the nose of the Earth's bow shock. This leads to yearly solar distance variations of \SI{>2}{\percent} (cite?) as the Earth orbits the Sun. Furthermore, its orbit within the ecliptic leads to a yearly variation of \SI{+-7.2}{\degree} in heliospheric latitude.\\
-The solar wind parameters vary with solar distance as well as with latitudinal separation from the heliospheric current sheet (HCS) (cite?).\\
+The solar wind parameters vary with solar distance as well as with latitudinal separation from the heliospheric current sheet (HCS).\\
+The OMNI data is time-shifted to the nose of the Earth's bow shock. This leads to yearly solar distance variations of \SI{>2}{\percent} (cite?) as the Earth orbits the Sun. Furthermore, its orbit within the ecliptic leads to a yearly variation of \SI{+-7.2}{\degree} in heliospheric latitude.\\
 The HCS's position in latitude is highly variable around the solar equator \citep[p.~127~ff.?]{Schwenn1990}.\\
 
-- over year (seasonal/monthly) -> expect them to be less than 5~\%\\
-
-%monthly seasonal variation
-Sun-Earth distance over the course of the year.\\
-In the year 2017 Earth's perihelion was on 5~January with a distance of \SI{-1.67}{\percent} from \SI{1}{\au} (Horizons On-Line Ephemeris System\footnote{\url{http://ssd.jpl.nasa.gov/horizons.cgi}}, Solar System Dynamics Group, Jet~Propulsion Laboratory).\\
-The cosine approximation
-\begin{align}
-	r_\text{E}(t) = 1 - 0.0167 \cdot \cos\left(2 \pi \left(t - 2017 - \frac{5}{365}\right)\right)\,,
-\end{align}
-with $t$ in years, suffices for our accuracy requirements.\\
-% HORIZONS Web-Interface
-% http://ssd.jpl.nasa.gov/horizons.cgi
-% Ephemeris Type:	VECTORS
-% Target Body:		Earth [Geocenter] [399]
-% Coordinate Origin:	Sun (body center) [500@10]
-% Time Span:		Start=2017-01-01, Stop=2017-12-31, Step=1 d
-% Table Settings:	CSV format=YES
-% Display/Output:	download/save (plain text file)
-%-> distance:	9.833098226363186E-01
-%-> diff. to 1 au:	0.166901774
-%-> change to day before:	4.4e-6	-> 0.1669018(44)
-
-seasonal variation function:\\
-$X_\text{avg}(t) = a\,r_\text{E}(t)^b$\\
-% B_avg = 5.969(29)~nT\\
-% B_med = 5.435(24)~nT\\
-% N_avg = 6.329(85)~cm-3\\
-% N_med = 4.858(60)~cm-3\\
-% T_avg = 1.198(16)e5~K\\
-% T_med = 7.17(12)e4~K\\
-% V1_avg = 4.132(22)e2~km/s\\
-% V1_med = 4.034(21)e2~km/s\\
-% V2_avg = 4.132(22)e2~km/s\\
-% V2_med = 4.034(21)e2~km/s\\
-
-% Heliographic Inertial (HGI) coordinates\\
-% HGI coordinates are Sun-centered with the z-axis directed along the solar rotation axis and directed northward of the solar equator. The solar equator plane is inclined \SI{7.25}{\degree} from the ecliptic.\\
-
-HGI coordinates; latitude range -7.25\degr{}~to~7.25\degr{}\\
-latitude variation (see Schwenn1990 p.~127)\\
+Error estimation over the year (seasonal/monthly) -> we expect variations to be less than 5~\%\\
 
 OMNI data is not corrected for solar distace. only available for 1-/5-min data\\
 
@@ -701,31 +680,13 @@ OMNI data is not corrected for solar distace. only available for 1-/5-min data\\
 \section{Results and discussion}
 
 list of results:\\
+- empirical solar wind model for inner heliosphere within ecliptic\\
 - low velocity at 0.0459~au\\
-- empirical solar wind model for inner heliosphere\\
+- slow/fast ratio SSN dependency\\
 - application validity of lognormal distributions\\
 --> B inversion of frequency distribution\\
 ---> magnetic field distribution's with distance increasing high value tail -> source are compression regions (why with density no increase?); look into Parker1958's B-field formula...\\
-
-%discussion
-Comparison with existing near-Sun models (renew extrapolation figure to 1-column)\\
-
-\citet{Wang2000}, sources of slow solar wind + IMF regulation mechanism + blobs; compare with our slow V lognormal part\\
-
-% comparison with other Helios studies (Schwenn, Bougeret)
-\citet{Schwenn1983,Schwenn1990}, who derived the distance dependencies for both Helios spacecraft separately ($v_\text{H1}(r) \propto r^{0.083}$ and $v_\text{H2}(r) \propto r^{0.036}$), average or median? fits well...\\
-Helios results, radial gradients see \citet{Schwenn1990} p.~155\\
-
-The electron density distance function, which \citet{Bougeret1984} derived from Helios data and normed to the 1976 1~au density ($n(r) = 6.14\,r^{-2.10(4)}\,\text{cm}^{-3}$) also fits well...\\
-
-
-\citet{Sheeley1997} -> LASCO coronagraph observed speed profile of coronal features tracing the slow solar wind, 2--30~Rs\\
-- parabolic eq.~(2) and exponential eq.~(3)\\
-- sonic point 5--6~Rs\\
-- slow solar wind origin 3--4~Rs\\
-
-The model of \citet{Sittler1999} is based on Skylab coronagraph and Ulysses data. it is a 2d semiempirical MHD model (time static)\\
-L-> compare with their radial density function eq. (18a); B-field function eq. (19a+b); V(r) eq. (24); T(r)...\\
+varying shape with distance is indicator for internal physical processes (mixing/turbulence...)\\
 
 %solar wind -> structures\\
 \citet{Balogh1999} p.~162~ff (origin and formation of CIRs in inner heliosphere with Helios data; latitude V dependence)\\
@@ -744,14 +705,12 @@ The ratio of both varies with solar activity, e.g. 3~years after maximum, polar 
 
 larger influx from higher latitudes (see figure b))\\
 
-varying shape with distance is indicator for internal physical processes (mixing/turbulence...)\\
-
 In most studies the density distance dependence is assumed to scale with $r^{-2}$ (cites), assuming a constant velocity.\\
 
 
 \section{Conclusions}
 
-Further investigations should be done into structure extrapolations...\\
+Further investigations should be done into structure extrapolations, outward extension of model to Mars...\\
 
 Further questions:\\
 nearer to the Sun (at and below the source surface) the solar wind expansion in the ecliptic should be less spherical but more circular due to the influx from higher latitudes. => density exponent > -2\\
