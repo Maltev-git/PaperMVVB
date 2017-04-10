@@ -187,14 +187,14 @@ seasonal influence contained within yearly frequency distributions\\
 SIDC and SWPC provide limited SSN forecast (a few months)\\
 
 \subsection{SSN correlation}
-Our current interest lies in the correlation of the SSN to the solar wind median value, because it defines the position of the lognormal function. The yearly OMNI parameter medians and the yearly SSN are plotted in Fig.~\ref{fig:OMNI_yearly_ssn_correlation_b_plot}.\\
+Our current interest lies in the correlation of the SSN to the solar wind median value, because it defines the position of the lognormal function. The yearly OMNI parameter medians and the yearly SSN are plotted in Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot}.\\
 
 solar activity = SSN $\neq$ solar cycle\\
-The solar wind velocity (and its close friends N \& T) is known to depend on the state of the solar cycle (cite?), which is why it follows the SSN only indirectly (with time lag). Thus we derive the correlation coefficients for different time lags between solar wind parameters and SSN (see Fig.~\ref{fig:OMNI_yearly_ssn_correlation_b_plot}).\\
+The solar wind velocity (and its close friends N \& T) is known to depend on the state of the solar cycle (cite?), which is why it follows the SSN only indirectly (with time lag). Thus we derive the correlation coefficients for different time lags between solar wind parameters and SSN (see Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot}).\\
 \begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/OMNI_yearly_ssn_correlation_b_plot.pdf}}
+	\resizebox{\hsize}{!}{\includegraphics{figures/OMNI_yearly_ssn_correlation_c_plot.pdf}}
 	\caption{Plot of the solar wind parameter yearly medians from OMNI data and the yearly SSN from the \citet{sidc} with cycle number (top). Their correlation coefficients with the yearly SSN for time lags back to -15 years (bottom).}
-	\label{fig:OMNI_yearly_ssn_correlation_b_plot}
+	\label{fig:OMNI_yearly_ssn_correlation_c_plot}
 \end{figure}
 
 The highest correlation coefficient for the magnetic field strength is 0.728. It is without lag time and the highest of all solar wind parameters, which is expected because the SSN is directly proportional to the solar surface magnetic flux (cite?).\\
@@ -546,28 +546,32 @@ give model errors sizes/uncertainties (sigmas); $W''_\text{err}(x,ssn,r)$, $x_\t
 To estimate the solar wind environment at SPP's planned orbital positions during its mission time, SSN predictions and extrapolations to the SPP perihelion region are included into the general solar wind model.\\
 
 %SPP orbit
-SPP orbit description, Venus flybys, within ecliptic, \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_b_plot})\\
+SPP orbit description, Venus flybys, within ecliptic, \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_c_plot})\\
 
 %SSN prediction
 choosing SSN prediction sources as input:\\
 SIDC prediction---12-month forecast (Kalman fiter combined method)\\
 The SWPC prediction (until end of current cycle/end of 2019) follows a consensus of the Solar~Cycle~24 Prediction~Panel.\\
 For the prediction of the next solar cycle we simply assume a course similar to the last and thus we simply shift the last cycle by 11~years. Additionally we consider the two alternatives of half and twice the amplitude.\\
-SIDC + SWPC + previous cycle~24 (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_b_plot})\\
+SIDC + SWPC + previous cycle~24 (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_c_plot})\\
 \begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_orbit_predicted_SSN_overview_b_plot.pdf}}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_orbit_predicted_SSN_overview_c_plot.pdf}}
 	\caption{SPP's solar distance during its mission time (top). Consecutive Venus flybys bring its perihelia nearer to the Sun. Actual and predicted SSN (bottom), i.e. SIDC 13-month smoothed monthly actual SSN, SIDC prediction, SWPC prediction and simply shifted SSN from previous cycle~24, together with two alternative trends of half and twice the amplitude.}
-	\label{fig:SPP_orbit_predicted_SSN_overview_b_plot}
+	\label{fig:SPP_orbit_predicted_SSN_overview_c_plot}
 \end{figure}
 
 Implementing the orbital distance data and predicted SSN for the mission time we get SPP's estimated solar wind environment.\\
-A zoom into the first and the nearest perihelia shows... (Fig.~\ref{fig:SPP_perihelia_prediction_plot}).\\
+A zoom into the first and the nearest perihelia shows... (Figs.~\ref{fig:SPP_perihelia_prediction_c_plot} and \ref{fig:SPP_perihelia_prediction_nearest_c_plot}).\\
 \begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_plot.pdf}}
-	\caption{Estimated B-field median during the first and nearest perihelia in 2018 and 2024.}
-	\label{fig:SPP_perihelia_prediction_plot}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_c_plot.pdf}}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's first perihelion in 2018. For the velocity slow and fast part are plotted.}
+	\label{fig:SPP_perihelia_prediction_c_plot}
 \end{figure}
-
+\begin{figure}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_nearest_c_plot.pdf}}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's nearest perihelion in 2024. For the velocity slow and fast part are plotted.}
+	\label{fig:SPP_perihelia_prediction_nearest_c_plot}
+\end{figure}
 \subsection{Near-Sun extrapolation behavior/effects}
 The extrapolation distance is only about one third of the model range, but as the parameters follow exponential change, one has to look at the logarithmic distance which is indeed one and a half times the model range.\\
 
