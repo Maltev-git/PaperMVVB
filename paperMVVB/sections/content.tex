@@ -262,15 +262,15 @@ Again, the velocity gets a special treatment with the double lognormal distribut
 \begin{align}
 	c(ssn) &= c_a \cdot ssn + c_b\,.
 \end{align}
-The fit result (see Table~\ref{tab:ssn_fit_parameters}) is a model in which three years after solar cycle minimum (SSN of zero) the slow solar wind has a share of almost two-thirds and decreases further with increasing SSN (see Fig.~\ref{fig:Vdbl_SSN_ratio_b_plot}).\\
+The fit result (see Table~\ref{tab:ssn_fit_parameters}) is a model in which three years after solar cycle minimum (SSN of zero) the slow solar wind has a share of almost two-thirds and decreases further with increasing SSN (see Fig.~\ref{fig:Vdbl_SSN_ratio_d_plot}).\\
 \begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/Vdbl_SSN_ratio_b_plot.pdf}}
-	\caption{Yearly ratio between slow to fast solar wind (threshold \SI{400}{\km\per\s} over SSN (+). Fit model ratio depending on the by 3~years lagged SSN (black line). The relation results from the velocity's double lognormal fit.}
-	\label{fig:Vdbl_SSN_ratio_b_plot}
+	\resizebox{\hsize}{!}{\includegraphics{figures/Vdbl_SSN_ratio_d_plot.pdf}}
+	\caption{Balance of slow to fast solar wind over the by 3~years lagged SSN. The yearly ratios (+) and their weighted linear fit (solid) are obtained from OMNI data with a threshold of \SI{400}{\km\per\s}. The error bars denote the SSN standard deviation and the relative weight from the yearly data coverage. The model's balance is obtained without a threshold (dashed).}
+	\label{fig:Vdbl_SSN_ratio_d_plot}
 \end{figure}
 % 3 years after minimum (SSN of zero) the slow wind has its maximal share of 0.638(32). 3 years after maximum (SSN of 200) it has only a share of 0.278(37).\\
-...compare with data\\
-=> there is no specific velocity threshold between slow and fast solar wind types, the velocity ranges of both types overlap.\\
+The ratio of slow to fast wind obtained from yearly OMNI data via simply applying the commonly used constant velocity threshold of \SI{400}{\km\per\s} (cite?) has a flatter SSN dependence than the model's balance. Why?\\
+Both should not necessary be identical, because there is no specific velocity threshold between slow and fast solar wind types, as the velocity ranges of both types overlap (cite?).\\
 
 In comparison with the data the fit model roughly matches with the general trend (see Fig.~\ref{fig:OMNI_yearly_BVdblNTSSN_fit_d_plot}).\\
 
@@ -503,7 +503,7 @@ Naturally, we use the double lognormal function~(\ref{eq:double_lognormal_fit_fu
 	}
 \end{table*}
 
-With $c = 0.557$ the velocity balancing parameter is of an expected value similar to that obtained from the Helios time period (the mean SSN during the Helios period was 59, this corresponds to a $c(59) = 0.53$, see Fig.~\ref{fig:Vdbl_SSN_ratio_b_plot}).\\
+With $c = 0.557$ the velocity balancing parameter is of an expected value similar to that obtained from the Helios time period (the mean SSN during the Helios period was 59, this corresponds to a $c(59) = 0.53$, see Fig.~\ref{fig:Vdbl_SSN_ratio_d_plot}).\\
 
 The fit models seem to resemble the data quite well (Fig.~\ref{fig:mixed_fit_fixed_4_paper_e_plot}). The magnetic field strength frequency is more focused (around \SI{40}{nT}) at the lower distance boundary than the model's is. This is expected because of our fixed distance independent shape approximation.\\
 \begin{figure*}
@@ -564,12 +564,12 @@ Implementing the orbital distance data and predicted SSN for the mission time we
 A zoom into the first and the nearest perihelia shows... (Figs.~\ref{fig:SPP_perihelia_prediction_c_plot} and \ref{fig:SPP_perihelia_prediction_nearest_c_plot}).\\
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_c_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's first perihelion in 2018. For the velocity slow and fast part are plotted.}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's first perihelion in 2018. For the velocity the SSN independent slow and fast parts are plotted.}
 	\label{fig:SPP_perihelia_prediction_c_plot}
 \end{figure}
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_nearest_c_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's nearest perihelion in 2024. For the velocity slow and fast part are plotted.}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's nearest perihelion in 2024. For the velocity the SSN independent slow and fast parts are plotted.}
 	\label{fig:SPP_perihelia_prediction_nearest_c_plot}
 \end{figure}
 \subsection{Near-Sun extrapolation behavior/effects}
