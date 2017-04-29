@@ -107,7 +107,7 @@ The values of $x_\text{med}$ and $x_\text{avg}$ obtained from fitting the solar 
 		S[table-format = 2.2]
 		}
 		\hline\hline
-		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median}	&\multicolumn{1}{c}{Mean}	&\multicolumn{1}{c}{Balance}	&\multicolumn{1}{c}{MAE}	&\multicolumn{1}{c}{SAR}\\
+		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median}	&\multicolumn{1}{c}{Mean}	&\multicolumn{1}{c}{Balance}	&\multicolumn{1}{c}{\multirow{2}{*}{MAE}}	&\multicolumn{1}{c}{SAR}\\
 		\multicolumn{2}{l}{}	&\multicolumn{1}{c}{$x_\text{med}$\tablefootmark{a}}	&\multicolumn{1}{c}{$x_\text{avg}$\tablefootmark{a}}	&\multicolumn{1}{c}{$c$}	&\multicolumn{1}{c}{}	&\multicolumn{1}{c}{[\%]}\\
 		\hline
 		\multicolumn{2}{l}{Magnetic field}	&5.661(16)	&6.164(18)	&--	&5.51e-4	&6.83\\
@@ -212,7 +212,7 @@ yearly SSN sw model to sw data fits -> SSN dependency (new figs)\\
 
 \subsection{SSN fitting}
 \label{sec:ssn_fitting}
-To be able to shift the distributions with SSN, add fit a linear SSN dependency to the median
+To be able to shift the distributions with SSN, we add a linear SSN dependency to the median
 \begin{align}
 	x_\text{med}(ssn) &= a_\text{med} \cdot ssn + b_\text{med}\,,	\label{eq:median_with_ssn}
 \end{align}
@@ -222,7 +222,7 @@ using a factor to the SSN $a_\text{med}$ with a baseline $b_\text{med}$. We rela
 \end{align}
 With the implementation of these relations into the lognormal function (\ref{eq:single_lognormal_fit_function}), the new dynamic fit function $W'(x,ssn)$ is then fitted to the yearly data. The three resulting fit coefficients ($a_\text{med}, b_\text{med}$ and $a_\text{avg}$) are presented in Table~\ref{tab:ssn_fit_parameters}.\\
 \begin{table*}
-	\caption{Resulting fit coefficients from the data fitting with SSN. For the velocity the fit parameters from the double lognormal fit and their balancing function are given. The values in brackets are the estimated standard deviation of each fit parameter.}
+	\caption{Resulting fit coefficients from the data fitting with lagged SSN. For the velocity the fit parameters from the double lognormal fit and their balancing function are given. The values in brackets are the estimated standard deviation of each fit parameter.}
 	\label{tab:ssn_fit_parameters}
 	\centering
 	\begin{tabular}{l@{} c@{}
@@ -258,21 +258,28 @@ In comparison with the data the fit models seem to match with the general trends
 	\label{fig:OMNI_yearly_BVdblNTSSN_fit_d_plot}
 \end{figure*}
 
+The comparison with the yearly data median values shows that the from the model obtained medians have a quite similar slope (see Fig.~\ref{fig:OMNI_yearly_BVNTvsSSN}).\\
+\begin{figure}
+	\resizebox{\hsize}{!}{\includegraphics{figures/OMNI_yearly_BVNTvsSSN.pdf}}
+	\caption{Solar wind parameter median over lagged SSN. The yearly data medians (+) with their weighted linear fit (solid) are obtained from OMNI data. The error bars denote the SSN standard deviation and the relative weight from the yearly data coverage. The SSN dependent median (\ref{eq:median_with_ssn}) is from the lognormal model fit (dashed). For the velocity the SSN independent slow and fast model parts are plotted instead (dotted).}
+	\label{fig:OMNI_yearly_BVNTvsSSN}
+\end{figure}
+
 Again, the velocity gets a special treatment with the double lognormal distribution (\ref{eq:double_lognormal_fit_function}). It is known that slow and fast solar wind stream occurrence rates follow the solar cycle, but their magnitudes stay fairly stable (cite?). This time we keep the two velocity components' positions constant and vary instead their balance with the SSN:
 \begin{align}
-	c(ssn) &= c_a \cdot ssn + c_b\,.
+	c(ssn) &= c_a \cdot ssn + c_b\,.	\label{eq:balance_with_ssn}
 \end{align}
-The fit result (see Table~\ref{tab:ssn_fit_parameters}) is a model in which three years after solar cycle minimum (SSN of zero) the slow solar wind has a share of almost two-thirds and decreases further with increasing SSN (see Fig.~\ref{fig:Vdbl_SSN_ratio_d_plot}).\\
+The fit result (see Table~\ref{tab:ssn_fit_parameters}) is a model in which three years after solar cycle minimum (SSN of zero) the slow solar wind has a share of almost two-thirds and decreases further with increasing SSN (see Fig.~\ref{fig:Vdbl_SSN_ratio_e_plot}).\\
 \begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/Vdbl_SSN_ratio_d_plot.pdf}}
-	\caption{Balance of slow to fast solar wind over the by 3~years lagged SSN. The yearly ratios (+) and their weighted linear fit (solid) are obtained from OMNI data with a threshold of \SI{400}{\km\per\s}. The error bars denote the SSN standard deviation and the relative weight from the yearly data coverage. The model's balance is obtained without a threshold (dashed).}
-	\label{fig:Vdbl_SSN_ratio_d_plot}
+	\resizebox{\hsize}{!}{\includegraphics{figures/Vdbl_SSN_ratio_e_plot.pdf}}
+	\caption{Balance of slow to fast solar wind over the by 3~years lagged SSN. The yearly ratios (+) and their weighted linear fit (solid) are obtained from OMNI data with a threshold of \SI{400}{\km\per\s}. The error bars denote the SSN standard deviation and the relative weight from the yearly data coverage. The model's balance (\ref{eq:balance_with_ssn}) is obtained without a threshold (dashed).}
+	\label{fig:Vdbl_SSN_ratio_e_plot}
 \end{figure}
 % 3 years after minimum (SSN of zero) the slow wind has its maximal share of 0.638(32). 3 years after maximum (SSN of 200) it has only a share of 0.278(37).\\
 The ratio of slow to fast wind obtained from yearly OMNI data via simply applying the commonly used constant velocity threshold of \SI{400}{\km\per\s} (cite?) has a flatter SSN dependence than the model's balance. Why?\\
 Both should not necessary be identical, because there is no specific velocity threshold between slow and fast solar wind types, as the velocity ranges of both types overlap (cite?).\\
 
-In comparison with the data the fit model roughly matches with the general trend (see Fig.~\ref{fig:OMNI_yearly_BVdblNTSSN_fit_d_plot}).\\
+In comparison with the data the velocity fit model also matches with the general trend (see Fig.~\ref{fig:OMNI_yearly_BVdblNTSSN_fit_d_plot}).\\
 
 density modulation with SSN \citep{Schwenn1983} p.~499\\
 density anticorrelation with SSN \citep{Bougeret1984} p.~406\\
@@ -485,7 +492,8 @@ Naturally, we use the double lognormal function~(\ref{eq:double_lognormal_fit_fu
 	S[table-format = +1.4(2)]
 	S[table-format = 1.3(2)]}
 		\hline\hline
-		\multicolumn{2}{l}{Parameter}	&\multicolumn{1}{c}{$a_\text{med}$\tablefootmark{a}}	&\multicolumn{1}{c}{$a_\text{avg}$\tablefootmark{a}}	&\multicolumn{1}{c}{$b$}	&$c$\\
+		\multicolumn{2}{c}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median}	&\multicolumn{1}{c}{Mean}	&\multicolumn{1}{c}{Exponent}	&\multicolumn{1}{c}{Balance}\\
+			&	&\multicolumn{1}{c}{$a_\text{med}$\tablefootmark{a}}	&\multicolumn{1}{c}{$a_\text{avg}$\tablefootmark{a}}	&\multicolumn{1}{c}{$b$}	&$c$\\
 		\hline
 		\multicolumn{2}{l}{Magnetic field}	&5.358(25)	&5.705(28)	&-1.662(11)	&\multicolumn{1}{c}{--}\\
 		\multicolumn{2}{l}{Density}	&5.424(33)	&6.845(47)	&-2.114(20)	&\multicolumn{1}{c}{--}\\
@@ -503,7 +511,7 @@ Naturally, we use the double lognormal function~(\ref{eq:double_lognormal_fit_fu
 	}
 \end{table*}
 
-With $c = 0.557$ the velocity balancing parameter is of an expected value similar to that obtained from the Helios time period (the mean SSN during the Helios period was 59, this corresponds to a $c(59) = 0.53$, see Fig.~\ref{fig:Vdbl_SSN_ratio_d_plot}).\\
+With $c = 0.557$ the velocity balancing parameter is of an expected value similar to that obtained from the Helios time period (the mean SSN during the Helios period was 59, this corresponds to a $c(59) = 0.53$, see Fig.~\ref{fig:Vdbl_SSN_ratio_e_plot}).\\
 
 The fit models seem to resemble the data quite well (Fig.~\ref{fig:mixed_fit_fixed_4_paper_e_plot}). The magnetic field strength frequency is more focused (around \SI{40}{nT}) at the lower distance boundary than the model's is. This is expected because of our fixed distance independent shape approximation.\\
 \begin{figure*}
@@ -518,9 +526,9 @@ L-> high value plots... (refer to histogram zoom in Fig.~\ref{fig:histogram_fits
 
 This model represents the Helios time frame around the rise of solar cycle~21.\\
 
-study time/cycle variations\\
-indications for that: fig. + theory + studies/papers...\\
-assuming the distance scaling laws are time independent, which we deduced...? which is an approximation.\\
+study cycle variation of exponent\\
+indications for that: figure! + theory + studies/papers...\\
+assuming the distance scaling laws are time independent, which we reason from that; it is an approximation\\
 
 
 \section{General solar wind model}
@@ -541,6 +549,21 @@ to get the combined model function $W''(x,ssn,r)$. And for the velocity $W_{II}'
 %model errors
 give model errors sizes/uncertainties (sigmas); $W''_\text{err}(x,ssn,r)$, $x_\text{med\_err}(ssn,r)$
 
+model requirements:\\
+- modeling the frequency distribution with sufficient accuracy -> error size (changing distribution shape with distance)\\
+- modeling the distance dependency with sufficient accuracy -> error size (different scaling law at smaller distances?)\\
+- possibility to extrapolate model down to 0.0459~au\\
+
+%model limits
+model limits (spherical coordinates):\\
+- heliocentric distance range 0.29--0.98~au\\
+- rotational symmetry\\
+- confined to ecliptic +-7.2 degrees\\
+model constrictions:\\
+- solar distance dependency function\\
+- frequency distribution functions\\
+- neglected influence from heliolatitude variation\\
+
 
 \section{Model extrapolation to SPP orbital time and position}
 To estimate the solar wind environment at SPP's planned orbital positions during its mission time, SSN predictions and extrapolations to the SPP perihelion region are included into the general solar wind model.\\
@@ -548,6 +571,7 @@ To estimate the solar wind environment at SPP's planned orbital positions during
 %SPP orbit
 SPP orbit description, Venus flybys, within ecliptic, \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_c_plot})\\
 
+\subsection{SPP mission time frame/SSN prediction}
 %SSN prediction
 choosing SSN prediction sources as input:\\
 SIDC prediction---12-month forecast (Kalman fiter combined method)\\
@@ -560,19 +584,11 @@ SIDC + SWPC + previous cycle~24 (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overv
 	\label{fig:SPP_orbit_predicted_SSN_overview_c_plot}
 \end{figure}
 
-Implementing the orbital distance data and predicted SSN for the mission time we get SPP's estimated solar wind environment.\\
-A zoom into the first and the nearest perihelia shows... (Figs.~\ref{fig:SPP_perihelia_prediction_c_plot} and \ref{fig:SPP_perihelia_prediction_nearest_c_plot}).\\
-\begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_c_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's first perihelion in 2018. For the velocity the SSN independent slow and fast parts are plotted.}
-	\label{fig:SPP_perihelia_prediction_c_plot}
-\end{figure}
-\begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_nearest_c_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's nearest perihelion in 2024. For the velocity the SSN independent slow and fast parts are plotted.}
-	\label{fig:SPP_perihelia_prediction_nearest_c_plot}
-\end{figure}
-\subsection{Near-Sun extrapolation behavior/effects}
+=> Implications for the mission...\\
+
+SPP orbit data source\\
+
+\subsection{SPP orbit/near-Sun extrapolation}
 The extrapolation distance is only about one third of the model range, but as the parameters follow exponential change, one has to look at the logarithmic distance which is indeed one and a half times the model range.\\
 
 extrapolation errors...\\
@@ -612,23 +628,19 @@ The electron density distance function, which \citet{Bougeret1984} derived from 
 The model of \citet{Sittler1999} is based on Skylab coronagraph and Ulysses data. it is a 2d semiempirical MHD model (time static)\\
 L-> compare with their radial density function eq. (18a); B-field function eq. (19a+b); V(r) eq. (24); T(r)...\\
 
-\subsection{Model requirements and limits}
-
-model requirements:\\
-- modeling the frequency distribution with sufficient accuracy -> error size (changing distribution shape with distance)\\
-- modeling the distance dependency with sufficient accuracy -> error size (different scaling law at smaller distances?)\\
-- possibility to extrapolate model down to 0.0459~au\\
-
-%model limits
-model limits (spherical coordinates):\\
-- heliocentric distance range 0.29--0.98~au\\
-- rotational symmetry\\
-- confined to ecliptic +-7.2 degrees\\
-model constrictions:\\
-- solar distance dependency function\\
-- frequency distribution functions\\
-- neglected influence from heliolatitude variation\\
-
+\subsection{SPP solar wind model}
+Implementing the orbital distance data and predicted SSN for the mission time we get SPP's estimated solar wind environment.\\
+A zoom into the first and the nearest perihelia shows... (Figs.~\ref{fig:SPP_perihelia_prediction_c_plot} and \ref{fig:SPP_perihelia_prediction_nearest_c_plot}).\\
+\begin{figure}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_c_plot.pdf}}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's first perihelion in 2018. For the velocity the SSN independent slow and fast parts are plotted.}
+	\label{fig:SPP_perihelia_prediction_c_plot}
+\end{figure}
+\begin{figure}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_nearest_c_plot.pdf}}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's nearest perihelion in 2024. For the velocity the SSN independent slow and fast parts are plotted.}
+	\label{fig:SPP_perihelia_prediction_nearest_c_plot}
+\end{figure}
 
 \subsection{Model validity and error sources}
 \label{sec:model_validity_and_errors}
