@@ -13,7 +13,7 @@ The main part of the SPP mission's goals is to gain insight into the coronal hea
 white light imager WISPR... \citep{Vourlidas2016}\\
 
 %difference to other models
-There are many studies analyzing the solar wind dependence on solar activity and heliocentric distance with Helios data (\citet{Schwenn1983, Bougeret1984, Schwenn1990}, more cites...). They examine average values, additionally distinguishing between slow and fast wind. In this paper we instead look at the variations of the whole frequency distributions, consider solar activity and extrapolate these to the near-Sun region.\\
+There are many studies analyzing the solar wind dependence on solar activity and heliocentric distance with Helios data (\citet{Schwenn1983, Bougeret1984, Schwenn1990}, more cites?). They examine average values, additionally distinguishing between slow and fast wind. In this paper we instead look at the variations of the whole frequency distributions, consider solar activity and extrapolate these to the near-Sun region.\\
 
 
 %definition of sw environment
@@ -68,6 +68,9 @@ The hourly data of the whole time range up to \mbox{2016-12-31} is the basis for
 % V: 73.07 \%		39.46 y\\
 % N: 70.29 \%		37.96 y\\
 % T: 66.73 \%		36.03 y\\
+
+%hourly data
+We note that the use of higher time resolution instead, would not significantly change our results. The frequency distributions of the also available minutely OMNI data set are almost congruent with the hourly---they only differ slightly at their extreme ends.
 
 %data binning
 We specify bin sizes considering the individual maximal parameter ranges and the OMNI data precision. Especially for the density and temperature we choose their bin sizes such small that their distributions' peaks can be resolved (the peaks are at their lower end). We set the individual bin sizes to \SI{0.5}{nT} for the magnetic field strength, \SI{10}{\km\per\s} for the velocity, \SI{1}{\per\cm\cubed} for the density and \SI{10000}{\K} for the temperature.
@@ -272,11 +275,11 @@ Again, the velocity gets a special treatment with the double lognormal distribut
 The fit result (see Table~\ref{tab:ssn_fit_parameters}) is a model in which three years after solar cycle minimum (SSN of zero) the slow solar wind has a share of almost two-thirds and decreases further with increasing SSN (see Fig.~\ref{fig:Vdbl_SSN_ratio_e_plot}).\\
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/Vdbl_SSN_ratio_e_plot.pdf}}
-	\caption{Balance of slow to fast solar wind over the by 3~years lagged SSN. The yearly ratios (+) and their weighted linear fit (solid) are obtained from OMNI data with a threshold of \SI{400}{\km\per\s}. The error bars denote the SSN standard deviation and the relative weight from the yearly data coverage. The model's balance (\ref{eq:balance_with_ssn}) is obtained without a threshold (dashed).}
+	\caption{Balance of slow to fast solar wind over the by 3~years lagged SSN. The yearly ratios (+) and their weighted linear fit (solid) are obtained from OMNI data with a threshold velocity of $v_\text{th} = \SI{400}{\km\per\s}$. The error bars denote the SSN standard deviation and the relative weight from the yearly data coverage. The model's balance (\ref{eq:balance_with_ssn}) is obtained without a threshold (dashed).}
 	\label{fig:Vdbl_SSN_ratio_e_plot}
 \end{figure}
 % 3 years after minimum (SSN of zero) the slow wind has its maximal share of 0.638(32). 3 years after maximum (SSN of 200) it has only a share of 0.278(37).\\
-The ratio of slow to fast wind obtained from yearly OMNI data via simply applying the commonly used constant velocity threshold of \SI{400}{\km\per\s} (cite?) has a flatter SSN dependence than the model's balance. Why?\\
+The ratio of slow to fast wind obtained from yearly OMNI data via simply applying the commonly used constant velocity threshold of $v_\text{th} = \SI{400}{\km\per\s}$ (cite?) has a flatter SSN dependence than the model's balance. Why?\\
 Both should not necessary be identical, because there is no specific velocity threshold between slow and fast solar wind types, as the velocity ranges of both types overlap (cite?).\\
 
 In comparison with the data the velocity fit model also matches with the general trend (see Fig.~\ref{fig:OMNI_yearly_BVdblNTSSN_fit_d_plot}).\\
@@ -289,14 +292,15 @@ density anticorrelation with SSN \citep{Bougeret1984} p.~406\\
 %%%%%%%%%%%%%%%%%%%%
 \section{Solar distance dependency}
 \label{sec:solar_distance_dependency}
-
-In this section we use Helios data to obtain exponential fit functions for the heliocentric distance dependency and evaluate the fits' extrapolation behavior in direction to the Sun. To fit the bulk solar wind distributions' distance dependency we use the frequency fitting method from Sect.~\ref{sec:frequency_distribution} on distance-binned Helios data. This results in models comprising of exponentially with distance shifted lognormal functions.
+In this section we use Helios data to obtain exponential fit functions for the heliocentric distance dependency and also evaluate the fits' extrapolation behavior in direction to the Sun. To fit the bulk solar wind distributions' distance dependency we use the frequency fitting method from Sect.~\ref{sec:frequency_distribution} on distance-binned Helios data. This results in models comprising of exponentially with distance shifted lognormal functions.
 
 %Helios data
 \subsection{Helios distance data}
 \label{sec:helios_distance_data}
-
 The Helios probes were the only spacecraft measuring in situ solar wind over large solar distance ranges in the inner heliosphere. We use the combined data from both Helios~1 and Helios~2 probes. Helios~1's (Helios~2's) highly elliptical orbit in the ecliptic covered a solar distance range of \SIrange{0.31}{0.98}{\au} (\SIrange{0.29}{0.98}{\au}). Launched during solar cycle minimum, the data of both probes cover the rise to the maximum of cycle 21 ($\sim$6.5~years at varying distances).
+
+%hourly data
+Again we choose data with hourly resolution to allow its use along with the hourly OMNI data. As \citet{Schwenn1983} pointed out, the many hourly Helios data points which contain only a few measurements, contribute with a larger scatter to the frequency distributions, nevertheless their effect is insignificant in the treatment of the bulk data.	%\citet[p.~491]{Schwenn1983} 
 
 Helios~1's (Helios~2's) merged hourly data set from the magnetometer and plasma instruments \citep{Rosenbauer1977} includes $\sim$12.5~orbits ($\sim$8~orbits) in the time range \mbox{1974-12-10} to \mbox{1981-06-14} (\mbox{1976-01-01} to \mbox{1980-03-04}).
 %Helios plasma instrument (E1); Helios magnetometer instrument (E2)
@@ -492,7 +496,7 @@ Naturally, we use the double lognormal function~(\ref{eq:double_lognormal_fit_fu
 	S[table-format = +1.4(2)]
 	S[table-format = 1.3(2)]}
 		\hline\hline
-		\multicolumn{2}{c}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median}	&\multicolumn{1}{c}{Mean}	&\multicolumn{1}{c}{Exponent}	&\multicolumn{1}{c}{Balance}\\
+		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median}	&\multicolumn{1}{c}{Mean}	&\multicolumn{1}{c}{Exponent}	&\multicolumn{1}{c}{Balance}\\
 			&	&\multicolumn{1}{c}{$a_\text{med}$\tablefootmark{a}}	&\multicolumn{1}{c}{$a_\text{avg}$\tablefootmark{a}}	&\multicolumn{1}{c}{$b$}	&$c$\\
 		\hline
 		\multicolumn{2}{l}{Magnetic field}	&5.358(25)	&5.705(28)	&-1.662(11)	&\multicolumn{1}{c}{--}\\
@@ -521,7 +525,7 @@ The fit models seem to resemble the data quite well (Fig.~\ref{fig:mixed_fit_fix
 \end{figure*}
 
 model errors, maximum errors\\
-The extreme values of the velocity and temperature seem to be too high (adjust color scale...)\\
+The extreme values of the velocity and temperature seem to be too high\\
 L-> high value plots... (refer to histogram zoom in Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot})\\
 
 This model represents the Helios time frame around the rise of solar cycle~21.\\
@@ -544,10 +548,10 @@ We combine the fit coefficients of the median relation for solar activity depend
 	x_\text{med}(ssn,r) &= (a_\text{med} \cdot ssn + b_\text{med}) \cdot r^b
 \end{align}
 
-to get the combined model function $W''(x,ssn,r)$. And for the velocity $W_{II}''(x,ssn,r)$ with the double lognormal function.\\
+to get the combined model function $W''(x,ssn,r)$. And for the velocity $W_\text{II}''(x,ssn,r)$ with the double lognormal function.\\
 
 %model errors
-give model errors sizes/uncertainties (sigmas); $W''_\text{err}(x,ssn,r)$, $x_\text{med\_err}(ssn,r)$
+give model errors sizes/uncertainties (sigmas); $W''_\text{err}(x,ssn,r)$, $x_\text{med\_err}(ssn,r)$\\
 
 model requirements:\\
 - modeling the frequency distribution with sufficient accuracy -> error size (changing distribution shape with distance)\\
@@ -566,29 +570,30 @@ model constrictions:\\
 
 
 \section{Model extrapolation to SPP orbital time and position}
-To estimate the solar wind environment at SPP's planned orbital positions during its mission time, SSN predictions and extrapolations to the SPP perihelion region are included into the general solar wind model.\\
+To estimate the solar wind environment at SPP's planned orbital positions during its mission time, SSN predictions are included into the general solar wind model and extrapolations to the SPP perihelion region are performed.\\
 
-%SPP orbit
-SPP orbit description, Venus flybys, within ecliptic, \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_c_plot})\\
-
-\subsection{SPP mission time frame/SSN prediction}
+\subsection{SSN prediction for SPP mission time}
 %SSN prediction
-choosing SSN prediction sources as input:\\
-SIDC prediction---12-month forecast (Kalman fiter combined method)\\
-The SWPC prediction (until end of current cycle/end of 2019) follows a consensus of the Solar~Cycle~24 Prediction~Panel.\\
-For the prediction of the next solar cycle we simply assume a course similar to the last and thus we simply shift the last cycle by 11~years. Additionally we consider the two alternatives of half and twice the amplitude.\\
-SIDC + SWPC + previous cycle~24 (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_c_plot})\\
+For the SSN prediction there are several sources available. The SIDC provides 12-month SSN forecasts\footnote{\url{http://sidc.be/silso/forecasts}} obtained from different methods (e.g. Kalman filter combined method) (use cite...). The Space Weather Prediction Center's (SWPC) prediction follows a consensus of the Solar~Cycle~24 Prediction~Panel\footnote{\url{http://legacy-www.swpc.noaa.gov/SolarCycle/}} (until end of 2019) (use cite...).
+
+For the prediction of the next solar cycle~25 we simply assume a course similar to the last and thus we shift the last cycle by 11~years. Additionally we consider the two alternatives of half and twice its amplitude. The SSN for SPP's first perihelion will be small---certainly below 20, whereas its nearest perihelia, which commence at the height of cycle~25, will have as of now almost unpredictable SSN amplitudes (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_d_plot})\\
 \begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_orbit_predicted_SSN_overview_c_plot.pdf}}
-	\caption{SPP's solar distance during its mission time (top). Consecutive Venus flybys bring its perihelia nearer to the Sun. Actual and predicted SSN (bottom), i.e. SIDC 13-month smoothed monthly actual SSN, SIDC prediction, SWPC prediction and simply shifted SSN from previous cycle~24, together with two alternative trends of half and twice the amplitude.}
-	\label{fig:SPP_orbit_predicted_SSN_overview_c_plot}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_orbit_predicted_SSN_overview_d_plot.pdf}}
+	\caption{SPP's solar distance during its mission time (top). Consecutive Venus flybys bring its perihelia nearer to the Sun. Actual and predicted SSN (bottom), i.e. SIDC 13-month smoothed monthly actual SSN, SIDC prediction, SWPC prediction and simply by 11~years shifted SSN from previous cycle~24, together with two alternative trends of half and twice its amplitude.}
+	\label{fig:SPP_orbit_predicted_SSN_overview_d_plot}
 \end{figure}
 
-=> Implications for the mission...\\
+[=> Implications for the mission...]\\
+
+prediction errors...\\
+
+\subsection{Near-Sun extrapolation for SPP orbit}
+
+%SPP orbit
+SPP orbit description, Venus flybys, within ecliptic, \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_d_plot})\\
 
 SPP orbit data source\\
 
-\subsection{SPP orbit/near-Sun extrapolation}
 The extrapolation distance is only about one third of the model range, but as the parameters follow exponential change, one has to look at the logarithmic distance which is indeed one and a half times the model range.\\
 
 extrapolation errors...\\
@@ -601,7 +606,7 @@ sonic and Alfvénic critical point positions (see \citet{Sittler1999})\\
 sonic point and slow solar wind origin \citep{Sheeley1997}\\
 approaching these regions, acceleration plays a role\\
 
-The near-Sun (SPP perihelion) solar wind velocity is expected to be slower than our model estimates, because the position of the source (Alfvénic critical) surface is predicted to lie between 15--30~Rs (Schatten1969, Sittler1999, Exarhos2000, Katsikas2010, Goelzer2014; choose references...), up to which the solar wind is believed to be accelerated.\\
+The near-Sun (SPP perihelion) solar wind velocity is expected to be slower than our model's estimates, because the position of the source (Alfvénic critical) surface is predicted to lie between 15--30~Rs (Schatten1969, Sittler1999, Exarhos2000, Katsikas2010, Goelzer2014; choose references...), up to which the solar wind is believed to be accelerated.\\
 
 density:\\
 \citet{Leblanc1998} -> electron density model derived from type~III radio burst observations\\
@@ -610,7 +615,8 @@ The density distance dependency scales with $r^{-2}$, but steepens below 10~Rs w
 magnetic field and temperature:\\
 crossing distance effect\\
 
-Comparison with existing near-Sun models (renew extrapolation figure to 1-column):\\
+Comparison with existing near-Sun models (renew extrapolation figure to 1-column; with half/twice SSN)\\
+calculate or set min, avg and max SSN (e.g. 0, 100, 200)\\
 
 \citet{Wang2000}, sources of slow solar wind + IMF regulation mechanism + blobs; compare with our slow V lognormal part\\
 
@@ -628,17 +634,17 @@ The electron density distance function, which \citet{Bougeret1984} derived from 
 The model of \citet{Sittler1999} is based on Skylab coronagraph and Ulysses data. it is a 2d semiempirical MHD model (time static)\\
 L-> compare with their radial density function eq. (18a); B-field function eq. (19a+b); V(r) eq. (24); T(r)...\\
 
-\subsection{SPP solar wind model}
+\subsection{SPP solar wind environment estimation}
 Implementing the orbital distance data and predicted SSN for the mission time we get SPP's estimated solar wind environment.\\
-A zoom into the first and the nearest perihelia shows... (Figs.~\ref{fig:SPP_perihelia_prediction_c_plot} and \ref{fig:SPP_perihelia_prediction_nearest_c_plot}).\\
+The zoom into the first and the nearest perihelia show which solar wind parameter magnitudes can be expected there (Figs.~\ref{fig:SPP_perihelia_prediction_c_plot} and \ref{fig:SPP_perihelia_prediction_nearest_c_plot}).\\
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_c_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's first perihelion in 2018. For the velocity the SSN independent slow and fast parts are plotted.}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's first perihelion in 2018 at ?\SI{0.16}{\au}. For the velocity the SSN independent slow and fast parts are plotted.}
 	\label{fig:SPP_perihelia_prediction_c_plot}
 \end{figure}
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_nearest_c_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's nearest perihelion in 2024. For the velocity the SSN independent slow and fast parts are plotted.}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's nearest perihelion in 2024 at \SI{0.0459}{\au}. For the velocity the SSN independent slow and fast parts are plotted.}
 	\label{fig:SPP_perihelia_prediction_nearest_c_plot}
 \end{figure}
 
@@ -661,16 +667,14 @@ all estimates outside these boundaries are extrapolations with large uncertainti
 
 discuss high value zoom figures\\
 
-The use of hourly data instead of higher resolution data (less than 1~min) has no significant influence on the bulk results. The minutely OMNI data frequency distributions are almost congruent and differ only slightly at their extreme ends.\\
-The many hourly Helios data points which contain only a few measurements, contribute with a larger scatter to the frequency distributions \citep[p.~491]{Schwenn1983}.\\
-
 The solar wind parameters vary with solar distance as well as with latitudinal separation from the heliospheric current sheet (HCS).\\
 The OMNI data is time-shifted to the nose of the Earth's bow shock. This leads to yearly solar distance variations of \SI{>2}{\percent} (cite?) as the Earth orbits the Sun. Furthermore, its orbit within the ecliptic leads to a yearly variation of \SI{+-7.2}{\degree} in heliospheric latitude.\\
 The HCS's position in latitude is highly variable around the solar equator \citep[p.~127~ff.?]{Schwenn1990}.\\
 
 Error estimation over the year (seasonal/monthly) -> we expect variations to be less than 5~\%\\
 
-OMNI data is not corrected for solar distace. only available for 1-/5-min data\\
+
+%OMNI data is not corrected for solar distace. only available for 1-/5-min data\\
 
 %[limited parameter ranges... (minV: 171~km/s; Schwenn1983)]\\
 
@@ -708,7 +712,7 @@ In most studies the density distance dependence is assumed to scale with $r^{-2}
 
 \section{Conclusions}
 
-Further investigations should be done into structure extrapolations, outward extension of model to Mars...\\
+Further investigations should be done into structure extrapolations; outward extension of model to Mars seems feasable...\\
 
 Further questions:\\
 nearer to the Sun (at and below the source surface) the solar wind expansion in the ecliptic should be less spherical but more circular due to the influx from higher latitudes. => density exponent > -2\\
