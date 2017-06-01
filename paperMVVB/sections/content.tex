@@ -13,7 +13,7 @@ The main part of the PSP mission's goals is to gain insight into the coronal hea
 [white light imager WISPR... \citep{Vourlidas2016}]\\
 
 %difference to other models
-There are many studies analyzing the solar wind dependence on solar activity and heliocentric distance with Helios data (\citet{Schwenn1983, Bougeret1984, Schwenn1990}, more cites?). They examine average values, additionally distinguishing between slow and fast wind. In this paper we instead look at the variations of the whole frequency distributions, consider solar activity and extrapolate these to the near-Sun region.\\
+There are many studies analyzing the solar wind dependence on solar activity and heliocentric distance with Helios data (\citet{Schwenn1983, Bougeret1984, Schwenn1990}). They examine average values, additionally distinguishing between slow and fast wind. In this paper we instead look at the variations of the whole frequency distributions, consider solar activity and extrapolate these to the near-Sun region.\\
 
 
 %definition of sw environment
@@ -24,7 +24,9 @@ The goal of this paper is to estimate the solar wind environment PSP will probe 
 
 Generally, the characteristic behavior of a plasma is determined by its \textit{density}, \textit{temperature} and \textit{magnetic field strength}. Furthermore, the bulk \textit{velocity} is the parameter which makes the plasma a 'wind'. For our study we define the solar wind environment as the four major solar wind parameters. Quantities like flux densities, mass flux and plasma beta can directly be derived from those four parameters.
 
-In addition, the velocity is the defining parameter of the two types of solar wind. Solar wind mostly consists of and switches between slow and fast wind, whose ratio highly depends on solar activity. These types have different characteristics and their interactions lead to phenomena such as interaction regions. Additionally there also are coronal mass ejections (CMEs) embedded, whose occurrence rate follows solar activity too. Their share varies between almost zero in cycle minimum up to a half in maximum \citep{Richardson2012}. This study averages over these internal solar wind structures.
+In addition, the velocity is the defining parameter of the two types of solar wind. Solar wind mostly consists of and switches between slow and fast wind, whose different compositions and characteristics also indicate different sources and generation processes \citep{McGregor2011a} (better cites?). Their ratio highly depends on solar activity (cite?) and their interactions lead to phenomena such as interaction regions.
+
+Additionally there also are coronal mass ejections (CMEs) embedded, whose occurrence rate follows solar activity too. Their share varies between almost zero in cycle minimum up to a half in maximum \citep{Richardson2012}. This study averages over these internal solar wind structures.
 
 %frequency distribution data
 One cannot know which specific solar wind type or structure PSP will encounter at a given point in time, so we extrapolate the parameters' probability distributions from existing solar wind measurements.
@@ -150,7 +152,7 @@ From visual inspection, the resulting curves match well with the shape of the ma
 %double lognormal fitting
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %justification for compositional lognormal fit
-To reach a better fit result for the velocity we change the fit function. We do not want to abandon the well-founded application of the lognormal function. However, it is reasonable to assume that the velocity distribution is composed of at least two branches (slow and fast). Therefore a compositional approach promises better fit results, which is why we combine two lognormal functions (\ref{eq:single_lognormal_fit_function}), bearing the disadvantage of more fit variables:
+To reach a better fit result for the velocity we change the fit function. We do not want to abandon the well-founded application of the lognormal function. However, it is reasonable to assume that the velocity distribution can be made up of at least two overlapping branches \citep{McGregor2011b}. Therefore a compositional approach promises better fit results, which is why we combine two lognormal functions (\ref{eq:single_lognormal_fit_function}), bearing the disadvantage of more fit variables:
 \begin{align}
 	W_\text{II}(x) &= c \cdot W_1(x) + (1 -c) \cdot W_2(x)\,.	\label{eq:double_lognormal_fit_function}
 \end{align}
@@ -200,7 +202,7 @@ Thus we derive the correlation coefficients for different time lags between sola
 	\label{fig:OMNI_yearly_ssn_correlation_c_plot}
 \end{figure}
 
-The highest correlation coefficient for the magnetic field strength is 0.728. It is without lag time and the highest of all solar wind parameters, which is expected because the SSN is directly proportional to the solar surface magnetic flux (cite?).\\
+The highest correlation coefficient for the magnetic field strength is 0.728. It is without lag time and the highest of all solar wind parameters, which is expected because the SSN is directly proportional to the magnetic flux \citep{Smith2003}.\\
 Velocity and temperature have a lag time of 3~years with their maximal correlation coefficients (0.453 and 0.540). The density has a lag time of 6~years (0.468), which is in agreement with the by \citet{Bougeret1984} documented density anticorrelation with SSN.\\	%p.~406\\
 
 % maximal correlation coefficients and their lag times:\\
@@ -585,9 +587,17 @@ PSP orbit description, seven Venus flybys, within Venus' orbital plane? (\SI{3.8
 
 The extrapolation distance is only about one third of the model range, but as the parameters follow exponential change, one has to look at the logarithmic distance which is indeed one and a half times the model range.\\
 
-extrapolation errors...\\
-Comparison with existing near-Sun models (renew extrapolation figure to 1-column; with half/twice SSN)\\
+Comparison with existing near-Sun models (Fig.~\ref{fig:sw_extrapolation_ssn_plot}); with half/twice SSN)\\
 calculate or set min, avg and max SSN (e.g. 0, 100, 200)\\
+\begin{figure*}
+	\includegraphics[width=18cm]{figures/sw_extrapolation_ssn_plot.pdf}
+	\caption{Solar wind model extrapolations to the PSP orbit region. The from Helios and OMNI measurements obtained models are extrapolated to the PSP region---for the case of solar minimum (maximum) with a SSN of 0 (200). For comparison other near-Sun models are also shown... to 1-column...?}
+	\label{fig:sw_extrapolation_ssn_plot}
+\end{figure*}
+
+extrapolation errors...\\
+
+\citep{Banaszkiewicz1998}, analytical magnetic field model, DQCS model\\
 
 velocity:\\
 %critical surfaces
