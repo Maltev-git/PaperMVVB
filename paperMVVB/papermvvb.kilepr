@@ -87,7 +87,7 @@ order=-1
 
 [item:sections/abstract.tex]
 archive=true
-column=332
+column=66
 encoding=UTF-8
 highlight=LaTeX
 line=16
@@ -152,10 +152,10 @@ JumpList=
 ViMarks=.,10,1,[,10,1,],10,1
 
 [view-settings,view=0,item:sections/abstract.tex]
-CursorColumn=332
+CursorColumn=66
 CursorLine=16
 JumpList=
-ViMarks=.,16,331,[,16,324,],16,331
+ViMarks=.,23,43,[,23,43,],23,45
 
 [view-settings,view=0,item:sections/acknowledgments.tex]
 CursorColumn=72

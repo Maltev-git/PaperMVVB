@@ -4,10 +4,10 @@
 With his theoretical solar wind model \citet{Parker1958} laid the foundations...\\
 
 %in situ spacecraft
-Several space missions flew away from Earth's orbit to measure in situ solar wind at different heliocentric distances (e.g. the probes Helios, Voyager, Ulysses...). Voyager~1 is the farthest probe out of the solar system, now covering more than 137~au (cite?). Ulysses was the single probe orbiting the Sun outside the ecliptic and retrieving solar wind measurements from the poles of the Sun. So far, Helios~2 made the nearest in situ solar wind measurements with \SI{0.29}{\au}, followed closely by Helios~1 with \SI{0.31}{\au}. The new mission Solar~Probe~Plus~(SPP), whose planned launch date is in mid 2018, aims to reach further down into the Sun's atmosphere.
+Several space missions flew away from Earth's orbit to measure in situ solar wind at different heliocentric distances (e.g. the probes Helios, Voyager, Ulysses...). Voyager~1 is the farthest probe out of the solar system, now covering more than 137~au (cite?). Ulysses was the single probe orbiting the Sun outside the ecliptic and retrieving solar wind measurements from the poles of the Sun. So far, Helios~2 made the nearest in situ solar wind measurements with \SI{0.29}{\au}, followed closely by Helios~1 with \SI{0.31}{\au}. The new mission Parker~Solar~Probe (PSP), whose planned launch date is in mid 2018, aims to reach further down into the Sun's atmosphere.
 
 %Solar Probe Plus mission
-The main part of the SPP mission's goals is to gain insight into the coronal heating and solar wind acceleration processes. As these processes occur in the near-Sun region of the corona, SPP will have its closest perihelion at 9.86~solar radii (0.0459~au) \citep{Fox2015}. It will be the first spacecraft flying and measuring in situ solar wind this close to the Sun. Its planned observations range from the perihelion up to \SI{0.25}{\au}, leaving the outer part for data transfer, as \citet{Fox2015} state in their description of SPP's mission design.\\
+The main part of the PSP mission's goals is to gain insight into the coronal heating and solar wind acceleration processes. As these processes occur in the near-Sun region of the corona, PSP will have its closest perihelion at 9.86~solar radii (0.0459~au) \citep{Fox2015}. It will be the first spacecraft flying and measuring in situ solar wind this close to the Sun. Its planned observations range from the perihelion up to \SI{0.25}{\au}, leaving the outer part for data transfer, as \citet{Fox2015} state in their description of PSP's mission design.\\
 
 %WISPR
 [white light imager WISPR... \citep{Vourlidas2016}]\\
@@ -20,20 +20,20 @@ There are many studies analyzing the solar wind dependence on solar activity and
 \section{Solar wind environment}
 
 %solar wind parameters
-The goal of this paper is to estimate the solar wind environment SPP will probe during its orbits. We regard the solar wind primarily as a proton plasma, because protons make up most of it. The average helium abundance is only about \SI{4.5}{\percent} and in slow wind at solar cycle minimum even less than \SI{2}{\percent} \citep{Feldman1978,Schwenn1983,Kasper2012}. Neglecting heavier ions, the electron and mass density can be derived accordingly.
+The goal of this paper is to estimate the solar wind environment PSP will probe during its orbits. We regard the solar wind primarily as a proton plasma, because protons make up most of it. The average helium abundance is only about \SI{4.5}{\percent} and in slow wind at solar cycle minimum even less than \SI{2}{\percent} \citep{Feldman1978,Schwenn1983,Kasper2012}. Neglecting heavier ions, the electron and mass density can be derived accordingly.
 
 Generally, the characteristic behavior of a plasma is determined by its \textit{density}, \textit{temperature} and \textit{magnetic field strength}. Furthermore, the bulk \textit{velocity} is the parameter which makes the plasma a 'wind'. For our study we define the solar wind environment as the four major solar wind parameters. Quantities like flux densities, mass flux and plasma beta can directly be derived from those four parameters.
 
 In addition, the velocity is the defining parameter of the two types of solar wind. Solar wind mostly consists of and switches between slow and fast wind, whose ratio highly depends on solar activity. These types have different characteristics and their interactions lead to phenomena such as interaction regions. Additionally there also are coronal mass ejections (CMEs) embedded, whose occurrence rate follows solar activity too. Their share varies between almost zero in cycle minimum up to a half in maximum \citep{Richardson2012}. This study averages over these internal solar wind structures.
 
 %frequency distribution data
-One cannot know which specific solar wind type or structure SPP will encounter at a given point in time, so we extrapolate the parameters' probability distributions from existing solar wind measurements.
+One cannot know which specific solar wind type or structure PSP will encounter at a given point in time, so we extrapolate the parameters' probability distributions from existing solar wind measurements.
 
 Our approach is to get an analytical representation of the frequency distributions' shapes, their solar activity dependence and their solar distance scaling. We get the parameters' frequency distributions and solar activity dependence from near-Earth solar wind and sunspot number (SSN) time series with a duration of almost five solar cycles and their distance dependency from solar wind measurements of more than half a solar cycle, covering more than two third of the distance to the Sun (\SIrange{0.29}{0.98}{\au}).%0.68~au\\
 
 From the combination of the obtained frequency distributions, SSN dependence functions and solar distance dependence functions we build a general model representing the solar activity and distance behavior of all four solar wind parameter frequencies.
 
-This general model is then fed with a SSN prediction and extrapolated to SPP's planned orbital positions.\\
+This general model is then fed with a SSN prediction and extrapolated to PSP's planned orbital positions.\\
 
 
 %lognormal fitting
@@ -461,7 +461,7 @@ The next step is to fit the bulk of the solar wind parameters with lognormal fun
 	\caption{Helios hourly data plots of the four solar wind parameters over solar distance. The mean and median per \SI{0.01}{\au} data bin and their fit curves are plotted as well. The Helios data has a native distance resolution of \SI{0.01}{\au}. To make the abundance visible in these plots, we added a random distance value of up to \SI{+-0.005}{\au}.}
 	\label{fig:radial_fit_4_thesis_light_skip_pdfcairo_plot}
 \end{figure*}
-However, the magnetic field strength's mean crosses the median at \SI{0.339}{\au} (Table~\ref{tab:mean_median_fit_parameter}) and is lower at smaller distances. At the crossing point and below the magnetic field strength can therefore not be described anymore with a lognormal function. For an extrapolation to the SPP perihelion the same happens for the temperature at \SI{0.082}{\au}.
+However, the magnetic field strength's mean crosses the median at \SI{0.339}{\au} (Table~\ref{tab:mean_median_fit_parameter}) and is lower at smaller distances. At the crossing point and below the magnetic field strength can therefore not be described anymore with a lognormal function. For an extrapolation to the PSP perihelion the same happens for the temperature at \SI{0.082}{\au}.
 
 The large velocity's crossing distance and its large error indicate that the median's and mean's distance behavior can be kept identical and so the frequency's shape distance independent.
 
@@ -562,26 +562,26 @@ model constrictions:\\
 - neglected influence from heliolatitude variation\\
 
 
-\section{Model extrapolation to SPP orbital time and position}
-To estimate the solar wind environment at SPP's planned orbital positions during its mission time, SSN predictions are included into the general solar wind model and extrapolations to the SPP perihelion region are performed.\\
+\section{Model extrapolation to PSP orbital time and position}
+To estimate the solar wind environment at PSP's planned orbital positions during its mission time, SSN predictions are included into the general solar wind model and extrapolations to the PSP perihelion region are performed.\\
 
-\subsection{SSN prediction for SPP mission time}
+\subsection{SSN prediction for PSP mission time}
 %SSN prediction
 For the SSN prediction there are several sources available. The SIDC provides 12-month SSN forecasts\footnote{\url{http://sidc.be/silso/forecasts}} obtained from different methods (e.g. Kalman filter combined method). The Space Weather Prediction Center's (SWPC) prediction follows a consensus of the Solar~Cycle~24 Prediction~Panel\footnote{\url{http://www.swpc.noaa.gov/products/solar-cycle-progression}} (until end of 2019).
 
-For the prediction of the next solar cycle~25 we simply assume a course similar to the last and thus we shift the last cycle by 11~years. Additionally we consider the two alternatives of half and twice its amplitude. The SSN for SPP's first perihelion will be small---certainly below 20, whereas its nearest perihelia, which commence at the height of cycle~25, will have as of now almost unpredictable SSN amplitudes (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_d_plot})\\
+For the prediction of the next solar cycle~25 we simply assume a course similar to the last and thus we shift the last cycle by 11~years. Additionally we consider the two alternatives of half and twice its amplitude. The SSN for PSP's first perihelion will be small---certainly below 20, whereas its nearest perihelia, which commence at the height of cycle~25, will have as of now almost unpredictable SSN amplitudes (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_d_plot})\\
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_orbit_predicted_SSN_overview_d_plot.pdf}}
-	\caption{SPP's solar distance during its mission time (top). Consecutive Venus flybys bring its perihelia nearer to the Sun. Actual and predicted SSN (bottom), i.e. SIDC 13-month smoothed monthly actual SSN, SIDC prediction, SWPC prediction and simply by 11~years shifted SSN from previous cycle~24, together with two alternative trends of half and twice its amplitude.}
+	\caption{PSP's solar distance during its mission time (top). Consecutive Venus flybys bring its perihelia nearer to the Sun. Actual and predicted SSN (bottom), i.e. SIDC 13-month smoothed monthly actual SSN, SIDC prediction, SWPC prediction and simply by 11~years shifted SSN from previous cycle~24, together with two alternative trends of half and twice its amplitude.}
 	\label{fig:SPP_orbit_predicted_SSN_overview_d_plot}
 \end{figure}
 
 [=> Implications for the mission...]\\
 
-\subsection{Near-Sun extrapolation for SPP orbit}
+\subsection{Near-Sun extrapolation for PSP orbit}
 
-%SPP orbit
-SPP orbit description, seven Venus flybys, within Venus' orbital plane? (\SI{3.86}{\degree} to Sun's equator), \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_d_plot})\\
+%PSP orbit
+PSP orbit description, seven Venus flybys, within Venus' orbital plane? (\SI{3.86}{\degree} to Sun's equator), \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_d_plot})\\
 
 The extrapolation distance is only about one third of the model range, but as the parameters follow exponential change, one has to look at the logarithmic distance which is indeed one and a half times the model range.\\
 
@@ -597,7 +597,7 @@ sonic and Alfvénic critical point positions (see \citet{Sittler1999})\\
 sonic point and slow solar wind origin \citep{Sheeley1997}\\
 approaching these regions, acceleration plays a role\\
 
-The near-Sun (SPP perihelion) solar wind velocity is expected to be slower than our model's estimates, because the position of the source (Alfvénic critical) surface is predicted to lie between 15--30~Rs (Schatten1969, Sittler1999, Exarhos2000, Katsikas2010, Goelzer2014; choose references...), up to which the solar wind is believed to be accelerated.\\
+The near-Sun (PSP perihelion) solar wind velocity is expected to be slower than our model's estimates, because the position of the source (Alfvénic critical) surface is predicted to lie between 15--30~Rs (Schatten1969, Sittler1999, Exarhos2000, Katsikas2010, Goelzer2014; choose references...), up to which the solar wind is believed to be accelerated.\\
 
 density:\\
 \citet{Leblanc1998} -> electron density model derived from type~III radio burst observations\\
@@ -622,17 +622,17 @@ The electron density distance function, which \citet{Bougeret1984} derived from 
 The model of \citet{Sittler1999} is based on Skylab coronagraph and Ulysses data. it is a 2d semiempirical MHD model (time static)\\
 L-> compare with their radial density function eq. (18a); B-field function eq. (19a+b); V(r) eq. (24); T(r)...\\
 
-\subsection{SPP solar wind environment estimation}
-Implementing the orbital distance data and predicted SSN for the mission time we get SPP's estimated solar wind environment $W'''(x,ssn,r)$.\\
+\subsection{PSP solar wind environment estimation}
+Implementing the orbital distance data and predicted SSN for the mission time we get PSP's estimated solar wind environment $W'''(x,ssn,r)$.\\
 The zoom into the first and the nearest perihelia show which solar wind parameter magnitudes can be expected there (Figs.~\ref{fig:SPP_perihelia_prediction_d_plot} and \ref{fig:SPP_perihelia_prediction_nearest_d_plot}).\\
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_d_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's first perihelion in 2018 at about \SI{0.16}{\au}. For the velocity the SSN independent slow and fast parts are plotted.}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during PSP's first perihelion in 2018 at about \SI{0.16}{\au}. For the velocity the SSN independent slow and fast parts are plotted.}
 	\label{fig:SPP_perihelia_prediction_d_plot}
 \end{figure}
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_nearest_d_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during SPP's nearest perihelion in 2024 at \SI{0.0459}{\au}. For the velocity the SSN independent slow and fast parts are plotted.}
+	\caption{Estimated solar wind parameter medians (black) and their error bands (grey) during PSP's nearest perihelion in 2024 at \SI{0.0459}{\au}. For the velocity the SSN independent slow and fast parts are plotted.}
 	\label{fig:SPP_perihelia_prediction_nearest_d_plot}
 \end{figure}
 
