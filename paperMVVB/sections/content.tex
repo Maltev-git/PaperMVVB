@@ -203,19 +203,18 @@ Thus we derive the correlation coefficients for different time lags between sola
 \end{figure}
 
 The highest correlation coefficient for the magnetic field strength is 0.728. It is without lag time and the highest of all solar wind parameters, which is expected because the SSN is directly proportional to the magnetic flux \citep{Smith2003}.\\
-Velocity and temperature have a lag time of 3~years with their maximal correlation coefficients (0.453 and 0.540). The density has a lag time of 6~years (0.468), which is in agreement with the by \citet{Bougeret1984} documented density anticorrelation with SSN.\\	%p.~406\\
+Velocity and temperature have a lag time of 3~years with their maximal correlation coefficients (0.453 and 0.540). The density has a lag time of 6~years (0.468), which is in agreement with the by \citet{Bougeret1984} documented density anticorrelation with SSN.	%p.~406\\
 
 % maximal correlation coefficients and their lag times:\\
 % magnetic field strength: lag 0, 0.728\\
 % velocity: lag -3, 0.453\\
 % density: lag -6, 0.468\\
 % temperature: lag -3, 0.540\\
-For all parameters their correlation coefficients' amplitudes decline with increasing lag time and, as expected, show a frequency of about 11~years.
-cite literature to lag time...\\
+For all parameters their correlation coefficients' amplitudes decline with increasing lag time and, as also expected, show a frequency of about 11~years.
 
 \subsection{SSN fitting}
 \label{sec:ssn_fitting}
-To be able to shift the distributions with SSN, we add a linear SSN dependency to the median
+To be able to shift the frequency distributions with SSN, we add a linear SSN dependency to the median
 \begin{align}
 	x_\text{med}(ssn) &= a_\text{med} \cdot ssn + b_\text{med}\,,	\label{eq:median_with_ssn}
 \end{align}
@@ -278,9 +277,8 @@ The fit result (see Table~\ref{tab:ssn_fit_parameters}) is a model in which thre
 	\label{fig:Vdbl_SSN_ratio_f_plot}
 \end{figure}
 % 3 years after minimum (SSN of zero) the slow wind has its maximal share of 0.638(32). 3 years after maximum (SSN of 200) it has only a share of 0.278(37).\\
-To compare the ratios of slow to fast wind between model and data, we simply apply the commonly used constant velocity threshold of $v_\text{th} = \SI{400}{\km\per\s}$ (cite?). The linear fit to the yearly data ratio and the derived model ratio are quite similar (see Fig.~\ref{fig:Vdbl_SSN_ratio_f_plot}). Specific velocity thresholds between slow and fast solar wind cannot be directly compared with the somewhat steeper balance parameter of this model. The model's balance may represent the actual ratios of the solar wind types in a more realistic way than a specific velocity threshold does, as the velocity ranges of both types overlap (cites? - there exists slow sw with properties of fast wind and vice versa...).
-
-In comparison with the data the velocity fit model also matches with the general trend (see Fig.~\ref{fig:OMNI_yearly_BVdblNTSSN_fit_d_plot}).\\
+To compare the ratios of slow to fast wind between model and data, we simply apply the commonly used constant velocity threshold of $v_\text{th} = \SI{400}{\km\per\s}$ (cite?). The linear fit to the yearly data ratio and the derived model ratio are quite similar (see Fig.~\ref{fig:Vdbl_SSN_ratio_f_plot}). Specific velocity thresholds between slow and fast solar wind cannot be directly compared with the somewhat steeper balance parameter of this model. The model's balance may represent the actual ratios of the solar wind types in a more realistic way than a specific velocity threshold does, since the velocity ranges of both types overlap \citep{McGregor2011b}.
+%(i.e. there exists slow wind with properties of fast wind and vice versa)
 
 
 %exponential fitting
@@ -421,6 +419,7 @@ Using this data, we also have to keep in mind that its time coverage is unequall
 For calculating the median and mean values at different solar distances the data is binned into \SI{0.01}{\au} bins, which is also the native precision in this data set.\\
 
 \subsection{Exponential fitting}
+\label{sec:exponential_fitting}
 %why exponential function?
 An exponential distance behavior is expected from all four parameters (cites?). Therefore we use the exponential function
 \begin{align}
@@ -428,7 +427,7 @@ An exponential distance behavior is expected from all four parameters (cites?). 
 \end{align}
 with the solar distance $r$ for the regression fit of the median and mean. The fits are weighted by data counts per bin.
 %fit result table and figure
-With $r$ in astronomical units we get the fit coefficients ($d_\text{med}$, $d_\text{avg}$, $e_\text{med}$ and $e_\text{avg}$) as given in Table~\ref{tab:mean_median_fit_parameter}.\\
+With $r$ in astronomical units we get the fit coefficients ($d_\text{med}$, $d_\text{avg}$, $e_\text{med}$ and $e_\text{avg}$) as given in Table~\ref{tab:mean_median_fit_parameter}.
 \begin{table*}
 	\caption{These are the fit coefficients for the median and mean solar distance dependencies of the four parameters from the combined Helios data set. The errors in brackets are the estimated standard deviations of each fit parameter. The crossing distance is the point where the fitted median and mean intersect.}
 	\label{tab:mean_median_fit_parameter}
@@ -463,11 +462,12 @@ The next step is to fit the bulk of the solar wind parameters with lognormal fun
 	\caption{Helios hourly data plots of the four solar wind parameters over solar distance. The mean and median per \SI{0.01}{\au} data bin and their fit curves are plotted as well. The Helios data has a native distance resolution of \SI{0.01}{\au}. To make the abundance visible in these plots, we added a random distance value of up to \SI{+-0.005}{\au}.}
 	\label{fig:radial_fit_4_thesis_light_skip_pdfcairo_plot}
 \end{figure*}
-However, the magnetic field strength's mean crosses the median at \SI{0.339}{\au} (Table~\ref{tab:mean_median_fit_parameter}) and is lower at smaller distances. At the crossing point and below the magnetic field strength can therefore not be described anymore with a lognormal function. For an extrapolation to the PSP perihelion the same happens for the temperature at \SI{0.082}{\au}.
 
 The large velocity's crossing distance and its large error indicate that the median's and mean's distance behavior can be kept identical and so the frequency's shape distance independent.
 
-Those crossings limit the possible extrapolation distances with lognormal functions. To circumvent these limitations for all four solar wind parameters we set the exponents $e_\text{med}$ and $e_\text{avg}$ to be identical, avoiding crossing of median and mean. Then the distribution's width is constant and scales only exponentially with solar distance. Applying this approximation, we have to accept larger model errors, especially for the magnetic field strength. It also limits the extrapolation accuracy.
+However, the magnetic field strength's mean crosses the median at \SI{0.339}{\au} and is lower at smaller distances (Table~\ref{tab:mean_median_fit_parameter}). At the crossing point and below the magnetic field strength can therefore not be described anymore with a lognormal function. For an extrapolation to the PSP perihelion the same happens for the temperature at \SI{0.082}{\au}.
+
+Those crossings limit the possible extrapolation distances with lognormal functions. To circumvent these limitations for all four solar wind parameters we set the exponents $e_\text{med}$ and $e_\text{avg}$ to be identical, avoiding crossing of median and mean. Then the distribution's width scales exponentially with solar distance. Applying this approximation, we have to accept larger model errors, especially for the magnetic field strength. It also limits the extrapolation accuracy, however it keeps the model simpler.
 
 \subsection{Exponential lognormal fitting}
 To retrieve the frequency distributions for every \SI{0.01}{\au} solar distance bin, we choose the same solar wind parameter binning as with the OMNI data (Sect.~\ref{sec:omni_frequency_data}).
@@ -510,9 +510,9 @@ Naturally, we use the double lognormal function~(\ref{eq:double_lognormal_fit_fu
 	}
 \end{table*}
 
-With $c' = 0.557$ the velocity balancing parameter is of an expected value similar to that obtained from the Helios time period (the mean SSN during the Helios period was 59, this corresponds to $c(59) = 0.53$, see Fig.~\ref{fig:Vdbl_SSN_ratio_f_plot}).\\
+With $c' = 0.557$ the velocity balancing parameter is of an expected value similar to that obtained from the Helios time period (the mean SSN during the Helios period was 59, this corresponds to $c(59) = 0.53$; see Fig.~\ref{fig:Vdbl_SSN_ratio_f_plot}).
 
-The fit models seem to resemble the data quite well (Fig.~\ref{fig:mixed_fit_fixed_4_paper_e_plot}). The magnetic field strength frequency is more focused (around \SI{40}{nT}) at the lower distance boundary than the model's is. This is expected because of our fixed distance independent shape approximation.\\
+The fit models seem to resemble the data quite well (Fig.~\ref{fig:mixed_fit_fixed_4_paper_e_plot}). The magnetic field strength frequency is more focused (around \SI{40}{nT}) at the lower distance boundary than the model's is. This is expected because of our fixed distance independent shape approximation.
 \begin{figure*}
 	\includegraphics[width=18cm]{figures/mixed_fit_fixed_4_paper_e_plot.pdf}
 	\caption{Solar wind parameter's frequency distributions over solar distance. Plotted are the binned Helios data and the exponential lognormal fit model (double lognormal for the velocity) with their median values (white).}
@@ -521,9 +521,9 @@ The fit models seem to resemble the data quite well (Fig.~\ref{fig:mixed_fit_fix
 
 The velocity and temperature models' upper values have a higher frequency than the data shows. This is due to the systematic fit discrepancy of the lognormal distribution's high value tails (see zoom box in Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}).\\
 
-model errors, maximum errors\\
+Possible differing scaling laws at smaller heliocentric distances are discussed in Sect.~\ref{sec:model_extrapolation_to_psp_orbital_time_and_position}.\\
 
-This model represents the Helios time frame around the rise of solar cycle~21.\\
+This radial solar wind model represents the Helios time frame around the rise of solar cycle~21.\\
 
 study cycle variation of exponent\\
 indications for that: figure! + theory + studies/papers...\\
@@ -551,7 +551,7 @@ give model errors sizes/uncertainties (sigmas); $W'''_\text{err}(x,ssn,r)$, $x_\
 model requirements:\\
 - modeling the frequency distribution with sufficient accuracy -> error size (changing distribution shape with distance)\\
 - modeling the distance dependency with sufficient accuracy -> error size (different scaling law at smaller distances?)\\
-- possibility to extrapolate model down to 0.0459~au\\
+- possibility to extrapolate model down to \SI{0.0459}{\au}\\
 
 %model limits
 model limits (spherical coordinates):\\
@@ -565,11 +565,12 @@ model constrictions:\\
 
 
 \section{Model extrapolation to PSP orbital time and position}
+\label{sec:model_extrapolation_to_psp_orbital_time_and_position}
 To estimate the solar wind environment at PSP's planned orbital positions during its mission time, SSN predictions are included into the general solar wind model and extrapolations to the PSP perihelion region are performed.\\
 
 \subsection{SSN prediction for PSP mission time}
 %SSN prediction
-For the SSN prediction there are several sources available. The SIDC provides 12-month SSN forecasts\footnote{\url{http://sidc.be/silso/forecasts}} obtained from different methods (e.g. Kalman filter combined method). The Space Weather Prediction Center's (SWPC) prediction follows a consensus of the Solar~Cycle~24 Prediction~Panel\footnote{\url{http://www.swpc.noaa.gov/products/solar-cycle-progression}} (until end of 2019).
+For the SSN short-term prediction are several sources available. The SIDC provides 12-month SSN forecasts\footnote{\url{http://sidc.be/silso/forecasts}} obtained from different methods (e.g. Kalman filter combined method). The Space Weather Prediction Center's (SWPC) prediction follows a consensus of the Solar~Cycle~24 Prediction~Panel\footnote{\url{http://www.swpc.noaa.gov/products/solar-cycle-progression}} (until end of 2019).
 
 For the prediction of the next solar cycle~25 we simply assume a course similar to the last and thus we shift the last cycle by 11~years. Additionally we consider the two alternatives of half and twice its amplitude. The SSN for PSP's first perihelion will be small---certainly below 20, whereas its nearest perihelia, which commence at the height of cycle~25, will have as of now almost unpredictable SSN amplitudes (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_d_plot})\\
 \begin{figure}
@@ -578,14 +579,12 @@ For the prediction of the next solar cycle~25 we simply assume a course similar 
 	\label{fig:SPP_orbit_predicted_SSN_overview_d_plot}
 \end{figure}
 
-[=> Implications for the mission...]\\
+[=> Implications for the sw estimation...]\\
 
 \subsection{Near-Sun extrapolation for PSP orbit}
 
 %PSP orbit
 PSP orbit description, seven Venus flybys, within Venus' orbital plane? (\SI{3.86}{\degree} to Sun's equator), \citep{Fox2015}, (see Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_d_plot})\\
-
-The extrapolation distance is only about one third of the model range, but as the parameters follow exponential change, one has to look at the logarithmic distance which is indeed one and a half times the model range.\\
 
 Comparison with existing near-Sun models (Fig.~\ref{fig:sw_extrapolation_ssn_plot}); with half/twice SSN)\\
 calculate or set min, avg and max SSN (e.g. 0, 100, 200)\\
@@ -597,26 +596,33 @@ calculate or set min, avg and max SSN (e.g. 0, 100, 200)\\
 
 extrapolation errors...\\
 
-\citep{Banaszkiewicz1998}, analytical magnetic field model, DQCS model\\
+%magnetic field:
+The magnetic field magnitude from our extrapolation is flatter than the analytical magnetic field model from \citet{Banaszkiewicz1998}, who constructed a dipole plus quadrupole plus current sheet (DQCS) model. We attribute this effect to the from a lognormal shape deviating distribution (see Sect.~\ref{sec:exponential_fitting}).\\
 
-velocity:\\
+%velocity:
 %critical surfaces
 Alfvénic critical surface i.e. source surface (see Fox before 2.1)\\
-in direction to the Sun is at $\sim$2.5~Rs the source surface (Schatten1969)\\
+in direction to the Sun is at about \SI{2.5}{R_s} the source surface (Schatten1969)\\
 sonic and Alfvénic critical point positions (see \citet{Sittler1999})\\
 sonic point and slow solar wind origin \citep{Sheeley1997}\\
 approaching these regions, acceleration plays a role\\
 
-The near-Sun (PSP perihelion) solar wind velocity is expected to be slower than our model's estimates, because the position of the source (Alfvénic critical) surface is predicted to lie between 15--30~Rs (Schatten1969, Sittler1999, Exarhos2000, Katsikas2010, Goelzer2014; choose references...), up to which the solar wind is believed to be accelerated.\\
+\citet{Wang2000}, sources of slow solar wind + IMF regulation mechanism + blobs; compare with our slow V lognormal part; Parker solution\\
 
-density:\\
-\citet{Leblanc1998} -> electron density model derived from type~III radio burst observations\\
-The density distance dependency scales with $r^{-2}$, but steepens below 10~Rs with $r^{-6}$ \citep{Leblanc1998}.\\
+\citet{Sheeley1997} -> LASCO coronagraph observed speed profile of coronal features tracing the slow solar wind, 2--30~Rs\\
+- parabolic eq.~(2) and exponential eq.~(3)\\
+- sonic point 5--6~Rs\\
+- slow solar wind origin 3--4~Rs\\
+
+The near-Sun (PSP perihelion) solar wind velocity is expected to be slower than our model's estimates, because the position of the source (Alfvénic critical) surface is predicted to lie between 15--30~Rs (Schatten1969, Sittler1999, Exarhos2000, Katsikas2010, Goelzer2014; choose references...), up to which the solar wind is believed to be accelerated.\\
+The \citet{Parker1958} model of an isothermal expanding corona with a temperature of \SI{e6}{\K} and a critical radius of \SI{5.8}{R_s}.\\
+
+
+%density:
+We expect that even our Sun-nearest extrapolated density at PSP perihelion agrees well with the actual, since \citet{Leblanc1998} derived an electron density model from type~III radio burst observations. Their model shows that the density distance dependency scales with $r^{-2}$ and steepens not until below \SI{10}{R_s} with $r^{-6}$ (see Fig.~\ref{fig:sw_extrapolation_ssn_plot}).\\
 
 magnetic field and temperature:\\
 crossing distance effect\\
-
-\citet{Wang2000}, sources of slow solar wind + IMF regulation mechanism + blobs; compare with our slow V lognormal part\\
 
 % comparison with other Helios studies (Schwenn, Bougeret)
 \citet{Schwenn1983,Schwenn1990}, who derived the distance dependencies for both Helios spacecraft separately ($v_\text{H1}(r) \propto r^{0.083}$ and $v_\text{H2}(r) \propto r^{0.036}$), average or median? fits well...\\
@@ -624,16 +630,11 @@ Helios results, radial gradients see \citet{Schwenn1990} p.~155\\
 
 The electron density distance function, which \citet{Bougeret1984} derived from Helios data and normed to the 1976 1~au density ($n(r) = 6.14\,r^{-2.10(4)}\,\text{cm}^{-3}$) also fits well...\\
 
-\citet{Sheeley1997} -> LASCO coronagraph observed speed profile of coronal features tracing the slow solar wind, 2--30~Rs\\
-- parabolic eq.~(2) and exponential eq.~(3)\\
-- sonic point 5--6~Rs\\
-- slow solar wind origin 3--4~Rs\\
-
-The model of \citet{Sittler1999} is based on Skylab coronagraph and Ulysses data. it is a 2d semiempirical MHD model (time static)\\
-L-> compare with their radial density function eq. (18a); B-field function eq. (19a+b); V(r) eq. (24); T(r)...\\
+% The model of \citet{Sittler1999} is based on Skylab coronagraph and Ulysses data. it is a 2d semiempirical MHD model (time static)\\
+% L-> compare with their radial density function eq. (18a); B-field function eq. (19a+b); V(r) eq. (24); T(r)...\\
 
 \subsection{PSP solar wind environment estimation}
-Implementing the orbital distance data and predicted SSN for the mission time we get PSP's estimated solar wind environment $W'''(x,ssn,r)$.\\
+Implementing the orbital distance data and predicted SSN for the mission time we can derive PSP's estimated solar wind environment $W'''(x,ssn,r)$.\\
 The zoom into the first and the nearest perihelia show which solar wind parameter magnitudes can be expected there (Figs.~\ref{fig:SPP_perihelia_prediction_d_plot} and \ref{fig:SPP_perihelia_prediction_nearest_d_plot}).\\
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_d_plot.pdf}}
@@ -691,14 +692,10 @@ varying shape with distance is indicator for internal physical processes (mixing
 %solar wind -> structures\\
 \citet{Balogh1999} p.~162~ff (origin and formation of CIRs in inner heliosphere with Helios data; latitude V dependence)\\
 Balogh2009 (HMF review + inner heliosheath)\\
-Patsourakos2016 (near-Sun B-field of CMEs)\\
 Aschwanden2004, p.~29\\
 
-Parker1963\\
-%https://babel.hathitrust.org/cgi/pt?id=uc1.b4264142;view=1up;seq=12
-
 individual velocity part discussion -> there is no specific velocity threshold between slow and fast solar wind types, the velocity ranges of both types overlap.\\
-\citet{Sanchez-Diaz2016} (very slow solar wind)\\
+\citet{Sanchez-Diaz2016} (very slow solar wind; continuation of slow sw)\\
 Not only the slowest wind but also the fastest wind is expected to converge to the average speed (Sanchez-Diaz2016 p.~2835, using MHD-model -> very slow solar wind is continuation of slow wind) (because of interaction).\\
 
 The ratio of both varies with solar activity, e.g. 3~years after maximum, polar coronal holes are observed to often have equatorial extensions (cite?). see and use \citet{Bougeret1984} p.~498...\\

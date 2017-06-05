@@ -41,3 +41,9 @@ $X_\text{avg}(t) = a\,r_\text{E}(t)^b$\\
 
 HGI coordinates; latitude range -7.25\degr{}~to~7.25\degr{}\\
 latitude variation (see Schwenn1990 p.~127)\\
+
+
+Patsourakos2016 (near-Sun B-field of CMEs)\\
+
+Parker1963, p.~75\\
+%https://babel.hathitrust.org/cgi/pt?id=uc1.b4264142;view=1up;seq=12
