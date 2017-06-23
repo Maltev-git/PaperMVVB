@@ -1,0 +1,58 @@
+MV's Kommentare zu
+paperMVVB_without_figures_2017-06-21_vb.docx
+
+KEY:
+grün (lila) Text: (nicht) übernommen
+cyan Hintergrund: eigene Einfügungen
+gelb: zu klären...
+
+
+NOTES:
+
+Die Schreibweise von "au" würde ich gerne in klein beibehalten.
+https://cneos.jpl.nasa.gov/glossary/au.html
+http://asa.usno.navy.mil/static/files/2017/Astronomical_Constants_2017.pdf
+
+CMEs within solar wind are not really superimposed, rather embedded.
+
+interaction regions:
+	-> needed? stream interaction regions (SIRs) and for quasi-stationary coronal source regions to co-rotating interaction regions (CIRs, ref. Buch über CIRs).
+
+
+
+GELB - inhaltlich klären:
+
+shifting of these lognormal distributions nicht klar
+
+In section 2 we..., in section will...
+	-> am Ende von sect. 2 vorhanden...
+
+The origin of slow wind is a subject of controversial discussions because several sources are closed magnetic structures in the solar corona, such as  Schwenn (19xx) has even reported the possibility of four types of solar wind depending on the phase of the solar cycle/activity.
+
+up to a daily rate of about 0.5 during times of solar maximum (Richardson & Cane 2012)
+
+
+@ARTICLE{1951ZA.....29..274B,
+   author = {{Biermann}, L.},
+    title = "{Kometenschweife und solare Korpuskularstrahlung}",
+  journal = {\zap},
+     year = 1951,
+   volume = 29,
+    pages = {274},
+   adsurl = {http://adsabs.harvard.edu/abs/1951ZA.....29..274B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{1966JGR....71.4469N,
+   author = {{Neugebauer}, M. and {Snyder}, C.~W.},
+    title = "{Mariner 2 Observations of the Solar Wind, 1, Average Properties}",
+  journal = {\jgr},
+     year = 1966,
+    month = oct,
+   volume = 71,
+    pages = {4469},
+      doi = {10.1029/JZ071i019p04469},
+   adsurl = {http://adsabs.harvard.edu/abs/1966JGR....71.4469N},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
