@@ -1,32 +1,52 @@
 \section{Introduction}
 
-%solar wind models; theoretical and empirical
-With his theoretical solar wind model \citet{Parker1958} laid the foundations...\\
+\color{Green4}
+%solar wind beginnings
+From observations of cometary tail fluctuations \citet{Biermann1951} inferred the presence of a continuous flow of particles from the Sun. With his theoretical solar wind model \citet{Parker1958} formulated the existence of the solar wind even before the first satellites measured it in situ in 1962 \citep{Neugebauer1966}.
 
 %in situ spacecraft
-Several space missions flew away from Earth's orbit to measure in situ solar wind at different heliocentric distances (e.g. the probes Helios, Voyager, Ulysses...). Voyager~1 is the farthest probe out of the solar system, now covering more than \SI{138}{\au}\footnote{\url{https://voyager.jpl.nasa.gov/}}. Ulysses was the singular probe orbiting the Sun outside the ecliptic and retrieving solar wind measurements from the poles of the Sun. So far, Helios~2 made the nearest in situ solar wind measurements with \SI{0.29}{\au}, followed closely by Helios~1 with \SI{0.31}{\au}. The new mission Parker~Solar~Probe (PSP), whose planned launch date is in mid 2018, aims to reach further down into the Sun's atmosphere.
+The idea of a space mission flying through the solar corona \hl{dates back to the founding year of NASA in 1958 (ref.).} Since then several space missions have measured the solar wind in situ at a wide range of heliocentric distances, in the case of Voyager~1 as far away as \SI{138}{\au}\footnote{\url{https://voyager.jpl.nasa.gov/}}, having even left the heliospause into interstellar space \citep{Gurnett2013}. Ulysses was the unique probe that orbited the Sun out of the ecliptic plane and thus could retrieve solar wind measurements from the poles of the Sun \hl{(ref.)}. So far, Helios~2 made the nearest in situ solar wind measurements ever at a distance as close to the Sun as \SI{0.29}{\au}, closely followed by Helios~1 with \SI{0.31}{\au}.
 
 %Solar Probe Plus mission
-The main part of the PSP mission's goals is to gain insight into the coronal heating and solar wind acceleration processes. As these processes occur in the near-Sun region of the corona, PSP will have its closest perihelion at 9.86~solar radii (\SI{0.0459}{\au}) \citep{Fox2015}. It will be the first spacecraft flying and measuring in situ solar wind this close to the Sun. Its planned observations range from the perihelion up to \SI{0.25}{\au}, leaving the outer part for data transfer, as \citet{Fox2015} state in their description of PSP's mission design.\\
+The Parker~Solar~Probe, with a planned launch date in mid 2018, will reach after six years in 2024 its closest perihelia with 9.86~solar radii, i.e. \SI{0.0459}{\au}. This distance will be achieved through seven Venus gravity assists with orbital periods of 88--168~days. In its prime mission time 2018--2025 PSP provides 24 orbits with perihela inside \SI{0.25}{\au} \citep{Fox2015}.
+
+\color{Red2}
+%PSP objectives and instruments
+The key PSP science objectives are to “trace the flow of energy that heats and accelerates the solar corona and solar wind, determine the structure and dynamics of the plasma and magnetic fields at the sources of the solar wind, and explore mechanisms that accelerate and transport energetic particles” (ref. NASA STDT report, \citet{Fox2015}). To achieve these goals, PSP has four scientific instruments on board: FIELDS for the measurements of magnetic fields and AC/DC electric fields, SWEAP for the measurements of flux of electrons, protons and alphas, IS\sun{}IS for the measurement of solar energetic particles and WISPR for the measurement of coronal structures (ref. to each instrument paper).\\
 
 %WISPR
-[white light imager WISPR... \citep{Vourlidas2016}]\\
+The Wide field Imager for Solar Probe (WISPR) will contribute to the science goals by deriving the 3D structure of the solar corona through which the in situ measurements are made to determine the sources of the solar wind. It will provide density power spectra over a wide range of structures, e.g., streamers and pseudostreamers, equatorial coronal holes, for determining the roles of turbulence, waves, and pressure-balanced structures in the solar wind. It will also measure the physical properties, such as speed and density jumps, of SEP-producing shocks and their CME drivers as they evolve in the corona and inner heliosphere \citep{Vourlidas2016}.\\
 
-This paper examines the variations of the bulk solar wind frequency distributions, considers solar activity and extrapolates these distributions to the near-Sun region.\\
+%CGAUSS
+CGAUSS (Coronagraphic German And US Solar Probe Survey) is the German contribution to the PSP mission as part of the Wide field Imager for Solar PRobe (WISPR). One of the objectives of the CGAUSS project is to extrapolate the solar wind environment down to the closest perihelion of \SI{9.86}{R_s} distance to the Sun in order to optimize the WISPR and PSP science operations. To achieve that goal this study uses in situ solar wind data from the US-German Helios~1 and 2 space probes and \SI{1}{\au} data from various satellites compiled in the NASA/GSFC OMNI solar wind database.\\
 
+\color{Green4}
+This paper examines the variations of the bulk solar wind frequency distributions, considers solar activity and extrapolates these distributions to the near-Sun region.
 
+\color{black}
 %definition of sw environment
 \section{Solar wind environment}
 
+\color{Green4}
 %solar wind parameters
-The goal of this paper is to estimate the solar wind environment PSP will probe during its orbits. We regard the solar wind primarily as a proton plasma, because protons make up most of it. The average helium abundance is only about \SI{4.5}{\percent} and in slow wind at solar cycle minimum even less than \SI{2}{\percent} \citep{Feldman1978,Schwenn1983,Kasper2012}. Neglecting heavier ions, the electron and mass density can be derived accordingly.
+As a baseline we treat the solar wind primarily as a proton plasma, because the average helium abundance is only about \SI{4.5}{\percent} and in slow wind at solar cycle minimum even less than \SI{2}{\percent} \citep{Feldman1978,Schwenn1983,Kasper2012}. Neglecting heavier ions, the electron and mass density can then \hl{be derived accordingly.}
 
-Generally, the characteristic behavior of a plasma is determined by its \textit{density}, \textit{temperature} and \textit{magnetic field strength}. Furthermore, the bulk \textit{velocity} is the parameter which makes the plasma a 'wind'. For our study we define the solar wind environment as the four major solar wind parameters. Quantities like flux densities, mass flux and plasma beta can directly be derived from those four parameters.
+The characteristic behavior of a magnetized plasma is determined by its \textit{density}, \textit{temperature} and \textit{magnetic field strength}. Furthermore, the bulk flow \textit{velocity} is the parameter which makes the plasma a 'wind'. For this study we define the solar wind environment through these four major solar wind parameters. Quantities like flux densities, mass flux and plasma beta can directly be derived from those four parameters.
 
-In addition, the velocity is the defining parameter of the two types of solar wind. Solar wind mostly consists of and switches between slow and fast wind, whose different compositions and characteristics also indicate different sources and generation processes \citep{McGregor2011a} (better cites?). Their ratio highly depends on solar activity (cite?) and their interactions lead to phenomena such as interaction regions.
+Generally, two types of solar wind are observed in the heliosphere, slow and fast streams \citep{Neugebauer1966}\hl{, Schwenn (19xx), McComas et al. (19xx)).} Fast streams are found to originate from coronal holes as Ulysses polar measurements revealed \hl{(ref.). The origin of slow wind is a subject of controversial discussions because several sources are closed magnetic structures in the solar corona, such as Schwenn (19xx) has even reported the possibility of four types of solar wind depending on the phase of the solar cycle/activity.}
 
-Additionally there also are coronal mass ejections (CMEs) embedded, whose occurrence rate follows solar activity too. Their share varies between almost zero in cycle minimum up to a half in maximum \citep{Richardson2012}. This study averages over these internal solar wind structures.
+The solar wind velocity is the defining parameter of the two types of solar wind. Slow solar wind has typical speeds \SI{<400}{\km\per\s} and fast solar wind has speeds \SI{>600}{\km\per\s} \citep[see][p.~144]{Schwenn1990}. Their different compositions and characteristics indicate different sources and generation processes \citep{McGregor2011a}. 
 
+Their occurrence frequency varies strongly with solar activity and their interactions lead to phenomena such as \color{red}
+stream interaction regions (SIRs) and for quasi-stationary coronal source regions to co-rotating interaction regions (CIRs, ref. Buch über CIRs).
+
+\color{Green4}
+Embedded in the slow and fast solar wind streams are coronal mass ejections (CMEs) \hl{(ref.)}. Their frequency in near \SI{1}{\au} measurements varies between almost zero during solar cycle minima \hl{up to a daily rate of about 0.5 during times of solar maximum} \citep{Richardson2012}.
+
+%frequency distribution data
+Since one cannot know which specific solar wind type or structure PSP will encounter at a given point in time during its mission, we extrapolate the parameters’ probability distributions from existing solar wind measurements.
+
+\color{black}
 %frequency distribution data
 One cannot know which specific solar wind type or structure PSP will encounter at a given point in time, so we extrapolate the parameters' probability distributions from existing solar wind measurements.
 
