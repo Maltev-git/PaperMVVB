@@ -4,16 +4,16 @@
 With his theoretical solar wind model \citet{Parker1958} laid the foundations...\\
 
 %in situ spacecraft
-Several space missions flew away from Earth's orbit to measure in situ solar wind at different heliocentric distances (e.g. the probes Helios, Voyager, Ulysses...). Voyager~1 is the farthest probe out of the solar system, now covering more than 137~au (cite?). Ulysses was the single probe orbiting the Sun outside the ecliptic and retrieving solar wind measurements from the poles of the Sun. So far, Helios~2 made the nearest in situ solar wind measurements with \SI{0.29}{\au}, followed closely by Helios~1 with \SI{0.31}{\au}. The new mission Parker~Solar~Probe (PSP), whose planned launch date is in mid 2018, aims to reach further down into the Sun's atmosphere.
+Several space missions flew away from Earth's orbit to measure in situ solar wind at different heliocentric distances (e.g. the probes Helios, Voyager, Ulysses...). Voyager~1 is the farthest probe out of the solar system, now covering more than \SI{138}{\au}\footnote{\url{https://voyager.jpl.nasa.gov/}}. Ulysses was the singular probe orbiting the Sun outside the ecliptic and retrieving solar wind measurements from the poles of the Sun. So far, Helios~2 made the nearest in situ solar wind measurements with \SI{0.29}{\au}, followed closely by Helios~1 with \SI{0.31}{\au}. The new mission Parker~Solar~Probe (PSP), whose planned launch date is in mid 2018, aims to reach further down into the Sun's atmosphere.
 
 %Solar Probe Plus mission
-The main part of the PSP mission's goals is to gain insight into the coronal heating and solar wind acceleration processes. As these processes occur in the near-Sun region of the corona, PSP will have its closest perihelion at 9.86~solar radii (0.0459~au) \citep{Fox2015}. It will be the first spacecraft flying and measuring in situ solar wind this close to the Sun. Its planned observations range from the perihelion up to \SI{0.25}{\au}, leaving the outer part for data transfer, as \citet{Fox2015} state in their description of PSP's mission design.\\
+The main part of the PSP mission's goals is to gain insight into the coronal heating and solar wind acceleration processes. As these processes occur in the near-Sun region of the corona, PSP will have its closest perihelion at 9.86~solar radii (\SI{0.0459}{\au}) \citep{Fox2015}. It will be the first spacecraft flying and measuring in situ solar wind this close to the Sun. Its planned observations range from the perihelion up to \SI{0.25}{\au}, leaving the outer part for data transfer, as \citet{Fox2015} state in their description of PSP's mission design.\\
 
 %WISPR
 [white light imager WISPR... \citep{Vourlidas2016}]\\
 
 %difference to other models
-There are many studies analyzing the solar wind dependence on solar activity and heliocentric distance with Helios data (\citet{Schwenn1983, Bougeret1984, Schwenn1990}). They examine average values, additionally distinguishing between slow and fast wind. In this paper we instead look at the variations of the whole frequency distributions, consider solar activity and extrapolate these to the near-Sun region.\\
+There are many studies analyzing the solar wind dependence on solar activity and heliocentric distance with Helios data (\citet{Schwenn1983, Bougeret1984, Schwenn1990}). They examine average values, additionally distinguishing between slow and fast wind. In this paper we instead look at the variations of the bulk frequency distributions, consider solar activity and extrapolate these to the near-Sun region.\\
 
 
 %definition of sw environment
@@ -31,11 +31,11 @@ Additionally there also are coronal mass ejections (CMEs) embedded, whose occurr
 %frequency distribution data
 One cannot know which specific solar wind type or structure PSP will encounter at a given point in time, so we extrapolate the parameters' probability distributions from existing solar wind measurements.
 
-Our approach is to get an analytical representation of the frequency distributions' shapes, their solar activity dependence and their solar distance scaling. We get the parameters' frequency distributions and solar activity dependence from near-Earth solar wind and sunspot number (SSN) time series with a duration of almost five solar cycles and their distance dependency from solar wind measurements of more than half a solar cycle, covering more than two third of the distance to the Sun (\SIrange{0.29}{0.98}{\au}).%0.68~au\\
+Our approach is to get an analytical representation of the frequency distributions' shapes (Sect.~\ref{sec:frequency_distribution}), their solar activity dependence (Sect.~\ref{sec:solar_activity_variations}) and their solar distance scaling (Sect.~\ref{sec:solar_distance_dependency}). We get the parameters' frequency distributions and solar activity dependence from near-Earth solar wind and sunspot number (SSN) time series with a duration of almost five solar cycles and their distance dependency from solar wind measurements of more than half a solar cycle, covering more than two third of the distance to the Sun (\SIrange{0.29}{0.98}{\au}).%0.68~au\\
 
-From the combination of the obtained frequency distributions, SSN dependence functions and solar distance dependence functions we build a general model representing the solar activity and distance behavior of all four solar wind parameter frequencies.
+From the combination of the obtained frequency distributions, SSN dependence functions and solar distance dependence functions we build a general model representing the solar activity and distance behavior of all four solar wind parameter frequencies (Sect.~\ref{sec:general_solar_wind_model}).
 
-This general model is then fed with a SSN prediction and extrapolated to PSP's planned orbital positions.\\
+This general model is then fed with a SSN prediction and extrapolated to PSP's planned orbital positions (Sect.~\ref{sec:model_extrapolation_to_psp_orbital_time_and_position}).\\
 
 
 %lognormal fitting
@@ -604,7 +604,7 @@ For the prediction of the next solar cycle~25 we simply assume a course similar 
 
 \subsection{Near-Sun extrapolation for PSP orbit}
 %PSP orbit
-Parker Solar Probe is planned to launch in mid 2018. With its first Venus flyby it will swing into Venus' orbital plane(?) (\SI{3.86}{\degree} to Sun's equator), which allows for additional seven flybys to finally reduce its perihelion distance to a minimum of less than \SI{10}{R_s} \citep{Fox2015} (Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_e_plot}).\\
+Parker Solar Probe is planned to launch in mid 2018. With its first Venus flyby it will swing into Venus' orbital plane (\SI{3.86}{\degree} to Sun's equator/\SI{3.39}{\degree} to ecliptic), which allows for additional seven flybys to finally reduce its perihelion distance to a minimum of less than \SI{10}{R_s} \citep{Fox2015} (Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_e_plot}).\\
 
 For the extrapolation to PSP's orbital range we just assume that our derived distance scaling laws do not change. The comparison with existing near-Sun models reveals that this is not entirely true (Fig.~\ref{fig:sw_extrapolation_ssn_b_plot}).\\
 \begin{figure*}
