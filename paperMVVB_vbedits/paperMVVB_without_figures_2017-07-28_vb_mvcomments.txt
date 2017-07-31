@@ -1,0 +1,30 @@
+MV's Kommentare zu
+paperMVVB_without_figures_2017-07-28_vb.docx
+
+
+McComas D J, et al 2008 Solar Probe Plus: Report of the science and technology definition team, NASA/TM-2008-214161
+Solar Probe Plus: Report of the Science and Technology Definition Team, NASA/TM-2008-214161 (2008).
+This led to a completely new mission design and the final 2008 STDT report—Solar Probe Plus: Report of the Science and Technology Definition Team, NASA/TM-2008-214161.
+accepted by the NASA Science and Technology Definition Team (STDT) [20] 
+[20] Solar  Probe  Plus:  Report  of  the  Science  and  Technology  Definition  Team, NASA/TM-2008-214161,  National  Aeronautics  and  Space  Administration,  Goddard  Space  Flight  Center,  Greenbelt, MD, 2008. 
+
+McComas1998
+@ARTICLE{McComas1998,
+   author = {{McComas}, D.~J. and {Bame}, S.~J. and {Barraclough}, B.~L. and 
+	{Feldman}, W.~C. and {Funsten}, H.~O. and {Gosling}, J.~T. and 
+	{Riley}, P. and {Skoug}, R. and {Balogh}, A. and {Forsyth}, R. and 
+	{Goldstein}, B.~E. and {Neugebauer}, M.},
+    title = "{Ulysses' return to the slow solar wind}",
+  journal = {\grl},
+ keywords = {Interplanetary Physics: Solar wind plasma, Interplanetary Physics: Sources of the solar wind, Interplanetary Physics: Interplanetary magnetic fields, Interplanetary Physics: Corotating streams},
+     year = 1998,
+   volume = 25,
+    pages = {1-4},
+      doi = {10.1029/97GL03444},
+   adsurl = {http://adsabs.harvard.edu/abs/1998GeoRL..25....1M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+
