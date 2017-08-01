@@ -25,6 +25,108 @@ McComas1998
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
+McComas2016
+@ARTICLE{McComas2016,
+   author = {{McComas}, D.~J. and {Alexander}, N. and {Angold}, N. and {Bale}, S. and 
+	{Beebe}, C. and {Birdwell}, B. and {Boyle}, M. and {Burgum}, J.~M. and 
+	{Burnham}, J.~A. and {Christian}, E.~R. and {Cook}, W.~R. and 
+	{Cooper}, S.~A. and {Cummings}, A.~C. and {Davis}, A.~J. and 
+	{Desai}, M.~I. and {Dickinson}, J. and {Dirks}, G. and {Do}, D.~H. and 
+	{Fox}, N. and {Giacalone}, J. and {Gold}, R.~E. and {Gurnee}, R.~S. and 
+	{Hayes}, J.~R. and {Hill}, M.~E. and {Kasper}, J.~C. and {Kecman}, B. and 
+	{Klemic}, J. and {Krimigis}, S.~M. and {Labrador}, A.~W. and 
+	{Layman}, R.~S. and {Leske}, R.~A. and {Livi}, S. and {Matthaeus}, W.~H. and 
+	{McNutt}, R.~L. and {Mewaldt}, R.~A. and {Mitchell}, D.~G. and 
+	{Nelson}, K.~S. and {Parker}, C. and {Rankin}, J.~S. and {Roelof}, E.~C. and 
+	{Schwadron}, N.~A. and {Seifert}, H. and {Shuman}, S. and {Stokes}, M.~R. and 
+	{Stone}, E.~C. and {Vandegriff}, J.~D. and {Velli}, M. and {von Rosenvinge}, T.~T. and 
+	{Weidner}, S.~E. and {Wiedenbeck}, M.~E. and {Wilson}, P.},
+    title = "{Integrated Science Investigation of the Sun (ISIS): Design of the Energetic Particle Investigation}",
+  journal = {\ssr},
+ keywords = {Solar Probe Plus, ISIS, Solar energetic particles, SEPs, CMEs, Corona, Particle acceleration},
+     year = 2016,
+    month = dec,
+   volume = 204,
+    pages = {187-256},
+      doi = {10.1007/s11214-014-0059-1},
+   adsurl = {http://adsabs.harvard.edu/abs/2016SSRv..204..187M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Kasper2016
+@ARTICLE{Kasper2016,
+   author = {{Kasper}, J.~C. and {Abiad}, R. and {Austin}, G. and {Balat-Pichelin}, M. and 
+	{Bale}, S.~D. and {Belcher}, J.~W. and {Berg}, P. and {Bergner}, H. and 
+	{Berthomier}, M. and {Bookbinder}, J. and {Brodu}, E. and {Caldwell}, D. and 
+	{Case}, A.~W. and {Chandran}, B.~D.~G. and {Cheimets}, P. and 
+	{Cirtain}, J.~W. and {Cranmer}, S.~R. and {Curtis}, D.~W. and 
+	{Daigneau}, P. and {Dalton}, G. and {Dasgupta}, B. and {DeTomaso}, D. and 
+	{Diaz-Aguado}, M. and {Djordjevic}, B. and {Donaskowski}, B. and 
+	{Effinger}, M. and {Florinski}, V. and {Fox}, N. and {Freeman}, M. and 
+	{Gallagher}, D. and {Gary}, S.~P. and {Gauron}, T. and {Gates}, R. and 
+	{Goldstein}, M. and {Golub}, L. and {Gordon}, D.~A. and {Gurnee}, R. and 
+	{Guth}, G. and {Halekas}, J. and {Hatch}, K. and {Heerikuisen}, J. and 
+	{Ho}, G. and {Hu}, Q. and {Johnson}, G. and {Jordan}, S.~P. and 
+	{Korreck}, K.~E. and {Larson}, D. and {Lazarus}, A.~J. and {Li}, G. and 
+	{Livi}, R. and {Ludlam}, M. and {Maksimovic}, M. and {McFadden}, J.~P. and 
+	{Marchant}, W. and {Maruca}, B.~A. and {McComas}, D.~J. and 
+	{Messina}, L. and {Mercer}, T. and {Park}, S. and {Peddie}, A.~M. and 
+	{Pogorelov}, N. and {Reinhart}, M.~J. and {Richardson}, J.~D. and 
+	{Robinson}, M. and {Rosen}, I. and {Skoug}, R.~M. and {Slagle}, A. and 
+	{Steinberg}, J.~T. and {Stevens}, M.~L. and {Szabo}, A. and 
+	{Taylor}, E.~R. and {Tiu}, C. and {Turin}, P. and {Velli}, M. and 
+	{Webb}, G. and {Whittlesey}, P. and {Wright}, K. and {Wu}, S.~T. and 
+	{Zank}, G.},
+    title = "{Solar Wind Electrons Alphas and Protons (SWEAP) Investigation: Design of the Solar Wind and Coronal Plasma Instrument Suite for Solar Probe Plus}",
+  journal = {\ssr},
+ keywords = {Solar probe plus, SWEAP, Solar wind plasma, Corona, Heating, Acceleration},
+     year = 2016,
+    month = dec,
+   volume = 204,
+    pages = {131-186},
+      doi = {10.1007/s11214-015-0206-3},
+   adsurl = {http://adsabs.harvard.edu/abs/2016SSRv..204..131K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Bale2016
+@ARTICLE{Bale2016,
+   author = {{Bale}, S.~D. and {Goetz}, K. and {Harvey}, P.~R. and {Turin}, P. and 
+	{Bonnell}, J.~W. and {Dudok de Wit}, T. and {Ergun}, R.~E. and 
+	{MacDowall}, R.~J. and {Pulupa}, M. and {Andre}, M. and {Bolton}, M. and 
+	{Bougeret}, J.-L. and {Bowen}, T.~A. and {Burgess}, D. and {Cattell}, C.~A. and 
+	{Chandran}, B.~D.~G. and {Chaston}, C.~C. and {Chen}, C.~H.~K. and 
+	{Choi}, M.~K. and {Connerney}, J.~E. and {Cranmer}, S. and {Diaz-Aguado}, M. and 
+	{Donakowski}, W. and {Drake}, J.~F. and {Farrell}, W.~M. and 
+	{Fergeau}, P. and {Fermin}, J. and {Fischer}, J. and {Fox}, N. and 
+	{Glaser}, D. and {Goldstein}, M. and {Gordon}, D. and {Hanson}, E. and 
+	{Harris}, S.~E. and {Hayes}, L.~M. and {Hinze}, J.~J. and {Hollweg}, J.~V. and 
+	{Horbury}, T.~S. and {Howard}, R.~A. and {Hoxie}, V. and {Jannet}, G. and 
+	{Karlsson}, M. and {Kasper}, J.~C. and {Kellogg}, P.~J. and 
+	{Kien}, M. and {Klimchuk}, J.~A. and {Krasnoselskikh}, V.~V. and 
+	{Krucker}, S. and {Lynch}, J.~J. and {Maksimovic}, M. and {Malaspina}, D.~M. and 
+	{Marker}, S. and {Martin}, P. and {Martinez-Oliveros}, J. and 
+	{McCauley}, J. and {McComas}, D.~J. and {McDonald}, T. and {Meyer-Vernet}, N. and 
+	{Moncuquet}, M. and {Monson}, S.~J. and {Mozer}, F.~S. and {Murphy}, S.~D. and 
+	{Odom}, J. and {Oliverson}, R. and {Olson}, J. and {Parker}, E.~N. and 
+	{Pankow}, D. and {Phan}, T. and {Quataert}, E. and {Quinn}, T. and 
+	{Ruplin}, S.~W. and {Salem}, C. and {Seitz}, D. and {Sheppard}, D.~A. and 
+	{Siy}, A. and {Stevens}, K. and {Summers}, D. and {Szabo}, A. and 
+	{Timofeeva}, M. and {Vaivads}, A. and {Velli}, M. and {Yehle}, A. and 
+	{Werthimer}, D. and {Wygant}, J.~R.},
+    title = "{The FIELDS Instrument Suite for Solar Probe Plus. Measuring the Coronal Plasma and Magnetic Field, Plasma Waves and Turbulence, and Radio Signatures of Solar Transients}",
+  journal = {\ssr},
+ keywords = {Coronal heating, Solar Probe Plus},
+     year = 2016,
+    month = dec,
+   volume = 204,
+    pages = {49-82},
+      doi = {10.1007/s11214-016-0244-5},
+   adsurl = {http://adsabs.harvard.edu/abs/2016SSRv..204...49B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
 
 
 
