@@ -126,7 +126,17 @@ Bale2016
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
-
-
+Balogh1999
+@ARTICLE{Balogh1999,
+   author = {{Balogh}, A. and {Gosling}, J.~T. and {Jokipii}, J.~R. and {Kallenbach}, R. and 
+	{Kunow}, H.},
+    title = "{Corotating Interaction Regions. Proceedings. ISSI Workshop, Bern (Switzerland), 6 - 13 Jun 1998.}",
+  journal = {\ssr},
+ keywords = {Solar Wind: Heliosphere, Solar Wind: Shock Waves, Solar Wind: Energetic Particles, Solar Wind: Structure, Solar Wind: Cosmic Rays, Interplanetary Plasma: Shock Waves, Interplanetary Plasma: Energetic Particles, Interplanetary Plasma: Structure, Interplanetary Plasma: Cosmic Rays, Interplanetary Plasma: Dynamics, Cosmic Rays: Solar Modulation},
+     year = 1999,
+   volume = 89,
+   adsurl = {http://adsabs.harvard.edu/abs/1999SSRv...89.....B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
 
 
