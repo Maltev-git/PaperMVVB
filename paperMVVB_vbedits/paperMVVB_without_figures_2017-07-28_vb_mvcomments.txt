@@ -139,4 +139,16 @@ Balogh1999
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
-
+Bothmer2007
+@INBOOK{Bothmer2007,
+   author = {{Bothmer}, V. and {Zhukov}, A.},
+    title = "{The Sun as the prime source of space weather}",
+ keywords = {Physics},
+booktitle = {Space Weather- Physics and Effects},
+     year = 2007,
+   editor = {{Bothmer}, V. and {Daglis}, I.~A.},
+    pages = {31},
+      doi = {10.1007/978-3-540-34578-7_3},
+   adsurl = {http://adsabs.harvard.edu/abs/2007swpe.book...31B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
