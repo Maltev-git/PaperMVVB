@@ -152,3 +152,16 @@ booktitle = {Space Weather- Physics and Effects},
    adsurl = {http://adsabs.harvard.edu/abs/2007swpe.book...31B},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+
+Schwenn1991
+@BOOK{Schwenn1991,
+   author = {{Schwenn}, R. and {Marsch}, E.},
+    title = "{Physics of the Inner Heliosphere II. Particles, Waves and Turbulence.}",
+ keywords = {KOSMISCHE STRAHLUNG, MAGNETOSPH{\"A}RE, SONNENSYSTEM, SONNENWIND},
+booktitle = {Physics of the Inner Heliosphere II},
+     year = 1991,
+    pages = {152},
+   adsurl = {http://adsabs.harvard.edu/abs/1991pihp.book.....S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
