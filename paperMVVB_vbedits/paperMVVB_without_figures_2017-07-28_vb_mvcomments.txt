@@ -165,3 +165,42 @@ booktitle = {Physics of the Inner Heliosphere II},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
+Russell2013
+@ARTICLE{Russell2013,
+   author = {{Russell}, C.~T. and {Mewaldt}, R.~A. and {Luhmann}, J.~G. and 
+	{Mason}, G.~M. and {von Rosenvinge}, T.~T. and {Cohen}, C.~M.~S. and 
+	{Leske}, R.~A. and {Gomez-Herrero}, R. and {Klassen}, A. and 
+	{Galvin}, A.~B. and {Simunac}, K.~D.~C.},
+    title = "{The Very Unusual Interplanetary Coronal Mass Ejection of 2012 July 23: A Blast Wave Mediated by Solar Energetic Particles}",
+  journal = {\apj},
+ keywords = {acceleration of particles, solar-terrestrial relations, solar wind, Sun: coronal mass ejections: CMEs, Sun: flares },
+     year = 2013,
+    month = jun,
+   volume = 770,
+      eid = {38},
+    pages = {38},
+      doi = {10.1088/0004-637X/770/1/38},
+   adsurl = {http://adsabs.harvard.edu/abs/2013ApJ...770...38R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Lazarus2000
+Lazarus, A.J., The Day the Solar Wind Almost Disappeared, Science, 2000,  vol.  287,  no.  5461,  pp.  2172–2173
+Lazarus, A., The day the solar wind almost disappeared, Science, 287, 2172-2173, 2000. 
+Science, Vol 287, Issue 5461, 2172-2173 , 24 March 2000 [DOI: 10.1126/science.287.5461.2172]
+
+
+Veselovsky2010
+@ARTICLE{Veselovsky2010,
+   author = {{Veselovsky}, I.~S. and {Dmitriev}, A.~V. and {Suvorova}, A.~V.
+	},
+    title = "{Algebra and statistics of the solar wind}",
+  journal = {Cosmic Research},
+     year = 2010,
+    month = apr,
+   volume = 48,
+    pages = {113-128},
+      doi = {10.1134/S0010952510020012},
+   adsurl = {http://adsabs.harvard.edu/abs/2010CosRe..48..113V},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
