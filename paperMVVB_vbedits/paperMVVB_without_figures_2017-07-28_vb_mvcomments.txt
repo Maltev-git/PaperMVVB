@@ -7,6 +7,19 @@ Solar Probe Plus: Report of the Science and Technology Definition Team, NASA/TM-
 This led to a completely new mission design and the final 2008 STDT report—Solar Probe Plus: Report of the Science and Technology Definition Team, NASA/TM-2008-214161.
 accepted by the NASA Science and Technology Definition Team (STDT) [20] 
 [20] Solar  Probe  Plus:  Report  of  the  Science  and  Technology  Definition  Team, NASA/TM-2008-214161,  National  Aeronautics  and  Space  Administration,  Goddard  Space  Flight  Center,  Greenbelt, MD, 2008. 
+National Aeronautics and Space Administration Goddard Space Flight Center, Greenbelt, Maryland 20771
+
+@TECHREPORT{McComas2008,
+   author = {{McComas}, D.~J and {Acton}, L.~W. and {Balat-Pichelin}, M. and {Bothmer}, V. and {Dirling}, D.~A. and {Feldman}, W.~C. and {Gloeckler}, G. and {Habbal}, S.~R. and {Hassler}, D.~M. and {Mann}, I. and {Matthaeus}, W.~H. and {McNutt}, Jr., R.~L. and {Mewaldt}, R.~A. and {Murphy}, N. and {Ofman}, L. and {Sittler}, Jr., E.~C. and {Smith}, C.~W. and {Velli}, M. and {Zurbuchen}, T.~H.},
+    title = "{Solar Probe Plus: Report of the Science and Technology Definition Team}",
+institution = {National Aeronautics and Space Administration, Goddard Space Flight Center},
+  address = {Greenbelt, MD},
+     year = 2008,
+    month = jul,
+   number = {NASA/TM-2008-214161},
+     url = {https://lwstrt.gsfc.nasa.gov/SolarProbe+Web.pdf},
+}
+
 
 McComas1998
 @ARTICLE{McComas1998,
@@ -188,7 +201,21 @@ Lazarus2000
 Lazarus, A.J., The Day the Solar Wind Almost Disappeared, Science, 2000,  vol.  287,  no.  5461,  pp.  2172–2173
 Lazarus, A., The day the solar wind almost disappeared, Science, 287, 2172-2173, 2000. 
 Science, Vol 287, Issue 5461, 2172-2173 , 24 March 2000 [DOI: 10.1126/science.287.5461.2172]
-
+Lazarus2000
+@article {Lazarus2000,
+	author = {Lazarus, Alan J.},
+	title = {The Day the Solar Wind Almost Disappeared},
+	volume = {287},
+	number = {5461},
+	pages = {2172--2173},
+	year = {2000},
+	doi = {10.1126/science.287.5461.2172},
+	publisher = {American Association for the Advancement of Science},
+	issn = {0036-8075},
+	URL = {http://science.sciencemag.org/content/287/5461/2172},
+	eprint = {http://science.sciencemag.org/content/287/5461/2172},
+	journal = {Science}
+}
 
 Veselovsky2010
 @ARTICLE{Veselovsky2010,
