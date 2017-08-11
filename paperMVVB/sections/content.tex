@@ -5,9 +5,8 @@ From observations of cometary tail fluctuations \citet{Biermann1951} inferred th
 %in situ spacecraft
 The idea of a space mission flying through the solar corona dates back to the founding year of NASA in 1958 \citep{McComas2008}. Since then several space missions have measured the solar wind in situ at a wide range of heliocentric distances, in the case of Voyager~1 as far away as \SI{138}{\au} in July 2017\footnote{\url{https://voyager.jpl.nasa.gov/}}, having even left the heliospause into interstellar space at a distance of \SI{121}{\au} \citep{Gurnett2013}.
 Until today various spacecraft have provided a wealth of solar wind measurements near Earth’s orbit, with Wind \hl{(ref.)}, ACE \hl{(ref.)} and DSCOVR \hl{(ref.)} still orbiting around the L1 point \SI{1.5}{million \km} ahead of Earth in the sunward direction. Additional measurements at other distances were provided by planetary missions to Venus and Mercury, such as PVO \hl{(ref.)} or MESSENGER \hl{(ref.)}. Ulysses was the first probe that orbited the Sun out of the ecliptic plane and thus could measure solar wind at polar latitudes \citep{McComas1998}. The nearest in situ solar wind measurements to date were obtained by the Helios mission. The in 1974 launched Helios~1 spacecraft reached distances of \SI{0.31}{\au}, Helios~2 launched two years later and approached the Sun up to \SI{0.29}{\au} \citep{Rosenbauer1977}.
-
 %Solar Probe Plus mission
-The NASA Parker~Solar~Probe\footnote{\url{http://parkersolarprobe.jhuapl.edu/}} (PSP), formerly Solar~Probe~Plus, with a planned launch date in mid 2018, will reach after six years in 2024 its closest perihelia at a distance of 9.86~solar radii (\Rsun), that is, \SI{0.0459}{\au} \citep{Fox2015}. This distance will be achieved through seven Venus gravity assists with orbital periods of 88--168~days. In its prime mission time 2018--2025 PSP provides 24~orbits with perihelia inside \SI{0.25}{\au} \citep{Fox2015}. Even its first perihelion, 93~days after launch in 2018, will take PSP to an unprecedented distance of \SI{0.16}{\au} (\SI{35.7}{\Rs}). {\color{Red2} In comparison, the ESA Solar Orbiter mission with a planned launch in 2019 will have a closest perihelion of \SI{0.289}{\au} \hl{(ref.)}.}
+The NASA Parker~Solar~Probe\footnote{\url{http://parkersolarprobe.jhuapl.edu/}} (PSP), formerly Solar~Probe~Plus, with a planned launch date in mid 2018, will reach after six years in 2024 its closest perihelia at a distance of 9.86~solar radii (\Rs), that is, \SI{0.0459}{\au} \citep{Fox2015}. This distance will be achieved through seven Venus gravity assists with orbital periods of 88--168~days. In its prime mission time 2018--2025 PSP provides 24~orbits with perihelia inside \SI{0.25}{\au} \citep{Fox2015}. Even its first perihelion, 93~days after launch in 2018, will take PSP to an unprecedented distance of \SI{0.16}{\au} (\SI{35.7}{\Rs}). {\color{Red2} In comparison, the ESA Solar Orbiter mission with a planned launch in 2019 will have a closest perihelion of \SI{0.289}{\au} \hl{(ref.)}.}
 
 %PSP objectives and instruments
 The key PSP science objectives are to “trace the flow of energy that heats and accelerates the solar corona and solar wind, determine the structure and dynamics of the plasma and magnetic fields at the sources of the solar wind, and explore mechanisms that accelerate and transport energetic particles” as stated in \citet{Fox2015}. To achieve these goals, PSP has four scientific instruments on board: FIELDS for the measurements of magnetic fields and AC/DC electric fields \citep{Bale2016}, SWEAP for the measurements of flux of electrons, protons and alphas \citep{Kasper2016}, IS\sun{}IS for the measurement of solar energetic particles \citep{McComas2016} and WISPR for the measurement of coronal and inner heliospheric structures \citep{Vourlidas2016}.
@@ -86,7 +85,7 @@ It is apparent that the mean is always larger than the median. Replacing the var
 \end{align}
 The values of $x_\text{med}$ and $x_\text{avg}$ obtained from fitting the individual solar wind frequency distributions are listed in Table~\ref{tab:lognormal_fit_parameters}.
 \begin{table*}
-	\caption{Resulting fit coefficients from the fitting of the lognormal function (\ref{eq:single_lognormal_fit_function}) to the shape of the solar wind parameters' frequency distributions at \SI{1}{\au} (OMNI hourly data). For the velocity also the fit parameters from the double lognormal function (\ref{eq:double_lognormal_fit_function}) are given, as well as the median and mean values of the resulting velocity fit. The mean absolute errors and sums of absolute residuals are shown as well. The values in brackets are the estimated standard deviation of each fit parameter.}
+	\caption{Resulting fit coefficients from the fitting of the lognormal function (\ref{eq:single_lognormal_fit_function}) to the shape of the solar wind parameters' frequency distributions from near \SI{1}{\au} OMNI hourly data. For the velocity also the fit parameters of the double lognormal function (\ref{eq:double_lognormal_fit_function}) are listed, as well as the median and mean values of the resulting velocity fit. The mean absolute errors and sums of absolute residuals are also listed. The values in brackets are the estimated standard deviations of each fit parameter.}
 	\label{tab:lognormal_fit_parameters}
 	\centering
 	\sisetup{table-figures-integer=1, table-figures-decimal=4, table-figures-exponent=0}
@@ -133,7 +132,7 @@ The values of $x_\text{med}$ and $x_\text{avg}$ obtained from fitting the indivi
 From visual inspection, the resulting curves describe the shape of the magnetic field strength, density and temperature distributions well as shown in Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}. However, for the velocity the fit function appears not to be as good in describing the measured distribution’s more complex shape around its maximum and in the higher velocity range. This also can be inferred from the sum of absolute residuals (SAR) between data and fit listed in Table~\ref{tab:lognormal_fit_parameters}, being almost three times larger than those from the other parameters.
 \begin{figure*}
 	\includegraphics[width=18cm]{figures/histogram_fits_4_a_zoom_paper_pdfplot.pdf}
-	\caption{Frequency distributions of the four solar wind parameters and their lognormal fits. The histograms have bins of 0.5~nT, 10~km/s, 1~cm$^{-3}$ and 10\,000~K and are based on the hourly OMNI data set. The fit's median and mean values are indicated as well. The insets only have zoomed-in frequency axes, their x-axes stay the same.}
+	\caption{Frequency distributions of the four solar wind parameters and their lognormal fits derived from the hourly OMNI data set. The histograms have bins of \SI{0.5}{\nT}, \SI{10}{\km\per\s}, \SI{1}{\per\cm\cubed} and \SI{10000}{\K}. The fit's median and mean values are indicated as well. The insets show zoomed-in frequency axes.}
 	\label{fig:histogram_fits_4_a_zoom_paper_pdfplot}
 \end{figure*}
 
@@ -150,55 +149,55 @@ The fitting of $W_\text{II}(x)$ to the velocity's frequency distribution yields 
 \begin{align}
 	\int W_\text{II}(x)\,\text{d}x = 0	&	&\text{and}	&	&\int x\,W_\text{II}(x)\,\text{d}x = 0	\,.
 \end{align}
-\hl{XXXXXXXXXXXXXXXXXXXXX}\\
-As anticipated, this more complex fit function is more accurate in describing the velocity's frequency distribution (see Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}).
+This more complex fit function is more accurately in describing the velocity's frequency distribution as shown in Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/histogram_fits_V_a_zoom_dbl_paper_pdfplot.pdf}}
 	\caption{The velocity's frequency distribution (same as in Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}) and its compositional lognormal fit. The fit's median and mean values and its two fit parts are indicated as well. The inset only has a zoomed-in frequency axis, its x-axis stays the same.}
 	\label{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}
 \end{figure}
-For this reason we keep using the double lognormal ansatz for the velocity frequency fits in the following sections.\\
-In this static model the slow and fast part contribute almost equally ($c \approx 0.5$), which of course is only valid for this kind of long-term average. At different times in a solar cycle their contributions vary strongly.
+Thus in the following sections we keep the double lognormal ansatz for all velocity frequency fits.
+
+The slow and fast part contribute almost equally ($c \approx 0.5$) to the long-term velocity distribution function.
 
 %transition
-For the bulk of the solar wind these static lognormal functions describe the parameters' distributions well. This is different for the extreme values (which may also stem from CMEs). The simple lognormal fit models of the magnetic field strength, the velocity and the density underestimate their frequency at the high value tails, whereas the temperature's tail is overestimated (see insets of Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}). The velocity's compositional lognormal fit only slightly overestimates its tail (inset in Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}).
+For the bulk of the solar wind these static lognormal functions describe the parameters' distributions well, but differ for the extreme values, mainly caused by CME events.
 
-Short-term variations in the solar wind cannot be predicted, but their occurrence rate can. It depends on solar activity, which changes cyclically and thus can be forecasted to a certain degree---at least within a solar cycle.
+The simple lognormal fit functions underestimate the frequency of the solar wind parameters in their high value tails, except for the temperature’s tail which is overestimated as seen by the insets in Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}. The velocity's compositional lognormal fit only slightly overestimates its tail as seen in the inset of Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
 
 
-\section{Solar activity variations}
+\section{Solar activity dependence of the solar wind frequency distributions}
 \label{sec:solar_activity_variations}
-This section aims to relate changes in the four solar wind parameters to general solar activity. For this we examine their correlations to the yearly sunspot number and determine the lag times with the highest coefficients. Next, we fit lognormal functions to the frequency distributions like before, but implement linear relations to the yearly SSN to shift the distributions. Only for the velocity the approach is different in that its two components are kept fixed and instead their balance is modified with changing SSN.
 
-\subsection{SSN data}
-Solar activity is commonly measured via the sunspot number. We want to correlate OMNI in situ measurements with the SSN, yet OMNI data are from Earth orbit, causing variations in solar latitude and distance. To dodge these seasonal variations we use yearly OMNI and SSN data.
+In the next step we investigate how the long-term solar wind distribution functions presented in the previous section depend on general solar activity. Therefore we examine their correlation with the sunspot number, being a commonly used long-term solar activity index and determine the time lags with the highest correlation coefficients.
 
-The international sunspot number (\citeyear{sidc}) is retrieved from the online catalogue\footnote{\url{http://www.sidc.be/silso/}} at the World Data Center -- Sunspot Index and Long-term Solar Observations (WDC-SILSO), Solar Influences Data Analysis Center (SIDC), Royal Observatory of Belgium (ROB).
+%\subsection{SSN data}
+The international sunspot number (\citeyear{sidc}) is provided by the online catalogue\footnote{\url{http://www.sidc.be/silso/}} at the World Data Center -- Sunspot Index and Long-term Solar Observations (WDC-SILSO), Solar Influences Data Analysis Center (SIDC), Royal Observatory of Belgium (ROB).
 
-%seasonal influence contained within yearly frequency distributions\\
+%\subsection{SSN correlation}
+For the correlations we fit lognormal functions to the frequency distributions as in Sect.~\ref{sec:frequency_distribution}, but implement linear relations to the yearly SSN, allowing shifting of the distribution functions with SSN. For the velocity the approach is different insofar as its two components are kept fixed and instead their balance is modified with the changing SSN.
 
-\subsection{SSN correlation}
-Our current interest lies in the correlation of the SSN to the solar wind median values, because the median defines the position of a lognormal function. The yearly OMNI parameter medians and the yearly SSN are plotted in Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot}.
-
-%solar activity = SSN $\neq$ solar cycle\\
-The solar wind velocity and its close friends density and temperature are known to depend on the state of the solar cycle \citep{Schwenn1983}, which is why they follow the SSN indirectly (with time lag).
-%density modulation with SSN \citep{Schwenn1983} p.~499\\
-Thus we derive the correlation coefficients for different time lags between solar wind parameters and SSN (see Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot}).
+Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot} shows yearly medians of the solar wind parameters and the yearly SSN together with the solar cycle number. The reason for correlating the SSN to the solar wind median values is, because the position of a lognormal function is defined by its median. The data are averaged to yearly values to avoid seasonal effects during the Earth’s orbit around the Sun caused by its variations in solar latitude and distance. The correlation coefficients of the solar wind parameters with the yearly SSN shown in the bottom part of Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot} are calculated for time lags back to \num{-15}~years to cover a time span longer than a solar cycle.
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/OMNI_yearly_ssn_correlation_c_plot.pdf}}
-	\caption{The solar wind parameter yearly medians from OMNI data and the yearly SSN from the \citet{sidc} with cycle number (top). Their correlation coefficients with the yearly SSN are calculated for time lags back to -15 years (bottom).}
+	\caption{The solar wind parameter yearly medians derived from OMNI data and the yearly SSN from the \citet{sidc} with solar cycle number (top). Their correlation coefficients with the yearly SSN are calculated for time lags back to -15 years (bottom).}
 	\label{fig:OMNI_yearly_ssn_correlation_c_plot}
 \end{figure}
 
-The highest correlation coefficient for the magnetic field strength is 0.728, which is without lag time and the highest of all solar wind parameters. This is anticipated because the SSN is directly proportional to the magnetic flux \citep{Smith2003}.\\
-Velocity and temperature have a lag time of 3~years with their maximal correlation coefficients (0.453 and 0.540). The density has a lag time of 6~years (0.468), which is in agreement with the by \citet{Bougeret1984} documented density anticorrelation with SSN.	%p.~406\\
+The solar wind velocity, density and temperature depend on the state of the solar cycle \citep{Schwenn1983}, \hl{ref. zu Korrelationen}. %density modulation with SSN \citep{Schwenn1983} p.~499\\
+For instance the fast solar wind is correlated with the presence of polar coronal hole extensions to lower latitudes being a typical feature of the solar cycle, being the reason for the common velocity peak in the decreasing phase of the SSN, as pointed out by \citet[\hl{Figure~XX, p.~XX}]{Bothmer2007}. Therefore the solar wind velocity, density and temperature maxima exhibit time-lags to the SSN maxima.
 
+The highest correlation coefficient of 0.728 to the SSN is found for the magnetic field strength which has no time lag. This finding is anticipated because the SSN is found to be directly proportional to the evolution of the photospheric magnetic flux \citep{Smith2003}.
+
+
+Velocity and temperature show a lag time of 3~years with peak correlation coefficients of 0.453 and 0.540. The density with a correlation coefficient of 0.468 has a lag time of 6~years, which is in agreement with the by \citet{Bougeret1984} reported density anticorrelation to the SSN.	%p.~406\\
 % maximal correlation coefficients and their lag times:\\
 % magnetic field strength: lag 0, 0.728\\
 % velocity: lag -3, 0.453\\
 % density: lag -6, 0.468\\
 % temperature: lag -3, 0.540\\
 As expected, the correlation coefficients' amplitudes of all parameters decline with increasing lag time and show a frequency of about 11~years.
+
+\hl{XXXXXXXXXXXXXX}\\
 
 \subsection{SSN fitting}
 \label{sec:ssn_fitting}
