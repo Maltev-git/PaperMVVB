@@ -4,7 +4,7 @@
 From observations of cometary tail fluctuations \citet{Biermann1951} inferred the presence of a continuous flow of particles from the Sun. With his theoretical solar wind model \citet{Parker1958} formulated the existence of the solar wind even before the first satellites measured it in situ in 1959 \citep{Gringauz1960,Neugebauer1966}.
 %in situ spacecraft
 The idea of a space mission flying through the solar corona dates back to the founding year of NASA in 1958 \citep{McComas2008}. Since then several space missions have measured the solar wind in situ at a wide range of heliocentric distances, in case of Voyager~1 as far away as \SI{138}{\au}\footnote{\url{https://voyager.jpl.nasa.gov/}} (July 2017), having even left the heliospause into interstellar space at a distance of \SI{121}{\au} \citep{Gurnett2013}.
-Until today various spacecraft have provided a wealth of solar wind measurements near Earth’s orbit, with WIND \hl{(ref.)}, ACE \citep{Stone1998} and DSCOVR \citep{Burt2012} still orbiting around the L1 point \SI{1.5}{million\,\km} ahead of Earth in the sunward direction. Additional measurements at other solar distances were provided by planetary missions to Venus and Mercury, such as PVO \hl{(ref.)} or MESSENGER \hl{(ref.)}. Ulysses was the first probe that orbited the Sun out of the ecliptic plane and thus could measure solar wind even at polar latitudes \citep{McComas1998}. The Sun-nearest in situ solar wind measurements to date were obtained by the Helios mission. The in 1974 launched Helios~1 spacecraft reached distances of \SI{0.31}{\au}, Helios~2 launched two years later and approached the Sun up to \SI{0.29}{\au} \citep{Rosenbauer1977}.
+Until today various spacecraft have provided a wealth of solar wind measurements near Earth’s orbit, with WIND \hl{(ref.)}, ACE \citep{Stone1998} and DSCOVR \citep{Burt2012} still orbiting around the L1 point \SI{1.5}{million\,\km} ahead of Earth in the sunward direction. Additional measurements at other solar distances were provided by planetary missions to Venus and Mercury, such as PVO \citep{Colin1980} or MESSENGER \citep{Belcher1991}. Ulysses was the first probe that orbited the Sun out of the ecliptic plane and thus could measure solar wind even at polar latitudes \citep{McComas1998}. The Sun-nearest in situ solar wind measurements to date were obtained by the Helios mission. The in 1974 launched Helios~1 spacecraft reached distances of \SI{0.31}{\au}, Helios~2 launched two years later and approached the Sun up to \SI{0.29}{\au} \citep{Rosenbauer1977}.
 %Solar Probe Plus mission
 The NASA Parker~Solar~Probe\footnote{\url{http://parkersolarprobe.jhuapl.edu/}} (PSP), formerly Solar~Probe~Plus, with a planned launch date in mid 2018, will reach after six years in 2024 its closest perihelia at a distance of 9.86~solar radii (\Rs), that is, \SI{0.0459}{\au} \citep{Fox2015}. This distance will be achieved through seven Venus gravity assists with orbital periods of 88--168~days. In its prime mission time 2018--2025 PSP provides 24~orbits with perihelia inside \SI{0.25}{\au} \citep{Fox2015}. Even its first perihelion, 93~days after launch in 2018, will take PSP to an unprecedented distance of \SI{0.16}{\au} (\SI{35.7}{\Rs}). In comparison, the ESA Solar Orbiter mission with a planned launch in February 2019 will have its closest perihelia at \SI{0.28}{\au} \citep{Muller2013}.
 
@@ -569,74 +569,64 @@ Figs.~\ref{fig:SPP_perihelia_prediction_e_plot} and \ref{fig:SPP_perihelia_predi
 \end{figure}
 
 
-
-\hl{XXXXXXXXXXXXXXXXXXXXXXXX}\\
-
 \section{Discussion}
 \label{sec:discussion}
-The solar wind parameters vary with solar distance as well as with latitudinal separation from the heliospheric current sheet (HCS). The OMNI data is time-shifted to the nose of the Earth's bow shock. This leads to yearly solar distance variations of \SI{>2}{\percent} as the Earth orbits the Sun. Error estimation over the year (seasonal) -> we expect variations to be less than \SI{5}{\%}. Furthermore, its orbit within the ecliptic leads to a yearly variation of \SI{+-7.2}{\degree} in heliospheric latitude. The HCS's position in latitude is highly variable around the solar equator \citep[p.~127~ff.?]{Schwenn1990}. -> error estimation?.
 
-%[limited parameter ranges... (minV: 171~km/s; Schwenn1983)]\\
+We started the development of the empirical solar wind environment model for the near-ecliptic PSP orbit by lognormally fitting the about 40~years of in situ near-Earth solar wind data collected in the OMNI database, using the frequency distributions of the key solar wind parameters magnetic field strength, velocity, density and temperature. The OMNI multi-satellite solar wind data is intercalibrated, covers almost five solar cycles and thus represents solar wind gathered at different phases of solar activity in the ecliptic plane. In the next step we investigated the yearly variation of the solar wind distribution functions along with the SSN over 53~years and derived linear dependencies of the solar wind parameters with the SSN. The radial dependencies of the solar wind distribution functions were then analyzed using Helios~1 and 2 data for the distance range \SIrange{0.29}{0.98}{\au} in bins of \SI{0.01}{\au}. The herefrom derived power law fit functions were used to scale the prior calculated SSN-dependent \SI{1}{\au} distribution fit functions to the PSP orbit, combined with SSN predictions for the years 2018--2025, i.e., for the prime mission phase that gets PSP to closest perihelia of 9.86~solar radii distance to the Sun. The reason for performing the analysis this way is based on the fact that the OMNI solar wind database is much larger than the Helios database. Though, it is clear that the calculated distribution functions just represent first order estimates of the real solar wind to be encountered by PSP. The solar wind environment to be encountered will depend at times of PSP on the structure of the solar corona and underlying photospheric magnetic field {\color{red} , as shown by \hl{xxx (ref.)},} and on the evolution and interaction of individual solar wind streams and superimposed CMEs and shocks.
 
-%\subsection{Model validity and error sources}
-validity and estimation of error size outside of valid model range...\\
+However, the derived results are in good agreement with existing studies about near-Sun solar wind magnetic field strenghts and densities as shown in Sect.~\ref{sec:model_extrapolation_to_psp_orbit}. The from direct measurements differing velocity and temperature extrapolations below \hl{20~solar radii} indicate that PSP will indeed dive into the acceleration and heating regions of the solar wind to be expected at these distances (see Fig.~\ref{fig:sw_extrapolation_ssn_b_plot}). The near-Sun solar wind velocity at PSP perihelion is also expected to be slower than our model estimates, because the region of the Alfvénic critical surface, up to which the solar wind is believed to be accelerated, is predicted to lie in average around \SI{17}{\Rs} \citep[e.g.,][]{Sittler1999,Exarhos2000} and correlates with solar activity between \SI{15}{\Rs} in minimum and \SI{30}{\Rs} in maximum \citep{Katsikas2010,Goelzer2014}.	% in average around 17~Rs (e.g., 0.6~Rs Schatten 1969, 17~Rs Sittler1999, 17~Rs Exarhos2000) and scales with solar activity between 15~Rs in minimum and 30~Rs in maximum (19~Rs Katsikas2010, 15–30~Rs Goelzer2014).
+
+In our study we have not specifically investigated the occurrences of extreme solar wind parameters caused by CMEs or enhanced values due to stream interaction or co-rotating interaction regions. The Helios solar wind measurements plotted over radial distance in \hl{Fig.~}\ref{fig:radial_fit_4_thesis_light_skip_pdfcairo_plot} show several extreme values far above the usual solar wind magnetic field strengths, velocities, densities, and temperatures likely to be associated with individual CMEs. {\color{red} The results by \hl{Srivastava et al. (2017)}} indicate that due to the solar wind drag the speeds of fast CMEs will commonly slow down substantially up to distances of \hl{40~solar radii}. Therefore, it is expected that PSP will encounter CMEs with much higher speeds than those observed during the Helios mission. Also, the magnetic field, density and temperature values are expected to be much larger than in the average solar wind in individual fast shock associated CME events. PSP will thus also substantially improve our understanding of the near-Sun evolution of CMEs and their expansion with radial distance.
+
+a\\
+
+note special velocity treatment with double lognormal fits\\
+
 derive heliocentric distance depending error...\\
-list simplifications/approximations...\\
 error estimation for general model and extreme value tendencies\\
-error sources:\\
-- extrapolation\\
-- lognormal model\\
-- SSN variance\\
-all estimates outside these boundaries are extrapolations with large uncertainties.\\
 
-discuss results:\\
-- empirical solar wind model for inner heliosphere within ecliptic\\
-- low velocity at 0.0459~au\\
-- slow/fast ratio SSN dependency\\
-- application validity of lognormal distributions\\
---> B inversion of frequency distribution\\
----> magnetic field distribution's with distance increasing high value tail -> source are compression regions (why with density no increase?); look into Parker1958's B-field formula...\\
+magnetic field distribution's with distance increasing high value tail -> source are compression regions (why with density no increase?); look into Parker1958's B-field formula...\\
 varying shape with distance is indicator for internal physical processes (mixing/turbulence...)\\
 
-
-The near-Sun (PSP perihelion) solar wind velocity is expected to be slower than our model's estimates, because the position of the source (Alfvénic critical) surface is predicted to lie between \SIrange{15}{30}{\Rs} (Schatten1969, Sittler1999, Exarhos2000, Katsikas2010, Goelzer2014; choose correct references...), up to which the solar wind is believed to be accelerated.\\
-The \citet{Parker1958} model of an isothermal expanding corona with a temperature of \SI{e6}{\K} and a critical radius of \SI{5.8}{\Rs}.\\
-
+slow/fast ratio SSN dependency\\
 individual velocity part discussion -> there is no specific velocity threshold between slow and fast solar wind types, the velocity ranges of both types overlap.\\
 Not only the slowest wind but also the fastest wind is expected to converge to the average speed (Sanchez-Diaz2016 p.~2835, using MHD-model -> very slow solar wind is continuation of slow wind) (because of interaction).\\
-
 The ratio of both varies with solar activity, e.g., 3~years after maximum, polar coronal holes are observed to often have equatorial extensions (cite?). see and use \citet{Bougeret1984} p.~498...\\
-
 for the overlapping velocity model the SSN dependency is steeper than for a simple threshold\\
 
-
-%critical surfaces
-approaching these regions, acceleration plays a role\\
-Alfvénic critical surface i.e. source surface (see Fox before 2.1)\\
-in direction to the Sun is at about \SI{2.5}{\Rs} the source surface (Schatten1969)\\
-sonic and Alfvénic critical point positions (see \citet{Sittler1999})\\
-sonic point and slow solar wind origin \citep{Sheeley1997}\\
-% The model of \citet{Sittler1999} is based on Skylab coronagraph and Ulysses data. it is a 2d semiempirical MHD model (time static)\\
-% L-> compare with their radial density function eq. (18a); B-field function eq. (19a+b); V(r) eq. (24); T(r)...\\
-
-
-CMEs...\\
-
-%solar wind -> structures\\
-\citet{Balogh1999} p.~162~ff (origin and formation of CIRs in inner heliosphere with Helios data; latitude V dependence)\\
-Balogh2009 (HMF review + inner heliosheath)\\
 Aschwanden2004, p.~29\\
 
 
-\section{Summary and conclusions}
-We obtained lognormal representations of the frequency distributions' shapes of the four key solar wind parameters magnetic field strength, proton velocity, density and temperature. We derived analytical relations for the parameters' solar activity dependencies and for their solar distance scaling. An empirical solar wind model was build from the combination of the obtained frequency distributions, SSN dependence relations and solar distance dependence functions, representing the solar wind's solar activity and distance behavior. This empirical model was fed with SSN predictions and extrapolated to the orbit of PSP. We estimated solar wind median values during PSP’s first perihelion and modeled the values for PSP’s closest perihelia.
+\section{Summary of the results}
+For the near-Earth solar wind OMNI data and the Helios~1 and 2 data, obtained over the distance range \SIrange{0.29}{0.98}{\au}, we derived lognormal representations of the frequency distributions’ shapes of the four key solar wind parameters magnetic field strength, proton velocity, density and proton temperature. The dependencies of these frequency distributions on the solar activity cycle and on radial distance to the Sun have been modeled with analytical relations and extrapolated to the Parker Solar Probe orbit, taking into account predictions of the sunspot number. This empirical CGAUSS solar wind model for PSP, representing the solar wind’s solar activity and distance behavior, yields the following main results for the bulk solar wind:\\
 
+{\color{red}
+parameter relationships as bullets...\\
+
+Bmed(SSN,r) = ...\\
+V...\\
+give valid ranges [a--b]...\\
+We estimated solar wind median values during PSP’s first perihelion and the values for PSP’s first minimum perihelion of 9.86~Rs in 2024.\\
+}
 
 The velocity and temperature values are overestimated below \SI{20}{\Rs} in comparison with existing observations. This shows that solar wind acceleration and heating processes below \SI{20}{\Rs} limit the simple back-extrapolation from existing in situ measurements.\\
 
-WISPR mission operations implications...\\
+%Implications for WISPR mission operations and SoloHI on Solar Orbiter...
+The knowledge of the expected solar wind environment helps to optimize the WISPR and PSP preplanning of the science operations. This also applies for the Heliospheric Imager (SoloHI) onboard the Solar Orbiter spacecraft (Howard2013).\\
 
-- further investigations should be done into structure extrapolations\\
-- outward extension of model seems feasable (e.g., to Mars)\\
+
+
+
+\hl{To be moved into end of Sect. 5!}\\
+As the OMNI data are time-shifted to the nose of the Earth’s bow shock, this leads to yearly solar distance variations of \SI{+-1.67}{\%} as it the Earth orbits the Sun.\\
+{\color{red}
+The maximal solar wind parameter variation amplitudes over the year can thus be estimated from the derived power law exponents to about X \% for the m, to X \% for the v, ...\\
+calculate them and put them into Tab.3.\\
+The error estimation over the year caused by this varying radial difference can be expected to be smaller than 5 \% derived from investigation of the power law exponents of the solar wind parameters.\\
+}
+
+\hl{To be moved into Sect. 5!}\\
+\citet{Bruno1986,Balogh1999} have pointed out, that the solar wind parameters also vary with latitudinal separation from the heliospheric current sheet (HCS). Its The HCS’s position in heliographic latitude is highly variable around the solar equator \citep{Schwenn1990}, furthermore, the Earth’s orbit varies over the course of the year by \SI{+-7.2}{\degree} in latitude. However, the additional analysis of but this aspect is beyond the scope of this study.\\	%Balogh et al. (p.~162, 1999);	 (Schwenn 1990, p.~126)
+\hl{-> error estimation?}\\
 
 

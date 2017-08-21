@@ -43,6 +43,32 @@ institution = {National Aeronautics and Space Administration, Goddard Space Flig
      url = {https://lwstrt.gsfc.nasa.gov/SolarProbe+Web.pdf},
 }
 
+@BOOK{Belcher1991,
+   author = {{Belcher}, J.~W. and {Slavin}, J.~A. and {Armstrong}, T.~P. and 
+	{Farquhar}, R.~W. and {Akasofu}, S.~I. and {Baker}, D.~N. and 
+	{Cattell}, C.~A. and {Cheng}, A.~F. and {Chupp}, E.~L. and {Clark}, P.~E.
+	},
+    title = "{Mercury Orbiter: Report of the Science Working Team}",
+ keywords = {Mercury Spacecraft, Planetary Magnetospheres, Planetology, Solar Physics, Spin Stabilization, Aerospace Engineering, Atmospheric Physics, Conferences, Elliptical Orbits, Mercury (Planet), Mercury Project, Planetary Orbits, Space Exploration},
+booktitle = {Unknown},
+     year = 1991,
+    month = feb,
+   adsurl = {http://adsabs.harvard.edu/abs/1991mors.book.....B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Colin1980,
+   author = {{Colin}, L.},
+    title = "{The Pioneer Venus Program}",
+  journal = {\jgr},
+     year = 1980,
+    month = dec,
+   volume = 85,
+    pages = {7575-7598},
+      doi = {10.1029/JA085iA13p07575},
+   adsurl = {http://adsabs.harvard.edu/abs/1980JGR....85.7575C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
 
 @TECHREPORT{Marsden2008,
    author = {{Marsden}, R.~G. and {Müller}, D. and {Solar Orbiter Science Working Team}},
@@ -82,3 +108,18 @@ booktitle = {Solar Physics and Space Weather Instrumentation V},
    adsurl = {http://adsabs.harvard.edu/abs/2013SPIE.8862E..0HH},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+
+@ARTICLE{Exarhos2000,
+   author = {{Exarhos}, G. and {Moussas}, X.},
+    title = "{An estimation of the shape and temporal variation of the solar wind sonic, Alfv{\'e}nic and fast magnetosonic surfaces}",
+  journal = {\aap},
+ keywords = {HYDRODYNAMICS, SUN: SOLAR WIND},
+     year = 2000,
+    month = apr,
+   volume = 356,
+    pages = {315-318},
+   adsurl = {http://adsabs.harvard.edu/abs/2000A%26A...356..315E},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
