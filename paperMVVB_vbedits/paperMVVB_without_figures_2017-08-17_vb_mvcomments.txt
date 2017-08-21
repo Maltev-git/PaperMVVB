@@ -32,3 +32,53 @@
 }
 
 
+@TECHREPORT{McComas2008,
+   author = {{McComas}, D.~J and {Acton}, L.~W. and {Balat-Pichelin}, M. and {Bothmer}, V. and {Dirling}, D.~A. and {Feldman}, W.~C. and {Gloeckler}, G. and {Habbal}, S.~R. and {Hassler}, D.~M. and {Mann}, I. and {Matthaeus}, W.~H. and {McNutt}, Jr., R.~L. and {Mewaldt}, R.~A. and {Murphy}, N. and {Ofman}, L. and {Sittler}, Jr., E.~C. and {Smith}, C.~W. and {Velli}, M. and {Zurbuchen}, T.~H.},
+    title = "{Solar Probe Plus: Report of the Science and Technology Definition Team}",
+institution = {National Aeronautics and Space Administration, Goddard Space Flight Center},
+  address = {Greenbelt, MD},
+     year = 2008,
+    month = jul,
+   number = {NASA/TM-2008-214161},
+     url = {https://lwstrt.gsfc.nasa.gov/SolarProbe+Web.pdf},
+}
+
+
+@TECHREPORT{Marsden2008,
+   author = {{Marsden}, R.~G. and {Müller}, D. and {Solar Orbiter Science Working Team}},
+    title = "{Solar Orbiter - Exploring the Sun-heliosphere connection: Definition Study Report (Red Book)}",
+institution = {European Space Agency},
+     year = 2011,
+    month = jul,
+   number = {ESA/SRE(2011)14},
+     url = {http://sci.esa.int/solar-orbiter/48985-solar-orbiter-definition-study-report-esa-sre-2011-14/},
+}
+Richard G. Marsden, Daniel Müller
+Solar Orbiter definition study report (Red Book)
+Publication date: 25 July 2011
+Issue: 1.0
+Year: 2011
+Copyright: ESA
+Reference: ESA/SRE(2011)14 
+
+@INPROCEEDINGS{Howard2013,
+   author = {{Howard}, R.~A. and {Vourlidas}, A. and {Korendyke}, C.~M. and 
+	{Plunkett}, S.~P. and {Carter}, M.~T. and {Wang}, D. and {Rich}, N. and 
+	{McMullin}, D.~R. and {Lynch}, S. and {Thurn}, A. and {Clifford}, G. and 
+	{Socker}, D.~G. and {Thernisien}, A.~F. and {Chua}, D. and {Linton}, M.~G. and 
+	{Keller}, D. and {Janesick}, J.~R. and {Tower}, J. and {Grygon}, M. and 
+	{Hagood}, R. and {Bast}, W. and {Liewer}, P.~C. and {DeJong}, E.~M. and 
+	{Velli}, M.~M.~C. and {Mikic}, Z. and {Bothmer}, V. and {Rochus}, P. and 
+	{Halain}, J.-P. and {Lamy}, P.~L.},
+    title = "{The solar and heliospheric imager (SoloHI) instrument for the solar orbiter mission}",
+booktitle = {Solar Physics and Space Weather Instrumentation V},
+     year = 2013,
+   series = {\procspie},
+   volume = 8862,
+    month = sep,
+      eid = {88620H},
+    pages = {88620H},
+      doi = {10.1117/12.2027657},
+   adsurl = {http://adsabs.harvard.edu/abs/2013SPIE.8862E..0HH},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
