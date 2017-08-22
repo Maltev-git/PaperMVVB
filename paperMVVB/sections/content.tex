@@ -407,7 +407,7 @@ The fit coefficients ($d_\text{med}$, $d_\text{avg}$, $e_\text{med}$ and $e_\tex
 		Magnetic field	&5.377(92)	&-1.655(17)	&	&6.05(10)	&-1.546(18)	&0.339(11)	&0.11\\
 		Velocity	&4.107(28)	&0.058(13)	&	&4.356(24)	&0.049(10)	&0.7(83)e3	&0.012\\
 		Density		&5.61(27)	&-2.093(46)	&	&7.57(30)	&-2.010(38)	&0.027(73)	&0.072\\
-		Temperature	&7.14(23)	&-0.913(39)	&	&9.67(21)	&-0.792(28)	&0.082(85)	&0.005\\
+		Temperature	&7.14(23)	&-0.913(39)	&	&9.67(21)	&-0.792(28)	&0.082(85)	&0.050\\
 		\hline
 	\end{tabular}
 	\tablefoot{
@@ -446,7 +446,7 @@ Next we retrieve the frequency distributions of the four parameters in distance 
 % $T$: bin size 10\,000~K, min 497, mean precision: 4.49--44.49\\
 For simplification, as mentioned before, we treat the exponents of the median and mean fit functions as being identical. Implementing the power law distance dependency~(\ref{eq:power_function}) into the lognormal function (\ref{eq:single_lognormal_fit_function}), we get the fit parameters ($d'_\text{med}$, $d'_\text{avg}$ and their common exponent $e'$). Again, we use the double lognormal function~(\ref{eq:double_lognormal_fit_function}) for the velocity distribution fit, resulting in $W''_\text{II}(x,r)$. The additional fit parameters are the balancing parameter $c'$ and for the second lognormal part $d'_\text{med,2}$ and $d'_\text{avg,2}$. The resulting fit coefficients for the four solar wind parameters are presented in Table~\ref{tab:extrapolation_model_fit_parameters}.
 \begin{table*}
-	\caption{Fit coefficients from the single lognormal power function, respectively double lognormal for the velocity from the combined Helios data. The errors in brackets are the estimated standard deviations of the fit parameters.}
+	\caption{Fit coefficients from the single lognormal power function, respectively double lognormal for the velocity from the combined Helios data. The errors in brackets are the estimated standard deviations of the fit parameters. The seasonal variations are calculated from Earth's orbital solar distance variation and the derived exponents.}
 	\label{tab:extrapolation_model_fit_parameters}
 	\centering
 	\sisetup{table-figures-integer=1, table-figures-decimal=3, table-figures-exponent=0}
@@ -454,19 +454,20 @@ For simplification, as mentioned before, we treat the exponents of the median an
 	S[table-format = 1.3(2), table-space-text-post = a, table-align-text-post = false]
 	S[table-format = 1.3(2), table-space-text-post = a, table-align-text-post = false]
 	S[table-format = +1.4(2)]
-	S[table-format = 1.3(2)]}
+	S[table-format = 1.3(2)]
+	S[table-format = 1.2]}
 		\hline\hline
-		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median\tablefootmark{a}}	&\multicolumn{1}{c}{Mean\tablefootmark{a}}	&\multicolumn{1}{c}{Exponent}	&\multicolumn{1}{c}{Balance}\\
-			&	&\multicolumn{1}{c}{$d'_\text{med}$}	&\multicolumn{1}{c}{$d'_\text{avg}$}	&\multicolumn{1}{c}{$e'$}	&$c'$\\
+		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median\tablefootmark{a}}	&\multicolumn{1}{c}{Mean\tablefootmark{a}}	&\multicolumn{1}{c}{Exponent}	&\multicolumn{1}{c}{Balance}	&\multicolumn{1}{c}{Seasonal variation}\\
+			&	&\multicolumn{1}{c}{$d'_\text{med}$}	&\multicolumn{1}{c}{$d'_\text{avg}$}	&\multicolumn{1}{c}{$e'$}	&$c'$	&\multicolumn{1}{c}{$\Delta d$ [\%]}\\
 		\hline
-		\multicolumn{2}{l}{Magnetic field}	&5.358(25)	&5.705(28)	&-1.662(11)	&\multicolumn{1}{c}{--}\\
-		\multicolumn{2}{l}{Density}	&5.424(33)	&6.845(47)	&-2.114(20)	&\multicolumn{1}{c}{--}\\
-		\multicolumn{2}{l}{Temperature}	&6.357(64)	&10.72(14)	&-1.100(20)	&\multicolumn{1}{c}{--}\\
+		\multicolumn{2}{l}{Magnetic field}	&5.358(25)	&5.705(28)	&-1.662(11)	&\multicolumn{1}{c}{--}	&2.8\\
+		\multicolumn{2}{l}{Density}	&5.424(33)	&6.845(47)	&-2.114(20)	&\multicolumn{1}{c}{--}	&3.6\\
+		\multicolumn{2}{l}{Temperature}	&6.357(64)	&10.72(14)	&-1.100(20)	&\multicolumn{1}{c}{--}	&1.9\\
 		\hline
-		\multirow{1}{*}{Velocity}	&$W''_1$	&3.707(13)	&3.748(16)	&\multirow{2}{*}{0.0990(51)}	&\multirow{2}{*}{0.557(45)}\\
-			&$W''_2$	&5.26(13)	&5.42(11)	&	&\\
-		\cline{2-6}
-		\multicolumn{2}{r}{$W''_\text{II}$}	&4.13(13)\tablefootmark{b}	&4.47(11)\tablefootmark{b}	&\multicolumn{1}{c}{--}	&\multicolumn{1}{c}{--}\\
+		\multirow{1}{*}{Velocity}	&$W''_1$	&3.707(13)	&3.748(16)	&\multirow{2}{*}{0.0990(51)}	&\multirow{2}{*}{0.557(45)}	&\multicolumn{1}{c}{\multirow{2}{*}{0.17}}\\
+			&$W''_2$	&5.26(13)	&5.42(11)	&	&	&\\
+		\cline{2-7}
+		\multicolumn{2}{r}{$W''_\text{II}$}	&4.13(13)\tablefootmark{b}	&4.47(11)\tablefootmark{b}	&\multicolumn{1}{c}{--}	&\multicolumn{1}{c}{--}	&\multicolumn{1}{c}{--}\\
 		\hline
 	\end{tabular}
 	\tablefoot{
@@ -481,6 +482,8 @@ For simplification, as mentioned before, we treat the exponents of the median an
 % via calculate_twolognormal_median.py:
 % mean = 446.64
 % median = 413.33
+%
+% Yearly Earth distance variations from Earth_orbit_variation_impact_estimate.ods
 
 The velocity balancing parameter $c' = 0.557$ is in good agreement with the results for the SSN dependency (\ref{eq:balance_with_ssn}), because with a mean SSN of 59 during the Helios time period, $c(59) = 0.53$, as can be seen from Fig.~\ref{fig:Vdbl_SSN_ratio_f_plot}.
 
@@ -495,11 +498,11 @@ The model’s magnetic field strength is broader around values of \SI{40}{nT} at
 
 \section{Empirical solar wind model}
 \label{sec:empirical_solar_wind_model}
-In order to estimate the solar wind environment for the PSP orbit, we combine the results from the solar wind frequency distributions’ solar activity relationships and their distance dependencies derived from the OMNI and Helios data. The result is an empirical solar wind model for the inner heliosphere which will then be extrapolated to the PSP orbit in Sec.~\ref{sec:model_extrapolation_to_psp_orbit}.
+In order to estimate the solar wind environment for the PSP orbit, we combine the results from the solar wind frequency distributions’ solar activity relationships and their distance dependencies derived from the OMNI and Helios data. The result is an empirical solar wind model for the inner heliosphere which will then be extrapolated to the PSP orbit in Sect.~\ref{sec:model_extrapolation_to_psp_orbit}.
 
 %\subsection{Distance scaling law variations}
 %\label{sec:distance_scaling_law_variations}
-This established solar wind model for the radial distance dependence is representative for the time of the Helios observations around the rise of solar cycle~21. The variation of yearly power law fit exponents are shown in Fig.~\ref{fig:yearly_gradients_c} together with the yearly SSN for the time period \numrange{1974}{1982}. It can be seen that during the Helios time period there might be some systematic  variation of the exponents with solar activity---at least for the velocity and temperature. exponents
+This established solar wind model for the radial distance dependence is representative for the time of the Helios observations around the rise of solar cycle~21. The variation of yearly power law fit exponents are shown in Fig.~\ref{fig:yearly_gradients_c} together with the yearly SSN for the time period \numrange{1974}{1982}. It can be seen that during the Helios time period there might be some systematic  variation of the exponents with solar activity---at least for the velocity and temperature exponents.
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/yearly_gradients_c.pdf}}
 	\caption{Helios yearly variation of the solar wind parameters' fit exponents together with the SIDC 13-month smoothed monthly SSN. The weighted standard deviations and average values for all years are indicated by the shaded areas. In this plot the 21~days since Helios launch in the year 1974 are omitted because a distance range of merely \SIrange{0.95}{0.98}{\au} was covered that year.}
@@ -513,6 +516,8 @@ Since we neglect possible variations of the distance scaling laws, we combine th
 	x_\text{med}(ssn,r) &= (a_\text{med} \cdot ssn + b_\text{med}) \cdot r^{e'}	\,.	\label{eq:general_sw_model}
 \end{align}
 Thus we obtain the combined model function $W'''(x,ssn,r)$ and for the velocity $W_\text{II}'''(x,ssn,r)$ with the double lognormal function (\ref{eq:double_lognormal_fit_function}).
+
+This model averages over seasonal variations because it is based on yearly data. As the OMNI data are time-shifted to the nose of the Earth’s bow shock, this leads to yearly solar distance variations of \SI{+-1.67}{\%} as it orbits the Sun. The resulting maximal solar wind parameter variation amplitudes over the year can thus be derived from the derived power law exponents. They are estimated to be smaller than \SI{4}{\percent} as seen in Tab.~\ref{tab:extrapolation_model_fit_parameters}. \citet{Bruno1986,Balogh1999} have pointed out, that the solar wind parameters vary with latitudinal separation from the heliospheric current sheet (HCS). Its position in heliographic latitude is highly variable around the solar equator \citep{Schwenn1990}, furthermore, the Earth’s orbit varies over the course of the year by \SI{+-7.2}{\degree} in latitude. However, the additional analysis of this aspect is beyond the scope of this study.	%Balogh et al. (p.~162, 1999);	 (Schwenn 1990, p.~126)
 
 
 \section{Model extrapolation to PSP orbit}
@@ -614,20 +619,5 @@ The velocity and temperature values are overestimated below \SI{20}{\Rs} in comp
 
 %Implications for WISPR mission operations and SoloHI on Solar Orbiter...
 The knowledge of the expected solar wind environment helps to optimize the WISPR and PSP preplanning of the science operations. This also applies for the Heliospheric Imager (SoloHI) onboard the Solar Orbiter spacecraft (Howard2013).\\
-
-
-
-
-\hl{To be moved into end of Sect. 5!}\\
-As the OMNI data are time-shifted to the nose of the Earth’s bow shock, this leads to yearly solar distance variations of \SI{+-1.67}{\%} as it the Earth orbits the Sun.\\
-{\color{red}
-The maximal solar wind parameter variation amplitudes over the year can thus be estimated from the derived power law exponents to about X \% for the m, to X \% for the v, ...\\
-calculate them and put them into Tab.3.\\
-The error estimation over the year caused by this varying radial difference can be expected to be smaller than 5 \% derived from investigation of the power law exponents of the solar wind parameters.\\
-}
-
-\hl{To be moved into Sect. 5!}\\
-\citet{Bruno1986,Balogh1999} have pointed out, that the solar wind parameters also vary with latitudinal separation from the heliospheric current sheet (HCS). Its The HCS’s position in heliographic latitude is highly variable around the solar equator \citep{Schwenn1990}, furthermore, the Earth’s orbit varies over the course of the year by \SI{+-7.2}{\degree} in latitude. However, the additional analysis of but this aspect is beyond the scope of this study.\\	%Balogh et al. (p.~162, 1999);	 (Schwenn 1990, p.~126)
-\hl{-> error estimation?}\\
 
 
