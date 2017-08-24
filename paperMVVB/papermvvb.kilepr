@@ -117,10 +117,10 @@ order=-1
 
 [item:sections/content.tex]
 archive=true
-column=0
+column=481
 encoding=UTF-8
 highlight=LaTeX
-line=586
+line=582
 mode=LaTeX
 open=true
 order=0
@@ -132,7 +132,7 @@ encoding=UTF-8
 highlight=BibTeX
 line=261
 mode=BibTeX
-open=true
+open=false
 order=4
 
 [item:style/header.tex]
@@ -170,10 +170,10 @@ JumpList=
 ViMarks=.,3,0,[,3,0,],3,0
 
 [view-settings,view=0,item:sections/content.tex]
-CursorColumn=0
-CursorLine=586
+CursorColumn=481
+CursorLine=582
 JumpList=
-ViMarks=.,495,555,[,495,555,],495,555
+ViMarks=.,582,454,[,582,454,],582,480
 
 [view-settings,view=0,item:sections/literature_bibtex.bib]
 CursorColumn=0
