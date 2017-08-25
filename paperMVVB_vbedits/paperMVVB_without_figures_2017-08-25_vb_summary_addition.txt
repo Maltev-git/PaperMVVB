@@ -1,0 +1,9 @@
+
+The limitations of the extrapolated values at distances below 20 R 
+indicate the occurrence of solar wind acceleration and heating 
+processes. PSP will thus be able to directly measure these processes as 
+planned. Note that the study of extreme solar wind parameters associated 
+with extreme CMEs was beyond the scope of this study as well as an 
+estimate of the level of turbulence increasing with distance to the Sun 
+as observed by the Helios probes inside individual solar wind streams.
+
