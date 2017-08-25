@@ -598,35 +598,41 @@ We have not specifically investigated the occurrences of extreme solar wind para
 
 \section{Summary}
 \label{sec:summary}
-For the near-Earth solar wind OMNI data and the Helios~1 and 2 data, obtained over the distance range \SIrange{0.29}{0.98}{\au}, we derived lognormal representations of the frequency distributions’ shapes of the four key solar wind parameters magnetic field strength, proton velocity, proton density and proton temperature. The dependencies of these frequency distributions on the solar activity cycle and on radial distance to the Sun have been modeled with analytical relations and extrapolated to the Parker Solar Probe orbit, taking into account predictions of the sunspot number. This empirical CGAUSS solar wind model for PSP, representing the solar wind’s solar activity and distance behavior, yields estimations for the solar wind median values at PSP’s first perihelion in 2018 at a solar distance of \SI{0.16}{\au} and at PSP’s closest perihelion in 2024 at \SI{0.046}{\au}. The model yields the following main results for the bulk solar wind parameters:
+The scientific objective of this study, being part of the German contribution Coronagraphic German and US Solar Probe Plus Survey (CGAUSS) to the Wide field Imager for Solar Probe (WISPR), is to model the solar wind environment for the Parker Solar Probe mission (formerly Solar probe Plus) to be launched mid 2018.
+
+For this purpose we derived lognormal representations of the frequency distributions’ shapes of the four key solar wind parameters magnetic field strength, proton velocity, proton density and proton temperature for the near-Earth solar wind OMNI data, and the Helios~1 and 2 data obtained over the solar distance range \SIrange{0.29}{0.98}{\au}. The dependencies of these frequency distributions on solar activity, as measured by the international sunspot number, and on radial distance to the Sun were modeled with analytical relations and then extrapolated to the Parker Solar Probe orbit, taking into account predictions of the sunspot number. With the resulting CGAUSS empirical solar wind model for PSP the following main results for the bulk solar wind parameters and estimations for their median values at PSP’s first perihelion in 2018 at a solar distance of \SI{0.16}{\au} and at PSP’s closest perihelia beginning in 2024 at \SI{0.046}{\au} (\SI{9.86}{\Rs}) are obtained:
 \begin{itemize}
-	\item The empirical dependency of the magnetic field strength median value on solar activity and radial distance is
+	\item The dependency of the magnetic field strength median value on solar activity and radial distance is:
 	\begin{align}
 		B_\text{med}(ssn,r) = (\SI{0.0131}{\nT} \cdot ssn + \SI{4.29}{\nT}) \cdot r^{-1.66}	\,.
 	\end{align}
-	This approximation appears to be valid for PSP's full distance range, however near its closest perihelion the actual median values might lie within \SI{20}{\%} higher. The estimated median values for PSP's first and closest perihelion are \SI{87}{\nT} and \SI{943}{\nT}.
-	\item The radial dependency of the median velocity value for slow solar wind is
+	This approximation seems valid above \SI{20}{\Rs}, however near PSP's closest perihelion the actual values might be found to be slightly higher.
+	\item The estimated  magnetic field strength values for PSP's first and closest perihelion are \SI{87}{\nT} and \SI{943}{\nT}.	
+	\item The radial dependencies of the proton velocity median values for slow and fast solar wind are:
 	\begin{align}
-		v_\text{slow}(r) &= \SI{363}{\km\per\s} \cdot r^{0.099}
-		\intertext{and that for fast solar wind is}
+		v_\text{slow}(r) &= \SI{363}{\km\per\s} \cdot r^{0.099}	\,,\\
+%		\intertext{and}
 		v_\text{fast}(r) &= \SI{483}{\km\per\s} \cdot r^{0.099}	\,.
 	\end{align}
-	These relations are valid above about \SI{20}{\Rs}, below this solar distance they overestimate the actual velocities obtained from remote measurements. Their combined frequency distribution (\ref{eq:double_lognormal_fit_function}) is balanced by $c(ssn) = -0.00180 \cdot ssn + 0.64$, that is, at solar minimum ($ssn = 0$) the slow wind has a share of \SI{64}{\%}, dropping to only \SI{28}{\%} during maximum ($ssn = 200$). The calculated median values for PSP's first and closest perihelion are \SI{340}{\km\per\s} and \SI{290}{\km\per\s}.
-	\item The density relation is found to be
+	These relations appear valid above about \SI{20}{\Rs} solar distance, below they overestimate the actual solar wind velocities obtained from remote measurements.
+	\item The calculated median velocity values for PSP's first and closest perihelion are \SI{340}{\km\per\s} and \SI{290}{\km\per\s}.
+
+	\item The share of their frequency distributions to the overall solar wind velocity distribution (\ref{eq:double_lognormal_fit_function}) is depending on solar activity, their balance was found to be $c(ssn) = -0.00180 \cdot ssn + 0.64$. Thus, at solar minimum with sunspot number around 0 the slow wind contributes about \SI{64}{\%} and dropping to \SI{28}{\%} during solar maximum conditions with sunspot numbers around 200.
+	\item The median proton density relation is found to be:
 	\begin{align}
 		n_\text{med}(ssn,r) = \left(\SI{0.0038}{\per\cm\cubed} \cdot ssn + \SI{4.50}{\per\cm\cubed}\right) \cdot r^{-2.11}	\,.
 	\end{align}
-	It seems valid throughout the full PSP orbital distance range, even down to about \SI{8}{\Rs}. The estimated median values for PSP's first and closest perihelion are \SI{4015}{\per\cm\cubed} and \SI{9733}{\per\cm\cubed}.
-	\item The derived correlation function for the temperature is
+	This relation seems valid throughout the full PSP orbital distance range, even down to about \SI{8}{\Rs}.
+	\item The estimated density values for PSP's first and closest perihelion are \SI{4015}{\per\cm\cubed} and \SI{9733}{\per\cm\cubed}.
+	\item The derived correlation function for the median proton temperature is:
 	\begin{align}
 		T_\text{med}(ssn,r) = (\SI{197}{\K} \cdot ssn + \SI{57300}{\K}) \cdot r^{-1.10}	\,.
 	\end{align}
-	The evaluation of the validity of this relation shows, that the temperature values near PSP's perihelion are too high in comparison to coronal measurements. The estimated median values for PSP's first and closest perihelion are \SI{503000}{\K} and \SI{1930000}{\K}.
+	Around PSP’s perihelion this relation seems to provide too high temperature values in comparison to coronal measurements.
+	\item The estimated temperature values for PSP's first and closest perihelion are \SI{503000}{\K} and \SI{1930000}{\K}.
 \end{itemize}
-
-The velocity and temperature values are overestimated below \SI{20}{\Rs} in comparison with existing observations. This shows that solar wind acceleration and heating processes below \SI{20}{\Rs} limit the simple back-extrapolation from existing in situ measurements.
+The overestimation of the extrapolated velocity and temperature values at distances below \SI{20}{\Rs} indicate the occurrence of solar wind acceleration and heating processes, which PSP will thus be able to directly measure as planned.
 
 %Implications for WISPR mission operations and SoloHI on Solar Orbiter...
-The knowledge of the expected solar wind environment helps to optimize the WISPR and PSP preplanning of the science operations. This also applies for the Heliospheric Imager (SoloHI) onboard the Solar Orbiter spacecraft \citep{Howard2013}.
-
+The results of the modeled solar wind environment will be useful to help optimize the WISPR and in situ instrument science plannings and PSP mission operations. This also applies for the Heliospheric Imager (SoloHI) \citep{Howard2013} and the in situ instruments on board the Solar Orbiter spacecraft.
 
