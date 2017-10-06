@@ -4,7 +4,7 @@
 From observations of cometary tail fluctuations \citet{Biermann1951} inferred the presence of a continuous flow of particles from the Sun. With his theoretical solar wind model \citet{Parker1958} formulated the existence of the solar wind even before the first satellites measured it in situ in 1959 \citep{Gringauz1960,Neugebauer1966}.
 %in situ spacecraft
 The idea of a space mission flying through the solar corona dates back to the founding year of NASA in 1958 \citep{McComas2008}. Since then several space missions have measured the solar wind in situ at a wide range of heliocentric distances, in case of Voyager~1 as far away as \SI{138}{\au}\footnote{\url{https://voyager.jpl.nasa.gov/}} (July 2017), having even left the heliospause into interstellar space at a distance of \SI{121}{\au} \citep{Gurnett2013}.
-Until today various spacecraft have provided a wealth of solar wind measurements near Earth’s orbit, with WIND \citep{Lepping1995,Ogilvie1995}, ACE \citep{Stone1998} and DSCOVR \citep{Burt2012} still orbiting around the L1 point \SI{1.5}{million\,\km} ahead of Earth in the sunward direction. Additional measurements at other solar distances were provided by planetary missions to Venus and Mercury, such as PVO \citep{Colin1980} or MESSENGER \citep{Belcher1991}. Ulysses was the first probe that orbited the Sun out of the ecliptic plane and thus could measure solar wind even at polar latitudes \citep{McComas1998}. The Sun-nearest in situ solar wind measurements to date were obtained by the Helios mission. The in 1974 launched Helios~1 spacecraft reached distances of \SI{0.31}{\au}, Helios~2 launched two years later and approached the Sun up to \SI{0.29}{\au} \citep{Rosenbauer1977}.
+\hl{Until today } various spacecraft have provided a wealth of solar wind measurements near Earth’s orbit, with WIND \citep{Lepping1995,Ogilvie1995}, ACE \citep{Stone1998} and DSCOVR \citep{Burt2012} \hl{still orbiting } around the L1 point \SI{1.5}{million\,\km} ahead of Earth in the sunward direction. Additional measurements at other solar distances were provided by planetary missions to Venus and Mercury, such as PVO \citep{Colin1980} or MESSENGER \citep{Belcher1991}. Ulysses was the first probe that orbited the Sun out of the ecliptic plane and thus could measure solar wind even at polar latitudes \citep{McComas1998}. \hl{The Sun-nearest in situ solar wind measurements to date were obtained by the Helios mission. } \hl{The in 1974 launched Helios~1 spacecraft reached distances of } \SI{0.31}{\au}, \hl{Helios~2 launched two years later and approached the Sun up to } \SI{0.29}{\au} \citep{Rosenbauer1977}.
 %Solar Probe Plus mission
 The NASA Parker~Solar~Probe\footnote{\url{http://parkersolarprobe.jhuapl.edu/}} (PSP), formerly Solar~Probe~Plus, with a planned launch date in mid 2018, will reach after six years in 2024 its closest perihelia at a distance of 9.86~solar radii (\Rs), that is, \SI{0.0459}{\au} \citep{Fox2015}. This distance will be achieved through seven Venus gravity assists with orbital periods of 88--168~days. In its prime mission time 2018--2025 PSP provides 24~orbits with perihelia inside \SI{0.25}{\au} \citep{Fox2015}. Even its first perihelion, 93~days after launch in 2018, will take PSP to an unprecedented distance of \SI{0.16}{\au} (\SI{35.7}{\Rs}). In comparison, the ESA Solar Orbiter mission with a planned launch in February 2019 will have its closest perihelia at \SI{0.28}{\au} \citep{Muller2013}.
 
@@ -81,7 +81,7 @@ It is apparent that the mean is always larger than the median. Replacing the var
 \end{align}
 The values of $x_\text{med}$ and $x_\text{avg}$ obtained from fitting the individual solar wind frequency distributions are listed in Table~\ref{tab:lognormal_fit_parameters}.
 \begin{table*}
-	\caption{Resulting fit coefficients from the fitting of the lognormal function (\ref{eq:single_lognormal_fit_function}) to the shape of the solar wind parameters' frequency distributions from near \SI{1}{\au} OMNI hourly data. For the velocity also the fit parameters of the double lognormal function (\ref{eq:double_lognormal_fit_function}) are listed, as well as the median and mean values of the resulting velocity fit. The mean absolute errors and sums of absolute residuals are also listed. The values in brackets are the estimated standard deviations of the fit parameters.}
+	\caption{Resulting fit coefficients from the fitting of the lognormal function (\ref{eq:single_lognormal_fit_function}) to the shape of the solar wind parameters' frequency distributions from near \SI{1}{\au} OMNI hourly data. For the velocity also the fit parameters of the double lognormal function (\ref{eq:double_lognormal_fit_function}) are listed, as well as the median and mean values of the resulting velocity fit. The \hl{mean absolute errors } and \hl{sums of absolute residuals } are also listed. The values in brackets are the \hl{estimated standard deviations } of the fit parameters.}
 	\label{tab:lognormal_fit_parameters}
 	\centering
 	\sisetup{table-figures-integer=1, table-figures-decimal=4, table-figures-exponent=0}
@@ -108,7 +108,7 @@ The values of $x_\text{med}$ and $x_\text{avg}$ obtained from fitting the indivi
 		\hline
 	\end{tabular}
 	\tablefoot{
-		\tablefoottext{a}{In units of \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
+		\tablefoottext{a}{\hl{In units of } \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
 		\tablefoottext{b}{Error estimates derived from the individual fit part errors.}
 	}
 \end{table*}
@@ -128,7 +128,7 @@ The values of $x_\text{med}$ and $x_\text{avg}$ obtained from fitting the indivi
 From visual inspection, the resulting fit curves describe the shape of the magnetic field strength, density and temperature distributions well, as can be seen in Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}. However, for the velocity the fit function appears not to be as good in describing the measured distribution’s more complex shape around its peak and in the higher velocity range. This also can be inferred from the sum of absolute residuals (SAR) between data and fit listed in Table~\ref{tab:lognormal_fit_parameters}, being almost three times larger than those from the other parameters.
 \begin{figure*}
 	\includegraphics[width=18cm]{figures/histogram_fits_4_a_zoom_paper_pdfplot.pdf}
-	\caption{Frequency distributions of the four solar wind parameters and their lognormal fits derived from the hourly OMNI data set. The histograms have bins of \SI{0.5}{\nT}, \SI{10}{\km\per\s}, \SI{1}{\per\cm\cubed} and \SI{10000}{\K}. The fits' median and mean values are indicated as well. The insets show zoomed-in frequency axes.}
+	\caption{Frequency distributions of the four solar wind parameters and their lognormal fits derived from the hourly OMNI data set. The histograms have bins of \SI{0.5}{\nT}, \SI{10}{\km\per\s}, \SI{1}{\per\cm\cubed} and \SI{10000}{\K}. The fits' median and mean values are indicated as well. \hl{The insets show zoomed-in frequency axes. } }
 	\label{fig:histogram_fits_4_a_zoom_paper_pdfplot}
 \end{figure*}
 
@@ -147,14 +147,14 @@ The fitting of $W_\text{II}(x)$ to the velocity's frequency distribution yields 
 This more complex fit function is more accurate in describing the velocity's frequency distribution as shown in Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/histogram_fits_V_a_zoom_dbl_paper_pdfplot.pdf}}
-	\caption{The velocity's frequency distribution (same as in Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}) and its compositional lognormal fit. The fit's median and mean values and its two fit parts are indicated as well. The inset has a zoomed-in frequency axis.}
+	\caption{The velocity's frequency distribution (same as in Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}) and its compositional lognormal fit. The fit's median and mean values and its two fit parts are indicated as well. \hl{The inset has a zoomed-in frequency axis. } }
 	\label{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}
 \end{figure}
 Thus in the following sections we keep the double lognormal ansatz for all velocity frequency fits.
 
 %transition
-For the bulk of the solar wind these static lognormal functions describe the parameters' distributions well, but differ for the extreme values, mainly caused by CME events.
-The simple lognormal fit functions underestimate the frequency of the solar wind parameters in their high value tails, except for the temperature’s tail which is overestimated as seen in the insets of Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}. The velocity's compositional lognormal fit only slightly overestimates its tail as seen in the inset of Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
+For the bulk of the solar wind these static lognormal functions describe the parameters' distributions well, \hl{but differ for the extreme values, mainly caused by CME events. } 
+The simple lognormal fit functions underestimate the frequency of the solar wind parameters in their high value tails, except for the temperature’s tail which is overestimated as seen in the insets of Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}. The velocity's compositional lognormal fit only slightly \hl{overestimates } its tail as seen in the inset of Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
 The slow and fast part contribute almost equally ($c \approx 0.5$) to the long-term velocity distribution function.
 
 %{\color{red} discuss high value zoom figures; read in Veselovsky2010}
@@ -178,9 +178,9 @@ Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot} shows yearly medians of the so
 \end{figure}
 
 The solar wind velocity, density and temperature depend on the state of the solar cycle \citep{Schwenn1983}. %density modulation with SSN \citep{Schwenn1983} p.~499\\
-For instance the fast solar wind is correlated with the presence of polar coronal hole extensions to lower latitudes being a typical feature of the solar cycle, being the reason for the common velocity peak in the decreasing phase of the SSN, as pointed out by \citet[p.~75, Figure~3.52]{Bothmer2007}. Therefore the solar wind velocity, density and temperature maxima exhibit time-lags to the SSN maxima.
+For instance the \hl{fast solar wind is correlated with the presence of polar coronal hole extensions to lower latitudes being a typical feature of the solar cycle, being the reason for the common velocity peak in the decreasing phase of the SSN, as pointed out by } \citet[p.~75, Figure~3.52]{Bothmer2007}. Therefore the solar wind velocity, density and temperature maxima \hl{exhibit time-lags to the SSN maxima. } 
 
-The correlation coefficients of the solar wind parameters with the yearly SSN shown in the bottom part of Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot} are calculated for time lags back to \num{-15}~years to cover a time span longer than a solar cycle. As expected, the correlation coefficients' amplitudes of all parameters decline with increasing time lag and show a frequency of about 11~years. The highest correlation coefficient of 0.728 to the SSN is found for the magnetic field strength, it has no time lag. This finding is anticipated because the SSN is found to be directly proportional to the evolution of the photospheric magnetic flux \citep{Smith2003}.
+The correlation coefficients of the solar wind parameters with the yearly SSN shown in the bottom part of Fig.~\ref{fig:OMNI_yearly_ssn_correlation_c_plot} are calculated for time lags back to \num{-15}~years to cover a time span longer than a solar cycle. As expected, \hl{the correlation coefficients' amplitudes of all parameters decline with increasing time lag } and show \hl{a frequency of about 11~years. } The highest correlation coefficient of 0.728 to the SSN is found for the magnetic field strength, it has no time lag. This finding is anticipated because the SSN is found to be directly proportional to the evolution of the photospheric magnetic flux \citep{Smith2003}.
 Velocity and temperature show a lag time of 3~years with peak correlation coefficients of 0.453 and 0.540. The density with a correlation coefficient of 0.468 has a time lag of 6~years, which is in agreement with the by \citet{Bougeret1984} reported density anticorrelation to the SSN.	%p.~406\\
 % maximal correlation coefficients and their lag times:\\
 % magnetic field strength: lag 0, 0.728\\
@@ -189,7 +189,7 @@ Velocity and temperature show a lag time of 3~years with peak correlation coeffi
 % temperature: lag -3, 0.540\\
 
 %\subsection{SSN fitting}
-To enable shifts of the solar wind frequency distributions with the SSN, we add a linear SSN dependency to the median
+\hl{To enable shifts of the solar wind frequency distributions with the SSN } , we add a linear SSN dependency to the median
 \begin{align}
 	x_\text{med}(ssn) &= a_\text{med} \cdot ssn + b_\text{med}\,,	\label{eq:median_with_ssn}
 \end{align}
@@ -197,9 +197,9 @@ using a factor to the SSN $a_\text{med}$ with a baseline $b_\text{med}$. We rela
 \begin{align}
 	x_\text{avg}(ssn) &= (1 + a_\text{avg}) \cdot x_\text{med}(ssn)\,.	\label{eq:mean_with_ssn}
 \end{align}
-With the implementation of these relations into the lognormal function (\ref{eq:single_lognormal_fit_function}), the new dynamic fit function $W'(x,ssn)$ is then fitted to the yearly data. The three resulting fit coefficients ($a_\text{med}, b_\text{med}$ and $a_\text{avg}$) are presented in Table~\ref{tab:ssn_fit_parameters}.
+\hl{With the implementation of these relations into the lognormal function } (\ref{eq:single_lognormal_fit_function}), the new dynamic fit function $W'(x,ssn)$ is then fitted to the yearly data. The three resulting fit coefficients ($a_\text{med}, b_\text{med}$ and $a_\text{avg}$) are presented in Table~\ref{tab:ssn_fit_parameters}.
 \begin{table*}
-	\caption{Resulting fit coefficients from the OMNI data fitting with lagged SSN. For the velocity the fit parameters from the double lognormal fit and their balancing function are given. The values in brackets are the estimated standard deviation of the fit parameters.}
+	\caption{Resulting fit coefficients from the OMNI data fitting with lagged SSN. For the velocity the fit parameters from the double lognormal fit and their balancing function are given. The values in brackets are the \hl{estimated standard deviation} of the fit parameters.}
 	\label{tab:ssn_fit_parameters}
 	\centering
 	\begin{tabular}{l@{} c@{}
@@ -224,7 +224,7 @@ With the implementation of these relations into the lognormal function (\ref{eq:
 		\hline
 	\end{tabular}
 	\tablefoot{
-		\tablefoottext{a}{In units of \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
+		\tablefoottext{a}{\hl{In units of } \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
 	}
 \end{table*}
 
@@ -380,7 +380,7 @@ Thus, using this data, one has to keep in mind that its time coverage is unequal
 % 1981 06 1981.455  200.9  13.1   227  
 % 1981 07 1981.538  198.5  13.1   268  
 
-The median and mean values of the key solar wind parameters for different solar distances of the Helios data are calculated for the minimal distance resolution \SI{0.01}{\au} of the data set, see Fig.~\ref{fig:radial_fit_4_thesis_light_b_skip}. Assuming a radial solar wind outflow, it is expected that the distance dependence of the solar wind parameters over the Helios data range \SIrange{0.29}{0.98}{\au} can be described through power law scaling. Therefore we use the power law function
+The median and mean values of the key solar wind parameters for different solar distances of the Helios data are calculated for the minimal distance resolution \SI{0.01}{\au} of the data set\hl{, see } Fig.~\ref{fig:radial_fit_4_thesis_light_b_skip}. Assuming a radial solar wind outflow, it is expected that the distance dependence of the solar wind parameters over the Helios data range \SIrange{0.29}{0.98}{\au} can be described through power law scaling. Therefore we use the power law function
 \begin{align}
 	x(r) = d\cdot r^e	\label{eq:power_function}
 \end{align}
@@ -388,7 +388,7 @@ for the regression fit of the median and mean, with $r$ being the solar distance
 %fit result table and figure
 The fit coefficients ($d_\text{med}$, $d_\text{avg}$, $e_\text{med}$ and $e_\text{avg}$) are listed in Table~\ref{tab:mean_median_fit_parameter}.
 \begin{table*}
-	\caption{Fit coefficients for the median and mean solar distance dependencies of the four solar wind parameters derived from the combined Helios~1 and 2 data. The errors in brackets are the estimated standard deviations of each fit parameter. The crossing distances indicate where the median and mean fits intersect each other. The yearly variation is the weighted standard deviation derived from the yearly fit exponents seen in Fig.~\ref{fig:yearly_gradients_c}.}
+	\caption{Fit coefficients for \hl{the median and mean solar distance dependencies } of the four solar wind parameters derived from the combined Helios~1 and 2 data. The errors in brackets are the \hl{estimated standard deviations} of each fit parameter. The crossing distances indicate where the median and mean fits intersect each other. The yearly variation is the weighted standard deviation derived from the yearly fit exponents seen in Fig.~\ref{fig:yearly_gradients_c}.}
 	\label{tab:mean_median_fit_parameter}
 	\centering
 	\begin{tabular}{l
@@ -411,14 +411,14 @@ The fit coefficients ($d_\text{med}$, $d_\text{avg}$, $e_\text{med}$ and $e_\tex
 		\hline
 	\end{tabular}
 	\tablefoot{
-		\tablefoottext{a}{In units of \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
+		\tablefoottext{a}{\hl{In units of } \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
 	}
 \end{table*}
 % source year variation: fit_out_yearly_gradients_table_b_stats.txt
 
 % comparison with other Helios studies (Schwenn, Bougeret)
 %Helios results, radial gradients see \citet{Schwenn1990} p.~155
-As anticipated, our derived exponents agree with those found in existing studies from the Helios observations: \citet{Mariani1978} derived the exponents for the magnetic field strength separately for the fast and the slow solar wind as $B_\text{fast} \propto r^{-1.54}$ and $B_\text{slow} \propto r^{-1.61}$.
+\hl{As anticipated, our derived exponents agree with those found in existing studies from the Helios observations: } \citet{Mariani1978} derived the exponents for the magnetic field strength separately for the fast and the slow solar wind as $B_\text{fast} \propto r^{-1.54}$ and $B_\text{slow} \propto r^{-1.61}$.
 %$B_\text{fast} = 5.79\cdot r^{-1.54}$\,nT and $B_\text{slow} = 5.11\cdot r^{-1.61}$\,nT.
 The velocity exponent matches with the values found by \citet{Schwenn1983,Schwenn1990}, who derived the distance dependencies for both Helios spacecraft separately as $v_\text{H1} \propto r^{0.083}$ and $v_\text{H2} \propto r^{0.036}$. The calculated density exponent agrees well with the Helios plasma density model derived by \citet{Bougeret1984}, yielding $n \propto r^{-2.10}$.
 %to the year 1976 normalized   a \SI{1}{\au} density of $n = 6.14\cdot r^{-2.10}\,\text{cm}^{-3}$.
@@ -434,8 +434,8 @@ Fig.~\ref{fig:radial_fit_4_thesis_light_b_skip} shows the radial dependence of t
 	\caption{Helios hourly data plots of the four solar wind parameters over solar distance. The mean and median per \SI{0.01}{\au} data bin and their fit curves are plotted as well. The Helios data has a native distance resolution of \SI{0.01}{\au}, thus, to make the abundance visible in these plots, we added a random distance value of up to \SI{+-0.005}{\au}. The maximal velocities of CME events larger than \SI{800}{\km\per\s} are indicated with circles.}
 	\label{fig:radial_fit_4_thesis_light_b_skip}
 \end{figure*}
-Contrary, the mean and median fits for the magnetic field strength cross each other at \SI{0.339}{\au} and the mean is lower than the median at smaller distances (Table~\ref{tab:mean_median_fit_parameter}). Thus, below that distance the distribution function cannot well be described anymore by a lognormal function. The fits for the proton temperature show a similar behavior,
-having an intersection at \SI{0.082}{\au}. Therefore the extrapolation of the magnetic field and temperature distribution frequencies to the PSP orbit by applying lognormal functions is limited. To circumvent such limitations we set the exponents $e_\text{med}$ and $e_\text{avg}$ to be identical for all four parameters. It should be noted that this simplification leads to slightly larger modeling errors, especially in case of the magnetic field strength.
+Contrary, the mean and median fits for the magnetic field strength cross each other at \SI{0.339}{\au} and the mean \hl{is lower than the median at smaller distances } (Table~\ref{tab:mean_median_fit_parameter}). Thus, below that distance the distribution function cannot well be described anymore by a lognormal function. The fits for the proton temperature show a similar behavior,
+\hl{having an intersection at } \SI{0.082}{\au}. \hl{Therefore the extrapolation of the magnetic field and temperature distribution frequencies to the PSP orbit by applying lognormal functions is limited. } To circumvent such limitations we \hl{set the exponents $e_\text{med}$ and $e_\text{avg}$ to be identical for all four parameters. } It should be noted that this simplification leads to slightly larger modeling errors, especially in case of the magnetic field strength.
 
 %\subsection{Power law lognormal fitting}
 Next we retrieve the frequency distributions of the four parameters in distance bins of \SI{0.01}{\au},  choosing the same resolution as for the OMNI data analyzed in Sect.~\ref{sec:frequency_distribution}---the distributions are plotted in Fig.~\ref{fig:mixed_fit_fixed_4_paper_f_plot}.
@@ -446,7 +446,7 @@ Next we retrieve the frequency distributions of the four parameters in distance 
 % $T$: bin size 10\,000~K, min 497, mean precision: 4.49--44.49\\
 For simplification, as mentioned before, we treat the exponents of the median and mean fit functions as being identical. Implementing the power law distance dependency~(\ref{eq:power_function}) into the lognormal function (\ref{eq:single_lognormal_fit_function}), we get the fit parameters ($d'_\text{med}$, $d'_\text{avg}$ and their common exponent $e'$). Again, we use the double lognormal function~(\ref{eq:double_lognormal_fit_function}) for the velocity distribution fit, resulting in $W''_\text{II}(x,r)$. The additional fit parameters are the balancing parameter $c'$ and for the second lognormal part $d'_\text{med,2}$ and $d'_\text{avg,2}$. The resulting fit coefficients for the four solar wind parameters are presented in Table~\ref{tab:extrapolation_model_fit_parameters}.
 \begin{table*}
-	\caption{Fit coefficients from the single lognormal power function, respectively double lognormal for the velocity from the combined Helios data. The errors in brackets are the estimated standard deviations of the fit parameters. The seasonal variations are calculated from Earth's orbital solar distance variation and the derived exponents.}
+	\caption{Fit coefficients from the single lognormal power function, respectively double lognormal for the velocity from the combined Helios data. The errors in brackets are the \hl{estimated standard deviations} of the fit parameters. The seasonal variations are calculated from Earth's orbital solar distance variation and the derived exponents.}
 	\label{tab:extrapolation_model_fit_parameters}
 	\centering
 	\sisetup{table-figures-integer=1, table-figures-decimal=3, table-figures-exponent=0}
@@ -471,7 +471,7 @@ For simplification, as mentioned before, we treat the exponents of the median an
 		\hline
 	\end{tabular}
 	\tablefoot{
-		\tablefoottext{a}{In units of \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
+		\tablefoottext{a}{\hl{In units of } \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
 		\tablefoottext{b}{Velocity median and mean \SI{1}{\au} values for the resulting function. Error estimates derived from the individual fit part errors.}
 	}
 \end{table*}
@@ -487,13 +487,13 @@ For simplification, as mentioned before, we treat the exponents of the median an
 
 The velocity balancing parameter $c' = 0.557$ is in good agreement with the results for the SSN dependency (\ref{eq:balance_with_ssn}), because with a mean SSN of 59 during the Helios time period, $c(59) = 0.53$, as can be seen from Fig.~\ref{fig:Vdbl_SSN_ratio_f_plot}.
 
-The frequency distribution data for the four solar wind parameters with respect to the radial distance from the Sun are plotted in Fig.~\ref{fig:mixed_fit_fixed_4_paper_f_plot}, together with their power law lognormal fits and the double lognormal fit for the velocity with their median values.
+The frequency distribution data for the four solar wind parameters with respect to the radial distance from the Sun \hl{are plotted in } Fig.~\ref{fig:mixed_fit_fixed_4_paper_f_plot}, \hl{together with their power law lognormal fits and the double lognormal fit for the velocity with their median values. } 
 \begin{figure*}
 	\includegraphics[width=18cm]{figures/mixed_fit_fixed_4_paper_f_plot.pdf}
 	\caption{Frequency distributions of the four solar wind parameters with respect to the solar distance. Plotted are the binned Helios data and the power law lognormal fit models with their median values (white lines). The double lognormal model is used for the velocity, its slow and fast parts are indicated by dotted lines.}
 	\label{fig:mixed_fit_fixed_4_paper_f_plot}
 \end{figure*}
-The model’s magnetic field strength is broader around values of \SI{40}{nT} at the lower distance boundary than the data's frequency distribution implies. This behavior is expected because of the distance independent shape approximation applied. The velocity and temperature models’ upper values generally show a higher abundance than the actual data, see also zoom boxes in Figs.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot} and \ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}. The velocity model's with distance increasing high velocity tail comes from using the same exponent for both slow and fast components. This effect is not seen in the data, more specifically, not only the slowest wind but also the fastest wind is expected to converge to more average speeds \citep{Sanchez-Diaz2016}.
+The model’s magnetic field strength is broader around values of \SI{40}{nT} at the lower distance boundary than the data's frequency distribution implies. This behavior is expected because of the distance independent shape approximation applied. The velocity and temperature models’ upper values generally show a higher abundance than the actual data, see also zoom boxes in Figs.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot} and \ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}. \hl{The velocity model's with distance increasing high velocity tail comes from } using the same exponent for both slow and fast components. This effect is not seen in the data, more specifically, not only the slowest wind but also the fastest wind is expected to converge to more average speeds \citep{Sanchez-Diaz2016}.
 %\citep{Sanchez-Diaz2016} p.~2835, using MHD-model -> very slow solar wind is continuation of slow wind) (because of interaction)
 
 
@@ -503,10 +503,10 @@ In order to estimate the solar wind environment for the PSP orbit, we combine th
 
 %\subsection{Distance scaling law variations}
 %\label{sec:distance_scaling_law_variations}
-This established solar wind model for the radial distance dependence is representative for the time of the Helios observations around the rise of solar cycle~21. The variation of yearly power law fit exponents are shown in Fig.~\ref{fig:yearly_gradients_c} together with the yearly SSN for the time period \numrange{1974}{1982}. It can be seen that during the Helios time period there might be some systematic  variation of the exponents with solar activity---at least for the velocity and temperature exponents.
+This \hl{established} solar wind model for the radial distance dependence is representative for the time of the Helios observations around the rise of solar cycle~21. The variation of yearly \hl{power law fit} exponents are shown in Fig.~\ref{fig:yearly_gradients_c} together with the yearly SSN for the time period \numrange{1974}{1982}. It can be seen that during the Helios time period there might be some systematic  variation of the exponents with solar activity---at least for the velocity and temperature exponents.
 \begin{figure}
 	\resizebox{\hsize}{!}{\includegraphics{figures/yearly_gradients_c.pdf}}
-	\caption{Helios yearly variation of the solar wind parameters' fit exponents together with the SIDC 13-month smoothed monthly SSN. The weighted standard deviations and average values for all years are indicated by the shaded areas. In this plot the 21~days since Helios launch in the year 1974 are omitted because a distance range of merely \SIrange{0.95}{0.98}{\au} was covered that year.}
+	\caption{Helios yearly variation of the \hl{solar wind parameters' fit exponents } together with the SIDC 13-month smoothed monthly SSN. The weighted standard deviations and average values for all years are indicated by the shaded areas. In this plot the 21~days since Helios launch in the year 1974 are omitted because a distance range of merely \SIrange{0.95}{0.98}{\au} was covered that year.}
 	\label{fig:yearly_gradients_c}
 \end{figure}
 %yearly variation of the solar wind parameters' average fit function exponents
@@ -518,12 +518,12 @@ Since we neglect possible variations of the distance scaling laws, we combine th
 \end{align}
 Thus we obtain the combined model function $W'''(x,ssn,r)$ and for the velocity $W_\text{II}'''(x,ssn,r)$ with the double lognormal function (\ref{eq:double_lognormal_fit_function}).
 
-This model averages over seasonal variations because it is based on yearly data. As the OMNI data are time-shifted to the nose of the Earth’s bow shock, this leads to yearly solar distance variations of \SI{+-1.67}{\%} as it orbits the Sun. The resulting maximal solar wind parameter variation amplitudes over the year can thus be derived from the derived power law exponents. They are estimated to be smaller than \SI{4}{\percent} as seen in Tab.~\ref{tab:extrapolation_model_fit_parameters}. \citet{Bruno1986,Balogh1999} have pointed out, that the solar wind parameters vary with latitudinal separation from the heliospheric current sheet (HCS). Its position in heliographic latitude is highly variable around the solar equator \citep{Schwenn1990}, furthermore, the Earth’s orbit varies over the course of the year by \SI{+-7.2}{\degree} in latitude. However, the additional analysis of this aspect is beyond the scope of this study.	%Balogh et al. (p.~162, 1999);	 (Schwenn 1990, p.~126)
+This model averages over seasonal variations because it is based on yearly data. As the OMNI data are time-shifted to the nose of the Earth’s bow shock, this leads to yearly solar distance variations of \SI{+-1.67}{\%} as it orbits the Sun. The resulting maximal solar wind parameter variation amplitudes over the year can thus be derived from the derived power law exponents. They are estimated to be smaller than \SI{4}{\percent} as seen in Tab.~\ref{tab:extrapolation_model_fit_parameters}. \citet{Bruno1986,Balogh1999} have pointed out, that the solar wind parameters vary with latitudinal separation from the heliospheric current sheet (HCS). Its position in heliographic latitude is highly variable around the solar equator \citep{Schwenn1990}, furthermore, the Earth’s orbit varies over the course of the year by \SI{+-7.2}{\degree} in latitude. \hl{However, the additional analysis of this aspect is beyond the scope of this study. } 	%Balogh et al. (p.~162, 1999);	 (Schwenn 1990, p.~126)
 
 
 \section{Model extrapolation to PSP orbit}
 \label{sec:model_extrapolation_to_psp_orbit}
-To estimate PSP’s solar wind environment during its mission time for its orbital positions, SSN predictions are included into the in the previous sections derived empirical solar wind model and extrapolations down to the PSP perihelion region are performed.
+To estimate PSP’s solar wind environment during its mission time for its orbital positions, \hl{SSN predictions are included into the in the previous sections derived empirical solar wind model } and extrapolations down to the PSP perihelion region are performed.
 
 %\subsection{Near-Sun extrapolation for PSP orbit}
 %PSP orbit
