@@ -2,13 +2,13 @@ Referee Report
 
 This paper discusses a method of using OMNI and Helios solar wind data to estimate the solar wind parameters that might be expected during the upcoming Parker Solar Probe mission. It includes an estimate of how these parameters might vary with solar cycle, though this is a relatively small correction, and the likely sunspot number during the mission is anyway highly uncertain. The analysis appears to be thorough, retaining information on the log-normal distribution of the parameters that is used to produce “model” representations of the distributions and their variation during the solar cycle. However, in the end, this information isn’t used in the predictions at PSP, where only median values are considered. It’s also not clear whether this type of analysis has any advantage over say a simple-minded approach where you use the radial dependence of averaged Helios values to propagate averaged 1 AU values, perhaps taken at different times in the solar cycle, down to the PSP orbit. My suspicion is that the results might not be all that different, but the authors might like to address this point. The extrapolated values do appear to be fairly consistent with previous estimates of near Sun parameters, and deviations, e.g. in the speed profile can be plausibly accounted for, so the results appear to be reasonable. 
 
-- 
+- ...
 + add perihelia figures of distributions
 + ...
 
 Some steps in the procedure could be explained more clearly in the text, as noted below, and the tables are rather cryptic since the meaning of the various parameters is not always clear. If they are fit parameters, it would be helpful to state the function that is being fitted in the table. There are conclusions and summary sections that both, yet again, go through the analysis procedure, which is unnecessary. They could be combined. There are also useful functions that give the radial dependences of the parameters that are only shown in the summary section. They could be included in the main results section. 
 
-- 
+- ...
 + link the fit equations in table captions
 + ...
 
@@ -181,51 +181,128 @@ Section 6, line 2, suggest: predictions of the SSN during the mission are incorp
 
 Next paragraph, last sentence, suggest: the perihelion distance to be reduced to a minimum of 9.86 Rs. Reverse figures 10 and 11, since figure 11 is referenced first, or just remove the mention of Figure 11 here, which isn't necessary; the statement can be understood without looking at the figure. 
 
++ highlighted
++ can be adopted
++ highlighted
++ manage fig references
+
 Last line of page: How are the ranges of median values for different SSN shown in the figure? I'm guessing that it's the thickness of the shaded regions, but this could be stated specifically to guide the reader in interpreting the figure. 
+
++ highlighted
++ explain thickness of shaded region
 
 Figure 10 caption, line 1: The models obtained from Helios and OMNI measurements are … 
 
++ highlighted
++ can be adopted
+
 Line 3: But do the extreme values really occur for min and max SSN? E.g. the highest speeds could be at intermediate SSN? How can a time lag be “noted” in this figure which there is no obvious time dependence? 
+
++ answer question
++ answer question
++ answer question
 
 Line 4 below figure: “Arguably”: There's no argument here; this just seems to be a suggestion. 
 
++ highlighted
++ reword
+
 Line 5, suggest: mentioned changing shape of the frequency distribution with heliocentric distance 
+
++ highlighted
++ can be adopted
 
 Line 6: But the largest difference appears to be at ~1 AU, so isn't there also a problem with the dipole/quadrapole model matching the observed fields at 1 AU? 
 
++ highlighted
++ look into this
+
 Line 7: “Whereas”: Combine the sentences; whereas isn’t used at the beginning of a sentence. Since the peak speeds are on the declining phase of the cycle, wouldn't the peak predicted speeds occur for some intermediate sunspot number, not at SSN=200? 
+
++ highlighted
++ combine
++ explain
 
 Last line: New sentence at “Thus”. 
 
++ highlighted
++ can be adopted
+
 Page 19, line 6: What is the relevance of the comment on assuming a helium abundance? It's not clear how it relates to the comparison of the density profiles. 
+
++ highlighted
++ explain
 
 Line 10: overestimates 
 
++ highlighted
++ can be adopted
+
 Paragraph 2, line 2: There is an abrupt change of topic here, and it's not immediately obvious why short term SSN predictions are relevant. There could be an introductory sentence saying that since the solar wind predictions depend on SSN, they may be refined using predictions of the SSN during the PSP mission. 
+
++ highlighted
++ look into it
++ additional argument is first perihelion
 
 Line 5: Why should the last cycle be used rather than say a previous one? Is this based on expectations that the next cycle will also be small? 
 
++ highlighted
++ explain
+
 Line 8, suggest: the SSN during the closest perihelia, which will commence at the end of 2024 at the likely maximum phase of cycle 25, cannot be predicted at this time. Suggest moving this up to before "For the prediction of the next solar cycle..." 
+
++ highlighted
++ can be adopted
++ move up
 
 Paragraph 3: How are the error bands in Figures 12 and 13 calculated? E.g., do they use different assumptions for the predicted SSN? 
 
++ answer/explain
+
 Figure 11, lower legend in figure: “Cycle 24” amplitude rather than "its". 
+
++ fig legend
++ can be adopted
 
 Page 21, line 4, suggest: au, deriving power law fit functions that were used 
 
++ highlighted
++ can be adopted
+
 Line 6, suggest: -2025, encompassing the prime mission up to the closest approach of 9.86 Rs. 
+
++ highlighted
++ can be adopted
++ search text for solar radii and replace with Rs
 
 Paragraph 2, line 3, suggest: Differences from the results of these other studies suggest that below about 20 Rs, PSP may dive into the region where the acceleration and heating of the solar wind is expected to occur. 
 
++ highlighted
++ can be adopted, but
++ pay attention to wording
+
 Last line on page, suggest: because the solar wind is believed to be accelerated up to the height of the Alfvenic critical surface, which is predicted to lie on average around 17 Rs, with a range of between 15 Rs at solar minimum and 30 Rs at solar maximum. 
+
++ highlighted
++ can be adopted, but
++ check wording
 
 Page 22, paragraph 2, line 5, suggest: that due to solar wind drag, the speeds 
 
++ highlighted
++ can be adopted
+
 Summary, paragraph 2: It's not really necessary to go though the procedure yet again; there is already a synopsis in the conclusions. Is it necessary to have both a conclusions and a summary section? They could be combined. 
+
++ highlighted
++ combine both
 
 Equation 12 and following equations: The formulas presented here have not been shown above, but are much easier to interpret than the results above. I'd suggest moving them into the results section above. 
 
++ move equations or explain
+
 Page 23, last but one paragraph: Again, there are points here that have already been said twice above. 
 
-
++ highlighted
++ remove or merge with above
 
