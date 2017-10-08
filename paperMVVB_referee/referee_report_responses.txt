@@ -4,12 +4,13 @@ This paper discusses a method of using OMNI and Helios solar wind data to estima
 
 - ...
 + add perihelia figures of distributions
-+ ...
++ state advantage over simple-minded approach
++ how different are the results?
 
 Some steps in the procedure could be explained more clearly in the text, as noted below, and the tables are rather cryptic since the meaning of the various parameters is not always clear. If they are fit parameters, it would be helpful to state the function that is being fitted in the table. There are conclusions and summary sections that both, yet again, go through the analysis procedure, which is unnecessary. They could be combined. There are also useful functions that give the radial dependences of the parameters that are only shown in the summary section. They could be included in the main results section. 
 
 - ...
-+ link the fit equations in table captions
++ link the fit equations in table captions...
 + ...
 
 The English is reasonable overall, but there are a number of cases where a long phrase is used as an adjective. Suggestions have been made to rephrase these sentences.
@@ -20,23 +21,28 @@ Specific Points:
 
 Page 2, Results, line 5: Suggest: Since the modeled velocity and temperature values below about 20 Rs appear overestimated in comparison with existing observations, this suggests that PSP will directly measure solar wind acceleration and heating processes below 20 Rs as planned. 
 
+- adopted
 + highlighted
 + can be adopted
 
 Introduction, line 8: “Until today” is unnecessary – suggest removing. SOHO is also at L1 and returns solar wind observations from CELIAS. But maybe it’s not necessary to list the spacecraft, especially as other spacecraft not listed contributed earlier observations to OMNI. 
 
+- removed
 + highlighted
 + can be removed
+
 + highlighted
 + add SOHO
 
 Line 15: Suggest: The in-situ solar wind measurements closest to the Sun to date were made by ...
 
+- adopted
 + highlighted
 + can be adopted
 
 Line 16: Suggest: Helios 1, launched in 1974, reached distances… au. Helios 2, launched two years later, approached the Sun as close as 0.29 au. 
 
+- adopted
 + highlighted
 + can be adopted
 
@@ -44,8 +50,11 @@ Page 6, Table 1:
 
 Suggest writing the units together with the parameters in the first column, e.g. “Magnetic field (nT)”, rather than in a table footnote. 
 
+- changed
 + highlighted
 + can be adopted
+
++ do that for all tables
 
 I don’t really understand what the numbers in brackets (“estimated standard deviations”) represent. Why are they much larger than the parameter values and whole numbers? 
 
@@ -60,8 +69,11 @@ How are the mean absolute errors and sums of absolute errors defined?
 
 Page 7, Figure 1 caption, last sentence, suggest: show zoomed-in views of the high value tails of the distributions. 
 
+- adopted
 + highlighted
 + can be adopted
+
+- changed in fig 2 too
 + change in fig 2 too
 
 Line 5 below caption: Supporting reference or other evidence that the extreme values are associated with “CME events” (ICMEs?)? 
@@ -76,6 +88,7 @@ Line 7: Is this “overestimation” because [I]CMEs have abnormally low, not hi
 
 Page 8, last paragraph, line 2: Maybe avoid the word "correlated" since it is used below, and there is no correlation here. E.g., … fast solar wind occurs at times when polar coronal holes extend to lower latitudes, a typical feature of the declining phase of the solar cycle as pointed out by..... Therefore... exhibit time lags relative to the SSN maxima. 
 
+- both adopted
 + highlighted
 + highlighted
 + change both
@@ -92,8 +105,11 @@ Three lines below figure caption: It's the amplitudes of the variations in the c
 
 Next line: a period [not frequency] of about 11 years. 
 
+- adopted
 + highlighted
 + can be adopted
+
+- changed 'lag time' to 'time lag'
 + below, change 'lag time' to 'time lag'
 
 Page 10, Table 2: Similar comments to those for Table 1 apply. 
@@ -151,11 +167,13 @@ Page 15, paragraph 3, line 2: The figure is introduced twice, here and two parag
 
 Line 7, suggest: The increasing high velocity tail with distance comes from. 
 
+- adopted
 + highlighted
 + can be adopted
 
 Page 16, line below figure: Not sure what "established" means here. Remove? 
 
+- removed
 + highlighted
 + remove
 
@@ -166,6 +184,7 @@ Line 3: What parameter is used for the power law fits? Presumably it's the radia
 
 Page 17, figure caption: solar wind parameter power exponents for the dependence on radial distance 
 
+- adopted
 + highlighted
 + can be adopted
 
@@ -176,13 +195,16 @@ Last sentence of paragraph, suggest: Since this separation is highly variable, a
 
 Section 6, line 2, suggest: predictions of the SSN during the mission are incorporated into the empirical solar wind model derived in the previous sections 
 
+- adopted
 + highlighted
 + can be adopted
 
 Next paragraph, last sentence, suggest: the perihelion distance to be reduced to a minimum of 9.86 Rs. Reverse figures 10 and 11, since figure 11 is referenced first, or just remove the mention of Figure 11 here, which isn't necessary; the statement can be understood without looking at the figure. 
 
+- adopted
 + highlighted
 + can be adopted
+
 + highlighted
 + manage fig references
 
@@ -193,6 +215,7 @@ Last line of page: How are the ranges of median values for different SSN shown i
 
 Figure 10 caption, line 1: The models obtained from Helios and OMNI measurements are … 
 
+- adopted
 + highlighted
 + can be adopted
 
@@ -209,6 +232,7 @@ Line 4 below figure: “Arguably”: There's no argument here; this just seems t
 
 Line 5, suggest: mentioned changing shape of the frequency distribution with heliocentric distance 
 
+- adopted
 + highlighted
 + can be adopted
 
@@ -219,12 +243,15 @@ Line 6: But the largest difference appears to be at ~1 AU, so isn't there also a
 
 Line 7: “Whereas”: Combine the sentences; whereas isn’t used at the beginning of a sentence. Since the peak speeds are on the declining phase of the cycle, wouldn't the peak predicted speeds occur for some intermediate sunspot number, not at SSN=200? 
 
+- combined
 + highlighted
 + combine
+
 + explain
 
 Last line: New sentence at “Thus”. 
 
+- adopted
 + highlighted
 + can be adopted
 
@@ -235,6 +262,7 @@ Page 19, line 6: What is the relevance of the comment on assuming a helium abund
 
 Line 10: overestimates 
 
+- adopted
 + highlighted
 + can be adopted
 
@@ -251,8 +279,11 @@ Line 5: Why should the last cycle be used rather than say a previous one? Is thi
 
 Line 8, suggest: the SSN during the closest perihelia, which will commence at the end of 2024 at the likely maximum phase of cycle 25, cannot be predicted at this time. Suggest moving this up to before "For the prediction of the next solar cycle..." 
 
+- adopted
 + highlighted
 + can be adopted
+
+- moved up
 + move up
 
 Paragraph 3: How are the error bands in Figures 12 and 13 calculated? E.g., do they use different assumptions for the predicted SSN? 
@@ -266,13 +297,17 @@ Figure 11, lower legend in figure: “Cycle 24” amplitude rather than "its".
 
 Page 21, line 4, suggest: au, deriving power law fit functions that were used 
 
+- adopted
 + highlighted
 + can be adopted
 
 Line 6, suggest: -2025, encompassing the prime mission up to the closest approach of 9.86 Rs. 
 
+- adopted
 + highlighted
 + can be adopted
+
+- replaced solar radii with Rs in discussion
 + search text for solar radii and replace with Rs
 
 Paragraph 2, line 3, suggest: Differences from the results of these other studies suggest that below about 20 Rs, PSP may dive into the region where the acceleration and heating of the solar wind is expected to occur. 
@@ -289,6 +324,7 @@ Last line on page, suggest: because the solar wind is believed to be accelerated
 
 Page 22, paragraph 2, line 5, suggest: that due to solar wind drag, the speeds 
 
+- adopted
 + highlighted
 + can be adopted
 
