@@ -31,8 +31,11 @@ Introduction, line 8: “Until today” is unnecessary – suggest removing. SOH
 + highlighted
 + can be removed
 
+- SOHO added
 + highlighted
-+ add SOHO
++ add SOHO?
++ SOHO/CELIAS not real-time (ca. +3 hours)
++ SOHO/CELIAS does not contribute to OMNI data set
 
 Line 15: Suggest: The in-situ solar wind measurements closest to the Sun to date were made by ...
 
@@ -96,12 +99,14 @@ Page 8, last paragraph, line 2: Maybe avoid the word "correlated" since it is us
 
 Page 9, Figure 3: What does the grey shading in the top panels represent? Mention this in the caption. 
 
+- explained
 + explain
 
 Three lines below figure caption: It's the amplitudes of the variations in the correlations that decline with increasing lag, not the amplitudes of the correlation coefficients. 
 
+- changed
 + highlighted
-+ reword
++ change
 
 Next line: a period [not frequency] of about 11 years. 
 
@@ -113,6 +118,9 @@ Next line: a period [not frequency] of about 11 years.
 + below, change 'lag time' to 'time lag'
 
 Page 10, Table 2: Similar comments to those for Table 1 apply. 
+
+- table caption equation references added
+- in section 3 sentence with equation (9) clarified
 
 + highlighted
 + change
@@ -129,9 +137,12 @@ Below equation 8: I don't understand what "with the implementation of these rela
 
 Page 13, Table 3: Give the equation for the fit, to place the parameters in context. 
 
+- referenced the fit equation
 + highlighted
 + link the fit equation
-+ change other table things
+
+- referenced fit equations in all other table captions
++ reference fit equations for all other tables
 
 Third paragraph below table, line 2: “See Figure 7”: Why not explain Figure 7 more fully here, then the coefficients d med, davg, etc. obtained from the fits will make more sense? 
 
@@ -157,13 +168,11 @@ Line 8: But this distance (0.082 AU) is beyond the range shown in the figure, an
 Line 10: How are the identical exponents chosen? E.g., was emed always used, or eavg, or some other value? This sentence reads as though the values were the same for all four parameters, but presumably it really means that a different exponent was used for each parameter. 
 
 + highlighted
-+ reword to clarify
++ reword to clarify both
 
 Page 15, paragraph 3, line 2: The figure is introduced twice, here and two paragraphs above. Can this be avoided? 
 
 + highlighted
-+ rework table reference
-+ work table things
 
 Line 7, suggest: The increasing high velocity tail with distance comes from. 
 
@@ -179,6 +188,7 @@ Page 16, line below figure: Not sure what "established" means here. Remove?
 
 Line 3: What parameter is used for the power law fits? Presumably it's the radial distance, but this could be stated specifically. 
 
+- stated specifically and added equation reference
 + highlighted
 + state specifically
 
@@ -190,8 +200,11 @@ Page 17, figure caption: solar wind parameter power exponents for the dependence
 
 Last sentence of paragraph, suggest: Since this separation is highly variable, and requires significant effort to calculate for an extended time series, we have ignored this aspect in this analysis. 
 
+- adopted
 + highlighted
 + adopt reworded
+
+- a few lines before: added 'and' between references 'Bruno et al. (1986) and Balogh et al. (1999)'
 
 Section 6, line 2, suggest: predictions of the SSN during the mission are incorporated into the empirical solar wind model derived in the previous sections 
 
@@ -227,6 +240,7 @@ Line 3: But do the extreme values really occur for min and max SSN? E.g. the hig
 
 Line 4 below figure: “Arguably”: There's no argument here; this just seems to be a suggestion. 
 
+- reworded beginning of sentence
 + highlighted
 + reword
 
@@ -292,6 +306,7 @@ Paragraph 3: How are the error bands in Figures 12 and 13 calculated? E.g., do t
 
 Figure 11, lower legend in figure: “Cycle 24” amplitude rather than "its". 
 
+- changed
 + fig legend
 + can be adopted
 
@@ -342,3 +357,5 @@ Page 23, last but one paragraph: Again, there are points here that have already 
 + highlighted
 + remove or merge with above
 
+
+- added referee acknowledgment
