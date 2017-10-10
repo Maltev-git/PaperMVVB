@@ -3,19 +3,23 @@ Referee Report
 This paper discusses a method of using OMNI and Helios solar wind data to estimate the solar wind parameters that might be expected during the upcoming Parker Solar Probe mission. It includes an estimate of how these parameters might vary with solar cycle, though this is a relatively small correction, and the likely sunspot number during the mission is anyway highly uncertain. The analysis appears to be thorough, retaining information on the log-normal distribution of the parameters that is used to produce “model” representations of the distributions and their variation during the solar cycle. However, in the end, this information isn’t used in the predictions at PSP, where only median values are considered. It’s also not clear whether this type of analysis has any advantage over say a simple-minded approach where you use the radial dependence of averaged Helios values to propagate averaged 1 AU values, perhaps taken at different times in the solar cycle, down to the PSP orbit. My suspicion is that the results might not be all that different, but the authors might like to address this point. The extrapolated values do appear to be fairly consistent with previous estimates of near Sun parameters, and deviations, e.g. in the speed profile can be plausibly accounted for, so the results appear to be reasonable. 
 
 - ...
-+ add perihelia figures of distributions
-+ state advantage over simple-minded approach
-+ how different are the results?
++ use the distributions for the predictions (add perihelia figures of distributions)
++ state advantage over simple-minded approach (example of simple-minded approach; state how different the results are)
 
 Some steps in the procedure could be explained more clearly in the text, as noted below, and the tables are rather cryptic since the meaning of the various parameters is not always clear. If they are fit parameters, it would be helpful to state the function that is being fitted in the table. There are conclusions and summary sections that both, yet again, go through the analysis procedure, which is unnecessary. They could be combined. There are also useful functions that give the radial dependences of the parameters that are only shown in the summary section. They could be included in the main results section. 
 
 - ...
-+ link the fit equations in table captions...
-+ ...
++ procedural steps to be explained in detail
++ clarify the meaning of the parameters in tables
++ link the fit equations in table captions
++ combine conclusion and summary sections
++ include final functions in results section
 
 The English is reasonable overall, but there are a number of cases where a long phrase is used as an adjective. Suggestions have been made to rephrase these sentences.
 
 Overall, I anticipate that the paper will be acceptable for publication after the comments in this review are considered. 
+
+
 
 Specific Points:
 
@@ -32,8 +36,9 @@ Introduction, line 8: “Until today” is unnecessary – suggest removing. SOH
 + can be removed
 
 - SOHO added
+- should we keep it?
 + highlighted
-+ add SOHO?
++ add SOHO
 + SOHO/CELIAS not real-time (ca. +3 hours)
 + SOHO/CELIAS does not contribute to OMNI data set
 
@@ -54,19 +59,29 @@ Page 6, Table 1:
 Suggest writing the units together with the parameters in the first column, e.g. “Magnetic field (nT)”, rather than in a table footnote. 
 
 - changed
+- should we keep it? doesn't it look too packed?
 + highlighted
 + can be adopted
 
 + do that for all tables
 
-I don’t really understand what the numbers in brackets (“estimated standard deviations”) represent. Why are they much larger than the parameter values and whole numbers? 
+I don’t really understand what the numbers in brackets (“estimated standard deviations”) represent. Why are they much larger than the parameter values and whole numbers?
 
+- added notation explanation
 + highlighted
-+ highlighted
-+ explain both
++ explain
+
+- added notation explanation in all tables
++ explain in all tables??
+
++ explain also errors??
 
 How are the mean absolute errors and sums of absolute errors defined? 
 
+- mean absolute errors unnecessary (they are not referred to in paper), removed from table
++ highlighted
+
+- explained more clearly in text and table caption
 + highlighted
 + explain
 
@@ -87,14 +102,17 @@ Line 5 below caption: Supporting reference or other evidence that the extreme va
 Line 7: Is this “overestimation” because [I]CMEs have abnormally low, not high, temperatures? 
 
 + highlighted
-+ v not T, look into it
++ look into that
 
 Page 8, last paragraph, line 2: Maybe avoid the word "correlated" since it is used below, and there is no correlation here. E.g., … fast solar wind occurs at times when polar coronal holes extend to lower latitudes, a typical feature of the declining phase of the solar cycle as pointed out by..... Therefore... exhibit time lags relative to the SSN maxima. 
 
-- both adopted
+- changed
 + highlighted
++ change
+
+- adopted
 + highlighted
-+ change both
++ adopt
 + 'time lags' without hyphen!
 
 Page 9, Figure 3: What does the grey shading in the top panels represent? Mention this in the caption. 
@@ -121,17 +139,22 @@ Page 10, Table 2: Similar comments to those for Table 1 apply.
 
 - table caption equation references added
 - in section 3 sentence with equation (9) clarified
-
 + highlighted
 + change
 
 Three lines below table and following: I find this step difficult to follow. It seems that the sunspot numbers are shifted according to the lags, and there is some fit to the data which is then used to produce a model of the particular parameter as a function of SSN, but the text doesn't explain the motivation (apparently to produce a "model" distribution as a function of SSN) procedure very clearly. 
 
+- explained more clearly
 + highlighted
-+ explain in detail
++ explain motivation more clearly
+
+- section 3, second sentence: abbreviated 'sunspot number'
+- section 3, switched second and third paragraph
+- section 3, added a sentence to now second paragraph
 
 Below equation 8: I don't understand what "with the implementation of these relations into the lognormal function" means exactly. How are the fit coefficients obtained? 
 
+- phrased this point more clearly
 + highlighted
 + explain
 
