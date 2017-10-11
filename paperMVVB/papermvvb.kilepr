@@ -117,10 +117,10 @@ order=-1
 
 [item:sections/content.tex]
 archive=true
-column=369
+column=1176
 encoding=UTF-8
 highlight=LaTeX
-line=197
+line=433
 mode=LaTeX
 open=true
 order=2
@@ -170,10 +170,10 @@ JumpList=
 ViMarks=.,3,0,[,3,0,],3,0
 
 [view-settings,view=0,item:sections/content.tex]
-CursorColumn=369
-CursorLine=197
+CursorColumn=1176
+CursorLine=433
 JumpList=
-ViMarks=.,197,369,[,197,369,],197,369
+ViMarks=.,433,1176,[,433,1176,],433,1176
 
 [view-settings,view=0,item:sections/literature_bibtex.bib]
 CursorColumn=0

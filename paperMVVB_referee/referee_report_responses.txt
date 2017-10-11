@@ -5,6 +5,7 @@ This paper discusses a method of using OMNI and Helios solar wind data to estima
 - ...
 + use the distributions for the predictions (add perihelia figures of distributions)
 + state advantage over simple-minded approach (example of simple-minded approach; state how different the results are)
++ maybe stress Helios data bias to cycle minimum (section 4, third paragraph)
 
 Some steps in the procedure could be explained more clearly in the text, as noted below, and the tables are rather cryptic since the meaning of the various parameters is not always clear. If they are fit parameters, it would be helpful to state the function that is being fitted in the table. There are conclusions and summary sections that both, yet again, go through the analysis procedure, which is unnecessary. They could be combined. There are also useful functions that give the radial dependences of the parameters that are only shown in the summary section. They could be included in the main results section. 
 
@@ -169,27 +170,40 @@ Page 13, Table 3: Give the equation for the fit, to place the parameters in cont
 
 Third paragraph below table, line 2: “See Figure 7”: Why not explain Figure 7 more fully here, then the coefficients d med, davg, etc. obtained from the fits will make more sense? 
 
+- introduced figure properly
+- moved second figure reference to end of this paragraph
 + highlighted
-+ look into that
 
 Last paragraph of page: “As anticipated…” - especially since the same data are used! Also give the results in the text to make the comparison easier with the values given in this paragraph. 
 
+- removed 'As anticipated'
+- added exponents into text
 + highlighted
-+ look into that
+
++ is both sufficient?
 
 Page 14, last paragraph, line 6: The curves are still very close together after the crossing, so is this an important feature? 
 
 + highlighted
-+ look into that
++ what does that mean?
 
 Line 8: But this distance (0.082 AU) is beyond the range shown in the figure, and the data, so is it reliable? I don't understand the comment "therefore the extrapolation of the magnetic field and temperature distribution frequencies to the PSP orbit by applying lognormal functions is limited. What does “limited” mean? Perhaps the comment arises because the mean is larger than the median for a log normal distribution, as noted several pages earlier, and so this crossing indicates that the distribution is no longer log normal. Maybe a few more words of explanation would help the reader understand this point, and the significance of the crossing point. 
 
+- explained more clearly
 + highlighted
++ what does limited mean?
++ limited in the sense of a correct distribution shape
+
++ is it reliable? it is calculated from that data
+
+- clarified the significance of the crossing point
 + highlighted
-+ explain
++ explain significance of crossing point
 
 Line 10: How are the identical exponents chosen? E.g., was emed always used, or eavg, or some other value? This sentence reads as though the values were the same for all four parameters, but presumably it really means that a different exponent was used for each parameter. 
 
+- reworded sentence
+- added remark in next paragraph
 + highlighted
 + reword to clarify both
 
