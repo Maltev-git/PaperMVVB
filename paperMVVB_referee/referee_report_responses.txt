@@ -185,7 +185,7 @@ Last paragraph of page: “As anticipated…” - especially since the same data
 Page 14, last paragraph, line 6: The curves are still very close together after the crossing, so is this an important feature? 
 
 + highlighted
-+ what does that mean?
++ what does that mean? no?
 
 Line 8: But this distance (0.082 AU) is beyond the range shown in the figure, and the data, so is it reliable? I don't understand the comment "therefore the extrapolation of the magnetic field and temperature distribution frequencies to the PSP orbit by applying lognormal functions is limited. What does “limited” mean? Perhaps the comment arises because the mean is larger than the median for a log normal distribution, as noted several pages earlier, and so this crossing indicates that the distribution is no longer log normal. Maybe a few more words of explanation would help the reader understand this point, and the significance of the crossing point. 
 
@@ -209,7 +209,9 @@ Line 10: How are the identical exponents chosen? E.g., was emed always used, or 
 
 Page 15, paragraph 3, line 2: The figure is introduced twice, here and two paragraphs above. Can this be avoided? 
 
+- rephrased figure references
 + highlighted
++ aviod this
 
 Line 7, suggest: The increasing high velocity tail with distance comes from. 
 
@@ -255,13 +257,18 @@ Next paragraph, last sentence, suggest: the perihelion distance to be reduced to
 + highlighted
 + can be adopted
 
+- switched order of figures 10 and 11
+- added top and bottom pointers to both references of now figure 10
 + highlighted
 + manage fig references
 
-Last line of page: How are the ranges of median values for different SSN shown in the figure? I'm guessing that it's the thickness of the shaded regions, but this could be stated specifically to guide the reader in interpreting the figure. 
+Last line of page: How are the ranges of median values for different SSN shown in the figure? I'm guessing that it's the thickness of the shaded regions, but this could be stated specifically to guide the reader in interpreting the figure.
 
+- added remark about that
 + highlighted
 + explain thickness of shaded region
+
+- added further explanation in figure caption
 
 Figure 10 caption, line 1: The models obtained from Helios and OMNI measurements are … 
 
@@ -269,11 +276,16 @@ Figure 10 caption, line 1: The models obtained from Helios and OMNI measurements
 + highlighted
 + can be adopted
 
-Line 3: But do the extreme values really occur for min and max SSN? E.g. the highest speeds could be at intermediate SSN? How can a time lag be “noted” in this figure which there is no obvious time dependence? 
+- ordered the references Sheeley 1997 and Wang 2000 by year
 
-+ answer question
-+ answer question
-+ answer question
+Line 3: But do the extreme values really occur for min and max SSN? E.g. the highest speeds could be at intermediate SSN? How can a time lag be “noted” in this figure which there is no obvious time dependence?
+
++ yes, in average, see figure 5
+
+- correct, removed remark about time lag from figure caption
++ remove remark about time lag from caption
+
+- added column to table 2: SSN time lag
 
 Line 4 below figure: “Arguably”: There's no argument here; this just seems to be a suggestion. 
 
@@ -290,7 +302,7 @@ Line 5, suggest: mentioned changing shape of the frequency distribution with hel
 Line 6: But the largest difference appears to be at ~1 AU, so isn't there also a problem with the dipole/quadrapole model matching the observed fields at 1 AU? 
 
 + highlighted
-+ look into this
++ DQCS model assumes 3.1 nT at 1 au coming from CHs at +-60° latitudes (excluding field from equatorial slow wind belt)
 
 Line 7: “Whereas”: Combine the sentences; whereas isn’t used at the beginning of a sentence. Since the peak speeds are on the declining phase of the cycle, wouldn't the peak predicted speeds occur for some intermediate sunspot number, not at SSN=200? 
 
@@ -298,6 +310,7 @@ Line 7: “Whereas”: Combine the sentences; whereas isn’t used at the beginn
 + highlighted
 + combine
 
+- correct, it is a shifted SSN. added value of time lag (at each solar wind parameter)
 + explain
 
 Last line: New sentence at “Thus”. 
@@ -308,8 +321,11 @@ Last line: New sentence at “Thus”.
 
 Page 19, line 6: What is the relevance of the comment on assuming a helium abundance? It's not clear how it relates to the comparison of the density profiles. 
 
+- reworded
 + highlighted
 + explain
+
++ is that ok?
 
 Line 10: overestimates 
 
@@ -364,12 +380,14 @@ Line 6, suggest: -2025, encompassing the prime mission up to the closest approac
 
 Paragraph 2, line 3, suggest: Differences from the results of these other studies suggest that below about 20 Rs, PSP may dive into the region where the acceleration and heating of the solar wind is expected to occur. 
 
+- adopted with addition
 + highlighted
 + can be adopted, but
 + pay attention to wording
 
 Last line on page, suggest: because the solar wind is believed to be accelerated up to the height of the Alfvenic critical surface, which is predicted to lie on average around 17 Rs, with a range of between 15 Rs at solar minimum and 30 Rs at solar maximum. 
 
+- adopted with addition
 + highlighted
 + can be adopted, but
 + check wording
