@@ -9,7 +9,9 @@ This paper discusses a method of using OMNI and Helios solar wind data to estima
 
 Some steps in the procedure could be explained more clearly in the text, as noted below, and the tables are rather cryptic since the meaning of the various parameters is not always clear. If they are fit parameters, it would be helpful to state the function that is being fitted in the table. There are conclusions and summary sections that both, yet again, go through the analysis procedure, which is unnecessary. They could be combined. There are also useful functions that give the radial dependences of the parameters that are only shown in the summary section. They could be included in the main results section. 
 
-- ...
+- procedural steps explained in detail
+- clarified the meaning of the parameters in the tables
+- linked the fit equations in the table captions
 + procedural steps to be explained in detail
 + clarify the meaning of the parameters in tables
 + link the fit equations in table captions
@@ -75,8 +77,6 @@ I don’t really understand what the numbers in brackets (“estimated standard 
 - added notation explanation in all tables
 + explain in all tables??
 
-+ explain also errors??
-
 How are the mean absolute errors and sums of absolute errors defined? 
 
 - mean absolute errors unnecessary (they are not referred to in paper), removed from table
@@ -139,7 +139,6 @@ Next line: a period [not frequency] of about 11 years.
 Page 10, Table 2: Similar comments to those for Table 1 apply. 
 
 - table caption equation references added
-- in section 3 sentence with equation (9) clarified
 + highlighted
 + change
 
@@ -149,6 +148,7 @@ Three lines below table and following: I find this step difficult to follow. It 
 + highlighted
 + explain motivation more clearly
 
+- section 3, sentence with equation (9) clarified
 - section 3, second sentence: abbreviated 'sunspot number'
 - section 3, switched second and third paragraph
 - section 3, added a sentence to now second paragraph
@@ -243,6 +243,8 @@ Last sentence of paragraph, suggest: Since this separation is highly variable, a
 + highlighted
 + adopt reworded
 
++ is it ok?
+
 - a few lines before: added 'and' between references 'Bruno et al. (1986) and Balogh et al. (1999)'
 
 Section 6, line 2, suggest: predictions of the SSN during the mission are incorporated into the empirical solar wind model derived in the previous sections 
@@ -258,7 +260,7 @@ Next paragraph, last sentence, suggest: the perihelion distance to be reduced to
 + can be adopted
 
 - switched order of figures 10 and 11
-- added top and bottom pointers to both references of now figure 10
+- added 'top' and 'bottom' pointers to both references of now figure 10
 + highlighted
 + manage fig references
 
@@ -329,20 +331,23 @@ Page 19, line 6: What is the relevance of the comment on assuming a helium abund
 
 Line 10: overestimates 
 
-- adopted
+- corrected
 + highlighted
 + can be adopted
 
 Paragraph 2, line 2: There is an abrupt change of topic here, and it's not immediately obvious why short term SSN predictions are relevant. There could be an introductory sentence saying that since the solar wind predictions depend on SSN, they may be refined using predictions of the SSN during the PSP mission. 
 
+- added introductory sentences
 + highlighted
-+ look into it
++ smooth topic change
++ why are short-term SSN predictions relevant?
 + additional argument is first perihelion
 
 Line 5: Why should the last cycle be used rather than say a previous one? Is this based on expectations that the next cycle will also be small? 
 
+- yes, added reference
 + highlighted
-+ explain
++ yes, maybe note these expectations and add reference
 
 Line 8, suggest: the SSN during the closest perihelia, which will commence at the end of 2024 at the likely maximum phase of cycle 25, cannot be predicted at this time. Suggest moving this up to before "For the prediction of the next solar cycle..." 
 
@@ -353,9 +358,12 @@ Line 8, suggest: the SSN during the closest perihelia, which will commence at th
 - moved up
 + move up
 
-Paragraph 3: How are the error bands in Figures 12 and 13 calculated? E.g., do they use different assumptions for the predicted SSN? 
+Paragraph 3: How are the error bands in Figures 12 and 13 calculated? E.g., do they use different assumptions for the predicted SSN?
 
-+ answer/explain
+- yes, explained which SSN the predictions and error bands are based on
++ yes, they use different assumptions for the predicted SSN; SWPC expected ranges...
++ explain which SSN the predictions are based on...
++ explain which SSN ranges the error bands are based on...
 
 Figure 11, lower legend in figure: “Cycle 24” amplitude rather than "its". 
 
@@ -406,6 +414,8 @@ Summary, paragraph 2: It's not really necessary to go though the procedure yet a
 Equation 12 and following equations: The formulas presented here have not been shown above, but are much easier to interpret than the results above. I'd suggest moving them into the results section above. 
 
 + move equations or explain
+
++ equations only to be used with lognormal distribution, because median is not actual median
 
 Page 23, last but one paragraph: Again, there are points here that have already been said twice above. 
 
