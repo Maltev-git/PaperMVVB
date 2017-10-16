@@ -9,9 +9,11 @@ This paper discusses a method of using OMNI and Helios solar wind data to estima
 
 Some steps in the procedure could be explained more clearly in the text, as noted below, and the tables are rather cryptic since the meaning of the various parameters is not always clear. If they are fit parameters, it would be helpful to state the function that is being fitted in the table. There are conclusions and summary sections that both, yet again, go through the analysis procedure, which is unnecessary. They could be combined. There are also useful functions that give the radial dependences of the parameters that are only shown in the summary section. They could be included in the main results section. 
 
-- procedural steps explained in detail
+- procedural steps explained in detail, following the specific comments
 - clarified the meaning of the parameters in the tables
 - linked the fit equations in the table captions
+- combined the conclusion and summary sections
+- moved final functions into section 5
 + procedural steps to be explained in detail
 + clarify the meaning of the parameters in tables
 + link the fit equations in table captions
@@ -185,7 +187,7 @@ Last paragraph of page: “As anticipated…” - especially since the same data
 Page 14, last paragraph, line 6: The curves are still very close together after the crossing, so is this an important feature? 
 
 + highlighted
-+ what does that mean? no?
++ if median and mean are of similar values, this is an indication that the distribution is symmetrical (gaussian perhaps?)
 
 Line 8: But this distance (0.082 AU) is beyond the range shown in the figure, and the data, so is it reliable? I don't understand the comment "therefore the extrapolation of the magnetic field and temperature distribution frequencies to the PSP orbit by applying lognormal functions is limited. What does “limited” mean? Perhaps the comment arises because the mean is larger than the median for a log normal distribution, as noted several pages earlier, and so this crossing indicates that the distribution is no longer log normal. Maybe a few more words of explanation would help the reader understand this point, and the significance of the crossing point. 
 
@@ -194,7 +196,7 @@ Line 8: But this distance (0.082 AU) is beyond the range shown in the figure, an
 + what does limited mean?
 + limited in the sense of a correct distribution shape
 
-+ is it reliable? it is calculated from that data
++ is it reliable? it is calculated from that data, added: extrapolated intersection
 
 - clarified the significance of the crossing point
 + highlighted
@@ -303,8 +305,11 @@ Line 5, suggest: mentioned changing shape of the frequency distribution with hel
 
 Line 6: But the largest difference appears to be at ~1 AU, so isn't there also a problem with the dipole/quadrapole model matching the observed fields at 1 AU? 
 
+- added an explaining sentence
 + highlighted
 + DQCS model assumes 3.1 nT at 1 au coming from CHs at +-60° latitudes (excluding field from equatorial slow wind belt)
+
++ need new magnetic field model?
 
 Line 7: “Whereas”: Combine the sentences; whereas isn’t used at the beginning of a sentence. Since the peak speeds are on the declining phase of the cycle, wouldn't the peak predicted speeds occur for some intermediate sunspot number, not at SSN=200? 
 
@@ -408,17 +413,28 @@ Page 22, paragraph 2, line 5, suggest: that due to solar wind drag, the speeds
 
 Summary, paragraph 2: It's not really necessary to go though the procedure yet again; there is already a synopsis in the conclusions. Is it necessary to have both a conclusions and a summary section? They could be combined. 
 
+- combined discussion and summary sections
+- integrated first paragraph of summary into beginning of discussion section
+- removed the second mentioning of the procedure
 + highlighted
 + combine both
 
+- removed summary caption
++ retain section caption?
+
 Equation 12 and following equations: The formulas presented here have not been shown above, but are much easier to interpret than the results above. I'd suggest moving them into the results section above. 
 
-+ move equations or explain
+- inserted all final equations into end of section 5, after equation (11)
+- removed equations from summary and referenced them instead
++ move equations
 
 + equations only to be used with lognormal distribution, because median is not actual median
 
+- integrated list item about slow/fast wind balance into velocity list item
+
 Page 23, last but one paragraph: Again, there are points here that have already been said twice above. 
 
+- removed paragraph
 + highlighted
 + remove or merge with above
 

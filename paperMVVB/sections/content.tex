@@ -152,7 +152,7 @@ Thus in the following sections we keep the double lognormal ansatz for all veloc
 
 %transition
 For the bulk of the solar wind these static lognormal functions describe the parameters' distributions well, \hl{but differ for the extreme values, mainly caused by CME events. } 
-The simple lognormal fit functions underestimate the frequency of the solar wind parameters in their high value tails, except for the temperature’s tail which is overestimated as seen in the insets of Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}. The velocity's compositional lognormal fit only slightly \hl{overestimates } its tail as seen in the inset of Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
+The simple lognormal fit functions underestimate the frequency of the solar wind parameters in their high value tails, except for the temperature’s tail which is \hl{overestimated} as seen in the insets of Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}. The velocity's compositional lognormal fit only slightly overestimates its tail as seen in the inset of Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
 The slow and fast part contribute almost equally ($c \approx 0.5$) to the long-term velocity distribution function.
 
 %{\color{red} discuss high value zoom figures; read in Veselovsky2010}
@@ -431,7 +431,7 @@ The temperature exponent \textbf{$T_\text{avg} \propto r^{-0.79}$} is similar to
 %\citet{Marsch1982}	$T_\text{||,slow} \propto r^{-1.03}$ and $T_\text{||,fast} \propto r^{-0.69}$.
 
 %crossing distances
-\textbf{Our from the Helios data fit acquired} mean and median velocity fit exponents are very similar, which indicates that they just as well can be kept identical so that the basic shape of the frequency distribution does not change with distance. Contrary, the mean and median fits for the magnetic field strength cross each other at \SI{0.339}{\au} \textbf{(see Table~\ref{tab:mean_median_fit_parameter})} and the mean \hl{is \textbf{getting slightly} lower than the median at smaller distances }. Thus, below that distance the \textbf{frequency distribution} cannot well be described anymore by a lognormal function\textbf{, because the mean of a lognormal function has to be larger than its median (as mentioned in Sect.~\ref{sec:frequency_distribution}), that is, the location of the crossing indicates that the parameter's distribution is not anymore of a lognormal shape thereafter.} The fits for the proton temperature show a similar behavior, \hl{having an \textbf{extrapolated} intersection at } \SI{0.082}{\au}. Therefore the extrapolation of the magnetic field and temperature distribution frequencies to the PSP orbit by applying lognormal functions is limited. \textbf{The crossing points limit the regions where the distribution's shapes can still be considered lognormal.}
+\textbf{Our from the Helios data fit acquired} mean and median velocity fit exponents are very similar, which indicates that they just as well can be kept identical so that the basic shape of the frequency distribution does not change with distance. Contrary, the mean and median fits for the magnetic field strength cross each other at \SI{0.339}{\au} \textbf{(see Table~\ref{tab:mean_median_fit_parameter})} and the mean \hl{is \textbf{getting slightly} lower than the median at smaller distances }. Thus, below that distance the \textbf{frequency distribution} cannot well be described anymore by a lognormal function\textbf{, because the mean of a lognormal function has to be larger than its median (as mentioned in Sect.~\ref{sec:frequency_distribution}), that is, the location of the crossing indicates that the parameter's distribution is not anymore of a lognormal shape thereafter.} The fits for the proton temperature show a similar behavior, having an \textbf{extrapolated} intersection at \SI{0.082}{\au}. Therefore the extrapolation of the magnetic field and temperature distribution frequencies to the PSP orbit by applying lognormal functions is limited. \textbf{The crossing points limit the regions where the distribution's shapes can still be considered lognormal.}
 
 \textbf{For being able to still fit and extrapolate lognormal functions with the data, we assume that the shapes keep being lognormal at all distances. For the coming frequency distribution fit function we reduce the fit exponents $e_\text{med}$ and $e_\text{avg}$ to only one.} It should be noted that this simplification leads to slightly larger modeling errors, especially in case of the magnetic field strength.
 
@@ -513,9 +513,36 @@ Since we neglect possible variations of the distance scaling laws, we combine th
 \begin{align}
 	x_\text{med}(ssn,r) &= (a_\text{med} \cdot ssn + b_\text{med}) \cdot r^{e'}	\,.	\label{eq:general_sw_model}
 \end{align}
-Thus we obtain the combined model function $W'''(x,ssn,r)$ and for the velocity $W_\text{II}'''(x,ssn,r)$ with the double lognormal function (\ref{eq:double_lognormal_fit_function}).
+Thus\textbf{, implementing the median and average relations into the lognormal function (\ref{eq:single_lognormal_fit_function}),} we obtain the combined model function $W'''(x,ssn,r)$ and for the velocity $W_\text{II}'''(x,ssn,r)$ with the double lognormal function (\ref{eq:double_lognormal_fit_function}). \textbf{The corresponding median and average relations for each solar wind parameter, with the values resulting from our analyses, are listed in the following. Their numerical values are the fit parameters from Table~\ref{tab:ssn_fit_parameters} and the exponents from Table~\ref{tab:extrapolation_model_fit_parameters}.}
 
-This model averages over seasonal variations because it is based on yearly data. As the OMNI data are time-shifted to the nose of the Earth’s bow shock, this leads to yearly solar distance variations of \SI{+-1.67}{\%} as it orbits the Sun. The resulting maximal solar wind parameter variation amplitudes over the year can thus be derived from the derived power law exponents. They are estimated to be smaller than \SI{4}{\percent} as seen in Tab.~\ref{tab:extrapolation_model_fit_parameters}. \citet{Bruno1986} \textbf{and} \citet{Balogh1999} have pointed out, that the solar wind parameters vary with latitudinal separation from the heliospheric current sheet (HCS). Its position in heliographic latitude is highly variable around the solar equator \citep{Schwenn1990}, furthermore, the Earth’s orbit varies over the course of the year by \SI{+-7.2}{\degree} in latitude. \textbf{Since this latitudinal separation is highly variable, and requires significant effort to calculate for an extended time series, we have ignored this aspect in this analysis.}	%Balogh et al. (p.~162, 1999);	 (Schwenn 1990, p.~126)
+\textbf{\begin{itemize}
+	\item The magnetic field strength relations, depending on solar activity and solar distance, are:
+	\begin{align}
+		B_\text{med}(ssn,r) &= (\SI{0.0131}{\nT} \cdot ssn + \SI{4.29}{\nT}) \cdot r^{-1.66}	\,,	\label{eq:median_B}\\
+		B_\text{avg}(ssn,r) &= 1.0879 \cdot B_\text{med}(ssn,r)\,.
+	\end{align}
+	\item The proton velocity relations for the slow and fast components, depending on solar distance, are:
+	\begin{align}
+		v_\text{med}^\text{slow}(r) &= \SI{363}{\km\per\s} \cdot r^{0.099}	\,,&	&	&v_\text{med}^\text{fast}(r) &= \SI{483}{\km\per\s} \cdot r^{0.099}	\,,	\label{eq:median_v}\\
+		v_\text{avg}^\text{slow}(r) &= 1.0101 \cdot v_\text{med}^\text{slow}(r)	\,,&	&	&v_\text{avg}^\text{fast}(r) &= 1.023 \cdot v_\text{med}^\text{fast}(r)	\,.
+	\end{align}
+	The share of both components is balanced with solar activity:
+	\begin{align}
+		c(ssn) = -0.00180 \cdot ssn + 0.64	\,.	\label{eq:balance_v}
+	\end{align}
+	\item The relations of the proton density are:
+	\begin{align}
+		n_\text{med}(ssn,r) &= \left(\SI{0.0038}{\per\cm\cubed} \cdot ssn + \SI{4.50}{\per\cm\cubed}\right) \cdot r^{-2.11}	\,,	\label{eq:median_n}\\
+		n_\text{avg}(ssn,r) &= 1.305 \cdot n_\text{med}(ssn,r)\,.
+	\end{align}
+	\item The proton temperature relations are:
+	\begin{align}
+		T_\text{med}(ssn,r) &= (\SI{197}{\K} \cdot ssn + \SI{57300}{\K}) \cdot r^{-1.10}	\,,	\label{eq:median_T}\\
+		T_\text{avg}(ssn,r) &= 1.654 \cdot T_\text{med}(ssn,r)\,.
+	\end{align}
+\end{itemize}}
+
+\textbf{These models average} over seasonal variations because \textbf{they are} based on yearly data. As the OMNI data are time-shifted to the nose of the Earth’s bow shock, this leads to yearly solar distance variations of \SI{+-1.67}{\%} as it orbits the Sun. The resulting maximal solar wind parameter variation amplitudes over the year can thus be derived from the derived power law exponents. They are estimated to be smaller than \SI{4}{\percent} as seen in Tab.~\ref{tab:extrapolation_model_fit_parameters}. \citet{Bruno1986} \textbf{and} \citet{Balogh1999} have pointed out, that the solar wind parameters vary with latitudinal separation from the heliospheric current sheet (HCS). Its position in heliographic latitude is highly variable around the solar equator \citep{Schwenn1990}, furthermore, the Earth’s orbit varies over the course of the year by \SI{+-7.2}{\degree} in latitude. \textbf{Since this latitudinal separation is highly variable, and requires significant effort to calculate for an extended time series, we have ignored this aspect in this analysis.}	%Balogh et al. (p.~162, 1999);	 (Schwenn 1990, p.~126)
 
 
 \section{Model extrapolation to PSP orbit}
@@ -531,7 +558,7 @@ Parker Solar Probe is planned to launch in mid 2018. With its first Venus flyby 
 	\label{fig:SPP_orbit_predicted_SSN_overview_f_plot}
 \end{figure}
 
-We extrapolate the derived empirical solar wind models (\ref{eq:general_sw_model}) to PSP’s orbital distance range and compare the results with those from the existing models shown in Fig.~\ref{fig:sw_extrapolation_ssn_e_plot}.
+We extrapolate the derived empirical solar wind \textbf{models} to PSP’s orbital distance range and compare the results with those from the existing models shown in Fig.~\ref{fig:sw_extrapolation_ssn_e_plot}.
 \begin{figure*}
 	\includegraphics[width=18cm]{figures/sw_extrapolation_ssn_e_plot.pdf}
 	\caption{Radial extrapolation of the solar wind median parameters to the PSP orbit region. \textbf{The models obtained from Helios and OMNI measurements} are extrapolated to the PSP region---for the range between the extreme cases of solar minimum and maximum, i.e., $0 \le ssn \le 200$\textbf{. The lower edges of the shaded areas correspond to solar minimum, the upper edges to maximum.} Also plotted are the radial dependencies of the analytic DQCS magnetic field model for solar minimum from \citet{Banaszkiewicz1998}, the slow wind velocity models from \textbf{\citet{Sheeley1997} and \citet{Wang2000}}, the density model from \citet{Leblanc1998} and the range of temperature measurements from \citet{Billings1959} and \citet{Liebenberg1975}.}
@@ -540,7 +567,8 @@ We extrapolate the derived empirical solar wind models (\ref{eq:general_sw_model
 \textbf{The model and the extrapolation are visualized for the SSN range between solar minimum and maximum ($0 \le ssn \le 200$), indicated by the shaded regions in the figure.}
 %magnetic field:
 The magnetic field strength is found to increase from median values of about \SI{43}{\nT} at \SI{0.25}{\au} to \SI{715}{\nT} at \SI{0.046}{\au} for a SSN of 0. Taking a SSN of 200 increases the values to \SI{69}{\nT} and \SI{1152}{\nT}. Our extrapolation results are slightly flatter than those derived from the analytical magnetic field model by \citet{Banaszkiewicz1998}, who constructed an analytic dipole plus quadrupole plus current sheet (DQCS) model for solar minimum.
-\textbf{We suggest that this difference is} due to the previously mentioned (Sect.~\ref{sec:solar_distance_dependency}) \textbf{changing shape of the frequency distribution with heliocentric distance} , \hl{which for smaller distances deviates more from the } model’s lognormal distribution.
+\textbf{We cannot compare with their absolute values, because their DQCS model assumes fields of \SI{3.1}{\nT} at \SI{1}{\au} coming from coronal holes with boundaries at \SI{+-60}{\degree} latitudes (it excludes the fields from the equatorial slow wind belt).}
+\textbf{We suggest that the difference in slope is} due to the previously mentioned (Sect.~\ref{sec:solar_distance_dependency}) \textbf{changing shape of the frequency distribution with heliocentric distance} , which for smaller distances deviates more from the model’s lognormal distribution.
 %velocity:
 The average velocity is found to decrease from \SI{340}{\km\per\s} at \SI{0.25}{\au} to about \SI{290}{\km\per\s} at \SI{0.046}{\au} \textbf{3~years after a} SSN of 0 \textbf{occurred, whereas} using a SSN of 200 it decreases from \SI{390}{\km\per\s} to \SI{330}{\km\per\s}. Comparing the results with the measurements by \citet{Sheeley1997} and \citet{Wang2000} shows an overestimation in our extrapolated slow solar wind velocity values for distances below about \SI{20}{\Rs}. They used LASCO coronagraph observations to track moving coronal features (blobs) in the distance range \SIrange{2}{30}{\Rs} to determine speed profiles and sources of the slow solar wind and they derived temperature and sonic point values for slow solar wind with the isothermal expansion model from \citet{Parker1958}. Therefore, it generally can be expected that PSP will encounter a slower solar wind environment close to the Sun than our model estimates\textbf{. Thus} PSP will measure solar wind acceleration processes \citep{McComas2008}, maybe even still at \SI{30}{\Rs} as the study by \citet{Sheeley1997} suggests.
 %density:
@@ -570,7 +598,9 @@ Implementing the \textbf{SSN predictions} for the PSP mission time and the orbit
 
 \section{Discussion}
 \label{sec:discussion}
-We started the development of the empirical solar wind environment model for the near-ecliptic PSP orbit by lognormally fitting the about 40~years of in situ near-Earth solar wind data collected in the OMNI database, using the frequency distributions of the key solar wind parameters magnetic field strength, velocity, density and temperature. Throughout the different analyses in our study the velocity's frequency distribution is treated as a composition of a slow and a fast wind distribution. Each velocity part is fitted with a lognormal function, which allows for the overlap of both velocity ranges. The OMNI multi-spacecraft solar wind data is intercalibrated and covers almost five solar cycles. It thus represents solar wind gathered at different phases of solar activity in the ecliptic plane. In the next step we investigated the yearly variation of the solar wind distribution functions along with the SSN over 53~years and derived linear dependencies of the solar wind parameters with the SSN. The radial dependencies of the solar wind distribution functions were then analyzed using Helios~1 and 2 data for the distance range \SIrange{0.29}{0.98}{\au} in bins of \SI{0.01}{\au}\textbf{, deriving power law fit functions that} were used to scale the prior calculated SSN-dependent \SI{1}{\au} distribution fit functions to the PSP orbit, combined with SSN predictions for the years 2018--2025, \textbf{encompassing the prime mission up to the closest approach of \SI{9.86}{\Rs}.} The reason for performing the analysis this way is based on the fact that the OMNI solar wind database is much larger than the Helios database. Though, it is clear that the calculated distribution functions just represent first order estimates of the real solar wind to be encountered by PSP. The solar wind environment to be encountered will depend at times of PSP on the structure of the solar corona and underlying photospheric magnetic field and on the evolution and interaction of individual solar wind streams and superimposed CMEs and shocks.
+\textbf{The scientific objective of this study, being part of the German contribution Coronagraphic German and US Solar Probe Plus Survey (CGAUSS) to the Wide field Imager for Solar Probe (WISPR), is to model the solar wind environment for the Parker Solar Probe mission (formerly Solar probe Plus) to be launched mid 2018.}
+
+\textbf{For this purpose we} started the development of the empirical solar wind environment model for the near-ecliptic PSP orbit by \textbf{deriving lognormal representations of the} in situ near-Earth solar wind data collected in the OMNI database, using the frequency distributions of the key solar wind parameters magnetic field strength, \textbf{proton} velocity, density and temperature. Throughout the different analyses in our study the velocity's frequency distribution is treated as a composition of a slow and a fast wind distribution. Each velocity part is fitted with a lognormal function, which allows for the overlap of both velocity ranges. The OMNI multi-spacecraft solar wind data is intercalibrated and covers almost five solar cycles. It thus represents solar wind gathered at different phases of solar activity in the ecliptic plane. In the next step we investigated the yearly variation of the solar wind distribution functions along with the SSN over 53~years and derived linear dependencies of the solar wind parameters with the SSN. The radial dependencies of the solar wind distribution functions were then analyzed using Helios~1 and 2 data for the distance range \SIrange{0.29}{0.98}{\au} in bins of \SI{0.01}{\au}\textbf{, deriving power law fit functions that} were used to scale the prior calculated SSN-dependent \SI{1}{\au} distribution fit functions to the PSP orbit, \textbf{taking into account} SSN predictions for the years 2018--2025, \textbf{encompassing the prime mission up to the closest approach of \SI{9.86}{\Rs}.} The reason for performing the analysis this way is based on the fact that the OMNI solar wind database is much larger than the Helios database. Though, it is clear that the calculated distribution functions just represent first order estimates of the real solar wind to be encountered by PSP. The solar wind environment to be encountered will depend at times of PSP on the structure of the solar corona and underlying photospheric magnetic field and on the evolution and interaction of individual solar wind streams and superimposed CMEs and shocks.
 
 However, the derived results are in good agreement with existing studies about near-Sun solar wind magnetic field strenghts and densities as shown in Sect.~\ref{sec:model_extrapolation_to_psp_orbit}. \textbf{The extrapolation results of the velocity and the temperature differ from the direct measurements of the other studies. This suggests that below about \SI{20}{\Rs} PSP may dive into the region where the acceleration and heating of the solar wind is expected to occur} (see Fig.~\ref{fig:sw_extrapolation_ssn_e_plot}). The near-Sun solar wind velocity at PSP perihelion is also expected to be slower than our model estimates, because the \textbf{solar wind is believed to be accelerated up to the height of the Alfvénic critical surface, which is predicted to lie on average around \SI{17}{\Rs} \citep[e.g.,][]{Sittler1999,Exarhos2000}, scaling with solar activity within a range of between \SI{15}{\Rs} at solar minimum and \SI{30}{\Rs} at solar} maximum \citep{Katsikas2010,Goelzer2014}.	% in average around 17~Rs (e.g., 0.6~Rs Schatten 1969, 17~Rs Sittler1999, 17~Rs Exarhos2000) and scales with solar activity between 15~Rs in minimum and 30~Rs in maximum (19~Rs Katsikas2010, 15–30~Rs Goelzer2014).
 
@@ -586,42 +616,19 @@ We have not specifically investigated the occurrences of extreme solar wind para
 %for the overlapping velocity model the SSN dependency is steeper than for a simple threshold\\
 %The ratio of both varies with solar activity, e.g., 3~years after maximum, polar coronal holes are observed to often have equatorial extensions (cite?). see and use citet{Bougeret1984} p.~498...\\
 
-\section{Summary}
-\label{sec:summary}
-The scientific objective of this study, being part of the German contribution Coronagraphic German and US Solar Probe Plus Survey (CGAUSS) to the Wide field Imager for Solar Probe (WISPR), is to model the solar wind environment for the Parker Solar Probe mission (formerly Solar probe Plus) to be launched mid 2018.
-
-\hl{For this purpose we derived lognormal representations } of the frequency distributions’ shapes of the four key solar wind parameters magnetic field strength, proton velocity, proton density and proton temperature for the near-Earth solar wind OMNI data, and the Helios~1 and 2 data obtained over the solar distance range \SIrange{0.29}{0.98}{\au}. The dependencies of these frequency distributions on solar activity, as measured by the international sunspot number, and on radial distance to the Sun were modeled with analytical relations and then extrapolated to the Parker Solar Probe orbit, taking into account predictions of the sunspot number. With the resulting CGAUSS empirical solar wind model for PSP the following main results for the bulk solar wind parameters and estimations for their median values at PSP’s first perihelion in 2018 at a solar distance of \SI{0.16}{\au} and at PSP’s closest perihelia beginning in 2024 at \SI{0.046}{\au} (\SI{9.86}{\Rs}) are obtained:
+%\section{Summary}
+%\label{sec:summary}
+With the resulting CGAUSS empirical solar wind model for PSP the following main results for the bulk solar wind parameters and estimations for their median values at PSP’s first perihelion in 2018 at a solar distance of \SI{0.16}{\au} and at PSP’s closest perihelia beginning in 2024 at \SI{0.046}{\au} (\SI{9.86}{\Rs}) are obtained:
 \begin{itemize}
-	\item The dependency of the magnetic field strength median value on solar activity and radial distance is:
-	\begin{align}
-		B_\text{med}(ssn,r) = (\SI{0.0131}{\nT} \cdot ssn + \SI{4.29}{\nT}) \cdot r^{-1.66}	\,.
-	\end{align}
-	This approximation seems valid above \SI{20}{\Rs}, however near PSP's closest perihelion the actual values might be found to be slightly higher.
-	\item The estimated  magnetic field strength values for PSP's first and closest perihelion are \SI{87}{\nT} and \SI{943}{\nT}.	
-	\item The radial dependencies of the proton velocity median values for slow and fast solar wind are:
-	\begin{align}
-		v_\text{slow}(r) &= \SI{363}{\km\per\s} \cdot r^{0.099}	\,,\\
-%		\intertext{and}
-		v_\text{fast}(r) &= \SI{483}{\km\per\s} \cdot r^{0.099}	\,.
-	\end{align}
-	These relations appear valid above about \SI{20}{\Rs} solar distance, below they overestimate the actual solar wind velocities obtained from remote measurements.
+	\item The dependency of the magnetic field strength median value \textbf{(\ref{eq:median_B})} on solar activity and radial \textbf{distance seems} valid above \SI{20}{\Rs}, however near PSP's closest perihelion the actual values might be found to be slightly higher.
+	\item The estimated magnetic field strength median values for PSP's first and closest perihelion are \SI{87}{\nT} and \SI{943}{\nT}.
+	\item The radial dependencies of the proton velocity median values for slow and fast solar \textbf{wind (\ref{eq:median_v}) appear} valid above about \SI{20}{\Rs} solar distance, below they overestimate the actual solar wind velocities obtained from remote measurements. The share of their frequency distributions to the overall solar wind velocity distribution (\ref{eq:double_lognormal_fit_function}) is depending on solar activity \textbf{with their balance relation (\ref{eq:balance_v})}. Thus, at solar minimum with sunspot number around 0 the slow wind \textbf{component} contributes about \SI{64}{\%} and dropping to \SI{28}{\%} during solar maximum conditions with sunspot numbers around 200.
 	\item The calculated median velocity values for PSP's first and closest perihelion are \SI{340}{\km\per\s} and \SI{290}{\km\per\s}.
-
-	\item The share of their frequency distributions to the overall solar wind velocity distribution (\ref{eq:double_lognormal_fit_function}) is depending on solar activity, their balance was found to be $c(ssn) = -0.00180 \cdot ssn + 0.64$. Thus, at solar minimum with sunspot number around 0 the slow wind contributes about \SI{64}{\%} and dropping to \SI{28}{\%} during solar maximum conditions with sunspot numbers around 200.
-	\item The median proton density relation is found to be:
-	\begin{align}
-		n_\text{med}(ssn,r) = \left(\SI{0.0038}{\per\cm\cubed} \cdot ssn + \SI{4.50}{\per\cm\cubed}\right) \cdot r^{-2.11}	\,.
-	\end{align}
-	This relation seems valid throughout the full PSP orbital distance range, even down to about \SI{8}{\Rs}.
+	\item The median proton density \textbf{relation (\ref{eq:median_n}) seems} valid throughout the full PSP orbital distance range, even down to about \SI{8}{\Rs}.
 	\item The estimated density values for PSP's first and closest perihelion are \SI{4015}{\per\cm\cubed} and \SI{9733}{\per\cm\cubed}.
-	\item The derived correlation function for the median proton temperature is:
-	\begin{align}
-		T_\text{med}(ssn,r) = (\SI{197}{\K} \cdot ssn + \SI{57300}{\K}) \cdot r^{-1.10}	\,.
-	\end{align}
-	Around PSP’s perihelion this relation seems to provide too high temperature values in comparison to coronal measurements.
+	\item The derived correlation function for the median proton \textbf{temperature (\ref{eq:median_T}) seems} to provide too high temperature values \textbf{around PSP’s perihelion} in comparison to coronal measurements.
 	\item The estimated temperature values for PSP's first and closest perihelion are \SI{503000}{\K} and \SI{1930000}{\K}.
 \end{itemize}
-\hl{The overestimation of the extrapolated velocity and temperature values at distances below } \SI{20}{\Rs} \hl{ indicate the occurrence of solar wind acceleration and heating processes, which PSP will thus be able to directly measure as planned. Note that the study of extreme solar wind parameters associated with extreme CMEs was beyond the scope of this study as well as an estimate of the level of turbulence increasing with distance to the Sun as observed by the Helios probes inside individual solar wind streams. } 
 
 %Implications for WISPR mission operations and SoloHI on Solar Orbiter...
 The results of the modeled solar wind environment will be useful to help optimize the WISPR and in situ instrument science plannings and PSP mission operations. This also applies for the Heliospheric Imager (SoloHI) \citep{Howard2013} and the in situ instruments on board the Solar Orbiter spacecraft.
