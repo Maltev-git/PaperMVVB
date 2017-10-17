@@ -582,18 +582,34 @@ The extrapolated proton temperature increases from about \SI{260000}{\K} at \SI{
 The SSN for PSP's first perihelion will be small---certainly below 20, whereas \textbf{the SSN during the closest perihelia, which will commence at the end of 2024 at the likely maximum phase of cycle~25, cannot be predicted at this time.} \textbf{However \citet{Hathaway2016} found indications that the next solar cycle will be similar in size to the current cycle~24. Therefore we simply assume a pattern similar to the last cycle for the prediction of the next solar} cycle and thus shift the last cycle by 11~years. Additionally we consider as possible alternatives SSN patterns of half and twice its amplitude as shown in \textbf{the bottom panel of Fig.~\ref{fig:SPP_orbit_predicted_SSN_overview_f_plot}.}
 
 %\subsection{PSP solar wind environment estimation}
-Implementing the \textbf{SSN predictions} for the PSP mission time and the orbital trajectory data, we can finally derive the estimated solar wind environment $W'''(x,ssn,r)$, to infer which solar wind parameter magnitudes can be expected. Figs.~\ref{fig:SPP_perihelia_prediction_e_plot} and \ref{fig:SPP_perihelia_prediction_nearest_e_plot} show the considered different solar wind parameters for 12-day periods, comprising the first perihelion in Novemver 2018 and the closest perihelion in December 2024.
+Implementing the \textbf{SSN predictions} for the PSP mission time and the orbital trajectory data, we can finally derive the estimated solar wind environment $W'''(x,ssn,r)$, to infer which solar wind parameter magnitudes can be expected. Figs.~\ref{fig:SPP_perihelia_prediction_f_plot} and \ref{fig:SPP_perihelia_prediction_nearest_f_plot} show the considered different solar wind parameters for 12-day periods, comprising the first perihelion in Novemver 2018 and the closest perihelion in December 2024.
 \begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_e_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black lines) and their error bands (grey) during 12 days in 2018 with PSP's first perihelion at about \SI{0.16}{\au}. For the velocity the combined median is calculated and also the SSN independent slow and fast parts are plotted (dotted lines).}
-	\label{fig:SPP_perihelia_prediction_e_plot}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_f_plot.pdf}}
+	\caption{Estimated solar wind parameter medians (black lines) and their error bands (grey) during 12~days in 2018 with PSP's first perihelion at about \SI{0.16}{\au}. For the velocity the combined median is calculated and also the SSN independent slow and fast parts are plotted (dotted lines).}
+	\label{fig:SPP_perihelia_prediction_f_plot}
 \end{figure}
 \begin{figure}
-	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_nearest_e_plot.pdf}}
-	\caption{Estimated solar wind parameter medians (black lines) and their error bands (grey) during during 12 days in 2024 with PSP's nearest perihelion at \SI{0.0459}{\au}. For the velocity the combined median is calculated and also the SSN independent slow and fast parts are plotted (dotted lines).}
-	\label{fig:SPP_perihelia_prediction_nearest_e_plot}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_perihelia_prediction_nearest_f_plot.pdf}}
+	\caption{Estimated solar wind parameter medians (black lines) and their error bands (grey) during 12~days in 2024 with PSP's \textbf{closest} perihelion at \SI{0.0459}{\au}. For the velocity the combined median is calculated and also the SSN independent slow and fast parts are plotted (dotted lines).}
+	\label{fig:SPP_perihelia_prediction_nearest_f_plot}
 \end{figure}
-\textbf{Monthly SSNs---shifted by the time lags specific to the solar wind parameters---are used in the calculation of the solar wind predictions. These SSNs are either actual smoothed values from the SIDC with their reported standard deviations, short-term predictions from the SWPC with their expected ranges or actual smoothed values from the SIDC shifted by 11~years with half/twice their values as uncertainties. The error bands given in both figures, calculated by error propagation, include these SSN ranges and the derived fit parameter errors.} In the beginning of the mission peak median values of about \SI{87}{\nT}, \SI{340}{\km\per\s}, \SI{4015}{\per\cm\cubed} and \SI{503000}{\K} are estimated to be measured at \SI{0.16}{\au}, increasing to about \SI{943}{\nT}, \SI{290}{\km\per\s}, \SI{9733}{\per\cm\cubed} and \SI{1930000}{\K} during the closest approach at \SI{0.046}{\au}.
+\textbf{Monthly SSNs---shifted by the time lags specific to the solar wind parameters---are used in the calculation of the solar wind predictions. These SSNs are either actual smoothed values from the SIDC with their reported standard deviations, short-term predictions from the SWPC with their expected ranges or actual smoothed values from the SIDC shifted by 11~years with half/twice their values as uncertainties. The error bands given in both figures, calculated by error propagation, include these SSN ranges and the derived fit parameter errors.} In the beginning of the mission peak median values of about \SI{87}{\nT}, \SI{340}{\km\per\s}, \SI{214}{\per\cm\cubed} and \SI{503000}{\K} are estimated to be measured at \SI{0.16}{\au}, increasing to about \SI{943}{\nT}, \SI{290}{\km\per\s}, \SI{2951}{\per\cm\cubed} and \SI{1930000}{\K} during the closest approach at \SI{0.046}{\au}.
+%B
+% 87.3642361846083
+%N
+% 213.613795298952	first
+% 2950.67837375615	nearest
+% 2925.63248639046	SSN 0
+% 3421.59065204775	SSN 200
+%T
+% 503136.759398494
+
+(see Fig.~\ref{fig:SPP_sw_distributions})\\
+\begin{figure}
+	\resizebox{\hsize}{!}{\includegraphics{figures/SPP_sw_distributions.pdf}}
+	\caption{Frequency distributions of the four solar wind parameters (same as in Figs.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot} and \ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}) and those extrapolated to PSP's first and closest perihelia.}
+	\label{fig:SPP_sw_distributions}
+\end{figure}
 
 
 \section{Discussion}
@@ -625,7 +641,7 @@ With the resulting CGAUSS empirical solar wind model for PSP the following main 
 	\item The radial dependencies of the proton velocity median values for slow and fast solar \textbf{wind (\ref{eq:median_v}) appear} valid above about \SI{20}{\Rs} solar distance, below they overestimate the actual solar wind velocities obtained from remote measurements. The share of their frequency distributions to the overall solar wind velocity distribution (\ref{eq:double_lognormal_fit_function}) is depending on solar activity \textbf{with their balance relation (\ref{eq:balance_v})}. Thus, at solar minimum with sunspot number around 0 the slow wind \textbf{component} contributes about \SI{64}{\%} and dropping to \SI{28}{\%} during solar maximum conditions with sunspot numbers around 200.
 	\item The calculated median velocity values for PSP's first and closest perihelion are \SI{340}{\km\per\s} and \SI{290}{\km\per\s}.
 	\item The median proton density \textbf{relation (\ref{eq:median_n}) seems} valid throughout the full PSP orbital distance range, even down to about \SI{8}{\Rs}.
-	\item The estimated density values for PSP's first and closest perihelion are \SI{4015}{\per\cm\cubed} and \SI{9733}{\per\cm\cubed}.
+	\item The estimated density values for PSP's first and closest perihelion are \SI{214}{\per\cm\cubed} and \SI{2951}{\per\cm\cubed}.
 	\item The derived correlation function for the median proton \textbf{temperature (\ref{eq:median_T}) seems} to provide too high temperature values \textbf{around PSP’s perihelion} in comparison to coronal measurements.
 	\item The estimated temperature values for PSP's first and closest perihelion are \SI{503000}{\K} and \SI{1930000}{\K}.
 \end{itemize}

@@ -439,4 +439,10 @@ Page 23, last but one paragraph: Again, there are points here that have already 
 + remove or merge with above
 
 
+
+- other changes:
 - added referee acknowledgment
+- We found mismatching density values and corrected a typo in our density calculation. The error affected the densities for the first and nearest perihelia and the curves for density in figures 12 and 13. (abstract, section 6 and summary: corrected values 4015 to 214 and 9733 to 2951 cm-3)
+- caption figure 13: removed a duplicate 'during'; replaced nearest with closest
+- added a new figure: figure 14
+
