@@ -1,11 +1,12 @@
 Referee Report
 
-This paper discusses a method of using OMNI and Helios solar wind data to estimate the solar wind parameters that might be expected during the upcoming Parker Solar Probe mission. It includes an estimate of how these parameters might vary with solar cycle, though this is a relatively small correction, and the likely sunspot number during the mission is anyway highly uncertain. The analysis appears to be thorough, retaining information on the log-normal distribution of the parameters that is used to produce “model” representations of the distributions and their variation during the solar cycle. However, in the end, this information isn’t used in the predictions at PSP, where only median values are considered. It’s also not clear whether this type of analysis has any advantage over say a simple-minded approach where you use the radial dependence of averaged Helios values to propagate averaged 1 AU values, perhaps taken at different times in the solar cycle, down to the PSP orbit. My suspicion is that the results might not be all that different, but the authors might like to address this point. The extrapolated values do appear to be fairly consistent with previous estimates of near Sun parameters, and deviations, e.g. in the speed profile can be plausibly accounted for, so the results appear to be reasonable. 
+This paper discusses a method of using OMNI and Helios solar wind data to estimate the solar wind parameters that might be expected during the upcoming Parker Solar Probe mission. It includes an estimate of how these parameters might vary with solar cycle, though this is a relatively small correction, and the likely sunspot number during the mission is anyway highly uncertain. The analysis appears to be thorough, retaining information on the log-normal distribution of the parameters that is used to produce “model” representations of the distributions and their variation during the solar cycle. However, in the end, this information isn’t used in the predictions at PSP, where only median values are considered. It’s also not clear whether this type of analysis has any advantage over say a simple-minded approach where you use the radial dependence of averaged Helios values to propagate averaged 1 AU values, perhaps taken at different times in the solar cycle, down to the PSP orbit. My suspicion is that the results might not be all that different, but the authors might like to address this point. The extrapolated values do appear to be fairly consistent with previous estimates of near Sun parameters, and deviations, e.g. in the speed profile can be plausibly accounted for, so the results appear to be reasonable.
 
-- ...
+- added a new figure in end of section 6: figure 14 shows the predicted solar wind distributions at the first and closest perihelia
 + use the distributions for the predictions (add perihelia figures of distributions)
+
+- true, the results would not be that different. We stated that in the discussion section and explained the advantage of our method
 + state advantage over simple-minded approach (example of simple-minded approach; state how different the results are)
-+ maybe stress Helios data bias to cycle minimum (section 4, third paragraph)
 
 Some steps in the procedure could be explained more clearly in the text, as noted below, and the tables are rather cryptic since the meaning of the various parameters is not always clear. If they are fit parameters, it would be helpful to state the function that is being fitted in the table. There are conclusions and summary sections that both, yet again, go through the analysis procedure, which is unnecessary. They could be combined. There are also useful functions that give the radial dependences of the parameters that are only shown in the summary section. They could be included in the main results section. 
 
@@ -262,7 +263,7 @@ Next paragraph, last sentence, suggest: the perihelion distance to be reduced to
 + can be adopted
 
 - switched order of figures 10 and 11
-- added 'top' and 'bottom' pointers to both references of now figure 10
+- added 'top' and 'bottom' pointers to both references of now figure 10 and added the time when the closest perihelion will occur at the first figure reference
 + highlighted
 + manage fig references
 
@@ -443,6 +444,5 @@ Page 23, last but one paragraph: Again, there are points here that have already 
 - other changes:
 - added referee acknowledgment
 - We found mismatching density values and corrected a typo in our density calculation. The error affected the densities for the first and nearest perihelia and the curves for density in figures 12 and 13. (abstract, section 6 and summary: corrected values 4015 to 214 and 9733 to 2951 cm-3)
-- caption figure 13: removed a duplicate 'during'; replaced nearest with closest
-- added a new figure: figure 14
+- caption figure 13: removed a duplicate 'during'; replaced nearest with first closest
 

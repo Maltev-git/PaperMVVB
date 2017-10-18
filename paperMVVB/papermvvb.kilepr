@@ -87,10 +87,10 @@ order=-1
 
 [item:sections/abstract.tex]
 archive=true
-column=0
+column=102
 encoding=UTF-8
 highlight=LaTeX
-line=18
+line=16
 mode=LaTeX
 open=true
 order=1
@@ -117,10 +117,10 @@ order=-1
 
 [item:sections/content.tex]
 archive=true
-column=80
+column=949
 encoding=UTF-8
 highlight=LaTeX
-line=591
+line=621
 mode=LaTeX
 open=true
 order=2
@@ -152,10 +152,10 @@ JumpList=
 ViMarks=.,6,0,[,6,0,],6,0
 
 [view-settings,view=0,item:sections/abstract.tex]
-CursorColumn=0
-CursorLine=18
+CursorColumn=102
+CursorLine=16
 JumpList=
-ViMarks=.,18,0,[,18,0,],18,0
+ViMarks=.,16,101,[,16,97,],16,101
 
 [view-settings,view=0,item:sections/acknowledgments.tex]
 CursorColumn=986
@@ -170,10 +170,10 @@ JumpList=
 ViMarks=.,3,0,[,3,0,],3,0
 
 [view-settings,view=0,item:sections/content.tex]
-CursorColumn=80
-CursorLine=591
+CursorColumn=949
+CursorLine=621
 JumpList=
-ViMarks=.,592,142,[,592,142,],592,142
+ViMarks=.,621,948,[,621,937,],621,948
 
 [view-settings,view=0,item:sections/literature_bibtex.bib]
 CursorColumn=0
