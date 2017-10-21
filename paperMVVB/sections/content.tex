@@ -4,7 +4,7 @@
 From observations of cometary tail fluctuations \citet{Biermann1951} inferred the presence of a continuous flow of particles from the Sun. With his theoretical solar wind model \citet{Parker1958} formulated the existence of the solar wind even before the first satellites measured it in situ in 1959 \citep{Gringauz1960,Neugebauer1966}.
 %in situ spacecraft
 The idea of a space mission flying through the solar corona dates back to the founding year of NASA in 1958 \citep{McComas2008}. Since then several space missions have measured the solar wind in situ at a wide range of heliocentric distances, in case of Voyager~1 as far away as \SI{138}{\au}\footnote{\url{https://voyager.jpl.nasa.gov/}} (July 2017), having even left the heliospause into interstellar space at a distance of \SI{121}{\au} \citep{Gurnett2013}.
-\textbf{Various} spacecraft have provided a wealth of solar wind measurements near Earth’s orbit, with WIND \citep{Lepping1995,Ogilvie1995}\textbf{, \hl{SOHO} \citep{Domingo1995}}, ACE \citep{Stone1998} and DSCOVR \citep{Burt2012} still orbiting around the L1 point \SI{1.5}{million\,\km} ahead of Earth in the sunward direction. Additional measurements at other solar distances were provided by planetary missions to Venus and Mercury, such as PVO \citep{Colin1980} or MESSENGER \citep{Belcher1991}. Ulysses was the first probe that orbited the Sun out of the ecliptic plane and thus could measure solar wind even at polar latitudes \citep{McComas1998}. \textbf{The in situ solar wind measurements closest to the Sun to date were made by} the Helios mission. \textbf{Helios~1, launched in 1974, reached distances of \SI{0.31}{\au}. Helios~2, launched two years later, approached the Sun as close as} \SI{0.29}{\au} \citep{Rosenbauer1977}.
+\textbf{Various} spacecraft have provided a wealth of solar wind measurements near Earth’s orbit, with WIND \citep{Lepping1995,Ogilvie1995}\textbf{, SOHO \citep{Domingo1995}}, ACE \citep{Stone1998} and DSCOVR \citep{Burt2012} still orbiting around the L1 point \SI{1.5}{million\,\km} ahead of Earth in the sunward direction. Additional measurements at other solar distances were provided by planetary missions to Venus and Mercury, such as PVO \citep{Colin1980} or MESSENGER \citep{Belcher1991}. Ulysses was the first probe that orbited the Sun out of the ecliptic plane and thus could measure solar wind even at polar latitudes \citep{McComas1998}. \textbf{The in situ solar wind measurements closest to the Sun to date were made by} the Helios mission. \textbf{Helios~1, launched in 1974, reached distances of \SI{0.31}{\au}. Helios~2, launched two years later, approached the Sun as close as} \SI{0.29}{\au} \citep{Rosenbauer1977}.
 %Solar Probe Plus mission
 The NASA Parker~Solar~Probe\footnote{\url{http://parkersolarprobe.jhuapl.edu/}} (PSP), formerly Solar~Probe~Plus, with a planned launch date in mid 2018, will reach after six years in 2024 its closest perihelia at a distance of 9.86~solar radii (\Rs), that is, \SI{0.0459}{\au} \citep{Fox2015}. This distance will be achieved through seven Venus gravity assists with orbital periods of 88--168~days. In its prime mission time 2018--2025 PSP provides 24~orbits with perihelia inside \SI{0.25}{\au} \citep{Fox2015}. Even its first perihelion, 93~days after launch in 2018, will take PSP to an unprecedented distance of \SI{0.16}{\au} (\SI{35.7}{\Rs}). In comparison, the ESA Solar Orbiter mission with a planned launch in February 2019 will have its closest perihelia at \SI{0.28}{\au} \citep{Muller2013}.
 
@@ -151,8 +151,7 @@ This more complex fit function is more accurate in describing the velocity's fre
 Thus in the following sections we keep the double lognormal ansatz for all velocity frequency fits.
 
 %transition
-For the bulk of the solar wind these static lognormal functions describe the parameters' distributions well, \hl{but differ for the extreme values, mainly caused by CME events. } 
-The simple lognormal fit functions underestimate the frequency of the solar wind parameters in their high value tails, except for the temperature’s tail which is \hl{overestimated} as seen in the insets of Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}. The velocity's compositional lognormal fit only slightly overestimates its tail as seen in the inset of Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
+For the bulk of the solar wind these static lognormal functions describe the parameters' distributions well\textbf{. The abnormally high parameter values in the distribution functions can be attributed to shock/CME events in agreement with the results of the OMNI solar wind investigations by \citet{Richardson2012}.} The simple lognormal fit functions underestimate the \textbf{frequencies in} their high value tails, except for the temperature’s tail which is overestimated, as seen in the insets of Fig.~\ref{fig:histogram_fits_4_a_zoom_paper_pdfplot}\textbf{, this appears to be because CMEs do not come with abnormally high temperatures.} The velocity's compositional lognormal fit only slightly overestimates its tail as seen in the inset of Fig.~\ref{fig:histogram_fits_V_a_zoom_dbl_paper_pdfplot}.
 The slow and fast part contribute almost equally ($c \approx 0.5$) to the long-term velocity distribution function.
 
 %{\color{red} discuss high value zoom figures; read in Veselovsky2010}
@@ -208,22 +207,19 @@ using a factor to the SSN $a_\text{med}$ with a baseline $b_\text{med}$. We rela
 		c c
 		}
 		\hline\hline
-		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{2}{c}{Median\tablefootmark{a}}	&\multicolumn{1}{c}{Mean}	&\multicolumn{2}{c}{Balance}	&\multicolumn{1}{c}{SSN lag}\\
+		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{2}{c}{Median}	&\multicolumn{1}{c}{Mean}	&\multicolumn{2}{c}{Balance}	&\multicolumn{1}{c}{SSN lag}\\
 		\cline{3-4}\cline{6-7}
 		\multicolumn{2}{l}{}	&\multicolumn{1}{c}{SSN factor $a_\text{med}$}	&\multicolumn{1}{c}{Baseline $b_\text{med}$}	&\multicolumn{1}{c}{Scaling factor $a_\text{avg}$}	&\multicolumn{1}{c}{SSN factor $c_a$}	&\multicolumn{1}{c}{Baseline $c_b$}	&\multicolumn{1}{c}{[years]}\\
 		\hline
-		\multicolumn{2}{l}{Magnetic field}	&1.309(19)e-2	&4.285(17)	&8.786(78)e-2	&\multicolumn{1}{c}{--}	&--	&0\\
+		\multicolumn{2}{l}{\textbf{Magnetic field [\si{nT}]}}	&1.309(19)e-2	&4.285(17)	&8.786(78)e-2	&\multicolumn{1}{c}{--}	&--	&0\\
 %		\multicolumn{2}{l}{Velocity}	&2.514(93)e-3	&3.8521(90)	&2.392(26)e-2	&\multicolumn{1}{c}{--}	&--\\
-		\multicolumn{2}{l}{Density}	&3.81(25)e-3	&4.495(26)	&3.050(27)e-1	&\multicolumn{1}{c}{--}	&--	&6\\
-		\multicolumn{2}{l}{Temperature}	&1.974(26)e-2	&5.729(19)	&6.541(28)e-1	&\multicolumn{1}{c}{--}	&--	&3\\
+		\multicolumn{2}{l}{\textbf{Density [\si{\per\cm\cubed}]}}	&3.81(25)e-3	&4.495(26)	&3.050(27)e-1	&\multicolumn{1}{c}{--}	&--	&6\\
+		\multicolumn{2}{l}{\textbf{Temperature [\SI{e4}{\K}]}}	&1.974(26)e-2	&5.729(19)	&6.541(28)e-1	&\multicolumn{1}{c}{--}	&--	&3\\
 		\hline
-		\multirow{2}{*}{Velocity}	&\multicolumn{1}{c}{$W'_1$}	&\multicolumn{1}{c}{--}	&3.633(12)	&1.008(37)e-2	&\multirow{2}{*}{\tablenum{-1.799(95)e-3}}	&\multirow{2}{*}{0.638(32)}	&\multirow{2}{*}{3}\\
-			&\multicolumn{1}{c}{$W'_2$}	&\multicolumn{1}{c}{--}	&4.831(81)	&2.31(20)e-2	&	&	&\\
+		\multicolumn{1}{l}{\textbf{Velocity}}	&\multicolumn{1}{c}{$W'_1$}	&\multicolumn{1}{c}{--}	&3.633(12)	&1.008(37)e-2	&\multirow{2}{*}{\tablenum{-1.799(95)e-3}}	&\multirow{2}{*}{0.638(32)}	&\multirow{2}{*}{3}\\
+		\multicolumn{1}{l}{\textbf{[\SI{e2}{\km\per\s}]}}	&\multicolumn{1}{c}{$W'_2$}	&\multicolumn{1}{c}{--}	&4.831(81)	&2.31(20)e-2	&	&	&\\
 		\hline
 	\end{tabular}
-	\tablefoot{
-		\tablefoottext{a}{\hl{In units of } \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
-	}
 \end{table*}
 
 As can be seen from Fig.~\ref{fig:OMNI_yearly_BVdblNTSSN_fit_e_plot}, naturally, the fit models match with the general data trends, though single year variations are not replicated by the model (e.g., the high velocity and temperature values in 1974, 1994 and 2003).
@@ -406,17 +402,14 @@ for the regression fit of the median and mean, with $r$ being the solar distance
 		\hline\hline
 		\multirow{2}{*}{Parameter}	&\multicolumn{2}{c}{Median}	&	&\multicolumn{2}{c}{Mean}	&\multicolumn{1}{c}{Crossing distance}	&\multicolumn{1}{c}{Yearly variation}\\
 		\cline{2-3}	\cline{5-6}
-			&\multicolumn{1}{c}{$d_\text{med}$\tablefootmark{a}}	&\multicolumn{1}{c}{$e_\text{med}$}	&	&\multicolumn{1}{c}{$d_\text{avg}$\tablefootmark{a}}	&\multicolumn{1}{c}{$e_\text{avg}$}	&\multicolumn{1}{c}{[\si{\au}]}	&\multicolumn{1}{c}{$\Delta e$}\\
+			&\multicolumn{1}{c}{$d_\text{med}$}	&\multicolumn{1}{c}{$e_\text{med}$}	&	&\multicolumn{1}{c}{$d_\text{avg}$}	&\multicolumn{1}{c}{$e_\text{avg}$}	&\multicolumn{1}{c}{[\si{\au}]}	&\multicolumn{1}{c}{$\Delta e$}\\
 		\hline
-		Magnetic field	&5.377(92)	&-1.655(17)	&	&6.05(10)	&-1.546(18)	&0.339(11)	&0.11\\
-		Velocity	&4.107(28)	&0.058(13)	&	&4.356(24)	&0.049(10)	&0.7(83)e3	&0.012\\
-		Density		&5.61(27)	&-2.093(46)	&	&7.57(30)	&-2.010(38)	&0.027(73)	&0.072\\
-		Temperature	&7.14(23)	&-0.913(39)	&	&9.67(21)	&-0.792(28)	&0.082(85)	&0.050\\
+		\textbf{Magnetic field [\si{nT}]}	&5.377(92)	&-1.655(17)	&	&6.05(10)	&-1.546(18)	&0.339(11)	&0.11\\
+		\textbf{Velocity [\SI{e2}{\km\per\s}]}	&4.107(28)	&0.058(13)	&	&4.356(24)	&0.049(10)	&0.7(83)e3	&0.012\\
+		\textbf{Density [\si{\per\cm\cubed}]}	&5.61(27)	&-2.093(46)	&	&7.57(30)	&-2.010(38)	&0.027(73)	&0.072\\
+		\textbf{Temperature [\SI{e4}{\K}]}	&7.14(23)	&-0.913(39)	&	&9.67(21)	&-0.792(28)	&0.082(85)	&0.050\\
 		\hline
 	\end{tabular}
-	\tablefoot{
-		\tablefoottext{a}{\hl{In units of } \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
-	}
 \end{table*}
 % source year variation: fit_out_yearly_gradients_table_b_stats.txt
 
@@ -460,22 +453,21 @@ For simplification, as mentioned before, we treat the exponents of the median an
 	S[table-format = 1.3(2)]
 	S[table-format = 1.2]}
 		\hline\hline
-		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median\tablefootmark{a}}	&\multicolumn{1}{c}{Mean\tablefootmark{a}}	&\multicolumn{1}{c}{Exponent}	&\multicolumn{1}{c}{Balance}	&\multicolumn{1}{c}{Seasonal variation}\\
+		\multicolumn{2}{l}{\multirow{2}{*}{Parameter}}	&\multicolumn{1}{c}{Median}	&\multicolumn{1}{c}{Mean}	&\multicolumn{1}{c}{Exponent}	&\multicolumn{1}{c}{Balance}	&\multicolumn{1}{c}{Seasonal variation}\\
 			&	&\multicolumn{1}{c}{$d'_\text{med}$}	&\multicolumn{1}{c}{$d'_\text{avg}$}	&\multicolumn{1}{c}{$e'$}	&$c'$	&\multicolumn{1}{c}{$\Delta d$ [\%]}\\
 		\hline
-		\multicolumn{2}{l}{Magnetic field}	&5.358(25)	&5.705(28)	&-1.662(11)	&\multicolumn{1}{c}{--}	&2.8\\
-		\multicolumn{2}{l}{Density}	&5.424(33)	&6.845(47)	&-2.114(20)	&\multicolumn{1}{c}{--}	&3.6\\
-		\multicolumn{2}{l}{Temperature}	&6.357(64)	&10.72(14)	&-1.100(20)	&\multicolumn{1}{c}{--}	&1.9\\
+		\multicolumn{2}{l}{\textbf{Magnetic field [\si{nT}]}}	&5.358(25)	&5.705(28)	&-1.662(11)	&\multicolumn{1}{c}{--}	&2.8\\
+		\multicolumn{2}{l}{\textbf{Density [\si{\per\cm\cubed}]}}	&5.424(33)	&6.845(47)	&-2.114(20)	&\multicolumn{1}{c}{--}	&3.6\\
+		\multicolumn{2}{l}{\textbf{Temperature [\SI{e4}{\K}]}}	&6.357(64)	&10.72(14)	&-1.100(20)	&\multicolumn{1}{c}{--}	&1.9\\
 		\hline
-		\multirow{2}{*}{Velocity}	&$W''_1$	&3.707(13)	&3.748(16)	&\multirow{2}{*}{0.0990(51)}	&\multirow{2}{*}{0.557(45)}	&\multicolumn{1}{c}{\multirow{2}{*}{0.17}}\\
-			&$W''_2$	&5.26(13)	&5.42(11)	&	&	&\\
+		\multirow{2}{*}{\textbf{Velocity}}	&$W''_1$	&3.707(13)	&3.748(16)	&\multirow{2}{*}{0.0990(51)}	&\multirow{2}{*}{0.557(45)}	&\multicolumn{1}{c}{\multirow{2}{*}{0.17}}\\
+		\multirow{2}{*}{\textbf{[\SI{e2}{\km\per\s}]}}	&$W''_2$	&5.26(13)	&5.42(11)	&	&	&\\
 		\cline{2-7}
-		\multicolumn{2}{r}{$W''_\text{II}$}	&4.13(13)\tablefootmark{b}	&4.47(11)\tablefootmark{b}	&\multicolumn{1}{c}{--}	&\multicolumn{1}{c}{--}	&\multicolumn{1}{c}{--}\\
+			&$W''_\text{II}$	&4.13(13)\tablefootmark{a}	&4.47(11)\tablefootmark{a}	&\multicolumn{1}{c}{--}	&\multicolumn{1}{c}{--}	&\multicolumn{1}{c}{--}\\
 		\hline
 	\end{tabular}
 	\tablefoot{
-		\tablefoottext{a}{\hl{In units of } \si{nT}, \SI{e2}{\km\per\s}, \si{\per\cm\cubed} and \SI{e4}{\K}.}
-		\tablefoottext{b}{Velocity median and mean \SI{1}{\au} values for the resulting function. Error estimates derived from the individual fit part errors.}
+		\tablefoottext{a}{Velocity median and mean \SI{1}{\au} values for the resulting function. Error estimates derived from the individual fit part errors.}
 	}
 \end{table*}
 % Vdbl fit:
