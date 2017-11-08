@@ -1,0 +1,119 @@
+Return-path: <aanda.paris@obspm.fr>
+Envelope-to: mvenzmer@astro.physik.uni-goettingen.de
+Delivery-date: Sun, 05 Nov 2017 06:19:13 +0100
+Received: from mailer.gwdg.de ([134.76.10.26])
+	by ms0.astro.physik.uni-goettingen.de with esmtps (TLSv1.2:DHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.84_2)
+	(envelope-from <aanda.paris@obspm.fr>)
+	id 1eBDKz-0006Je-3Y
+	for mvenzmer@astro.physik.uni-goettingen.de; Sun, 05 Nov 2017 06:19:13 +0100
+Received: from mfilter-123-1-2.mx.srv.dfn.de ([194.95.234.60])
+	by mailer.gwdg.de with esmtps (TLSv1.2:DHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.80)
+	(envelope-from <aanda.paris@obspm.fr>)
+	id 1eBDKy-0003zO-VP
+	for mvenzmer@astro.physik.uni-goettingen.de; Sun, 05 Nov 2017 06:19:12 +0100
+X-Virus-Scanned: Debian amavisd-new at mgw3-tub.srv.dfn.de
+X-Spam-Flag: NO
+X-Spam-Score: -0.091
+X-Spam-Level:
+X-Spam-Status: No, score=-0.091 tagged_above=-200 required=6.2
+	tests=[BAYES_50=0.5, BOGO_UNSURE=0.01, PP_MIME_FAKE_ASCII_TEXT=0.001,
+	RCVD_IN_DNSWL_MED=-0.01, RP_MATCHES_RCVD=-0.6, SPF_HELO_PASS=-0.001,
+	SPF_PASS=-0.001, T_TVD_MIME_NO_HEADERS=0.01] autolearn=disabled
+Received: from mx-p1.obspm.fr (mx-p1.obspm.fr [145.238.193.20])
+	by mfilter-123-1-2.mx.srv.dfn.de (Postfix) with ESMTPS
+	for <mvenzmer@astro.physik.uni-goettingen.de>; Sun,  5 Nov 2017 06:19:08 +0100 (CET)
+Received: from mms-aanda.obspm.fr (mms-aanda.obspm.fr [145.238.209.16])
+	by mx-p1.obspm.fr (8.14.4/8.14.4/DIO Observatoire de Paris - 15/04/10) with ESMTP id vA55J2k4346925
+	for <mvenzmer@astro.physik.uni-goettingen.de>; Sun, 5 Nov 2017 06:19:02 +0100
+Received: by mms-aanda (Postfix, from userid 1002)
+	id 05A756907B581; Sun,  5 Nov 2017 06:18:39 +0100 (CET)
+To: mvenzmer@astro.physik.uni-goettingen.de
+Subject: AA/2017/31831: referee report
+X-PHP-Originating-Script: 1001:mime_mail.inc
+From: aanda.paris@obspm.fr
+Mime-Version: 1.0
+Content-Type: multipart/mixed;boundary=2071bcf7eb6487e8a88817ac8203ae56
+Message-Id: <20171105051839.05A756907B581@mms-aanda>
+Date: Sun,  5 Nov 2017 06:18:39 +0100 (CET)
+X-Greylist: Sender IP whitelisted, not delayed by milter-greylist-4.5.11 (mx-p1.obspm.fr [145.238.193.20]); Sun, 05 Nov 2017 06:19:02 +0100 (CET)
+X-Virus-Scanned: clamav-milter 0.99.2 at mx-p1.obspm.fr
+X-Virus-Status: Clean
+
+---.
+
+--2071bcf7eb6487e8a88817ac8203ae56
+Content-type: text/plain; charset=us-ascii
+
+05/11/2017
+
+Dr Malte Venzmer 
+
+mvenzmer@astro.physik.uni-goettingen.de
+
+Our Ref. : AA/2017/31831 
+
+Dear Dr Venzmer,
+
+Your revised paper "Solar wind predictions for the Parker Solar Probe orbit. Near-Sun extrapolations derived from an empirical solar wind model based on Helios and OMNI observations" was submitted to the referee who recommends publication after revision (see enclosed report).
+
+Please take the referee's comments and suggestions into account in revising your work and send us the new version (in referee format and in printer format) at your earliest convenience. 
+
+Instructions for resubmission can be found at address https://mms-aanda.obspm.fr/is/aa/resubmit_a_paper.php. Your author ID number is 28894.
+
+- In your cover letter, please indicate precisely all the changes made in the revised version. Please also include your detailed responses keyed to the items in the report.
+- Mark all the changes clearly (using boldface) in your manuscript.
+
+With best regards,
+
+steve
+
+Steven N. Shore 
+A&A Editor
+-------------------
+Referee Report
+
+
+The authors have responded commendably to the suggestions made in my previous report, and I recommend acceptance of this paper. There were just a couple of minor points that might be considered (I’m using the version formatted for the journal): 
+
+Page 1 
+
+Column 1, 5 lines from bottom: Suggest: 2017, having crossed the heliopause into interstellar 
+
+Column 2, line 2: Suggest: 2012) currently providing observations while orbiting 
+
+Page 2, column 2, 7 pages from bottom. This sentence isn’t very clear, e.g. suggest: The occurrence frequency of these slow and fast streams varies strongly with solar activity, and their interactions lead to phenomena such as stream interaction regions which may persist for many solar rotations (“corotating” interaction regions) if the coronal source regions are quasi-stationary (Balogh et al. 1999). Or just end the sentence at “stream interaction regions”. 
+
+In this version of the paper, Figure 2 is positioned before Figure 1, but presumably this will be corrected in the published version. 
+
+Page 4: The meaning of the numbers in brackets in Table 1, etc, is still rather cryptic. So to see if I understand, say for the field, then a change in the last digit (0.001) corresponds to 16 standard deviations away from mean, i.e., the standard deviation is 0.0000625? Is this the correct interpretation? 
+
+Page 6 
+
+Column 1, 2 lines from bottom: Suggest: it appears to be a more realistic approach 
+
+Section 4, line 3: Suggest: We then examine how the fits may be extrapolated towards the Sun and in particular in to the PSP orbit. 
+
+Page 7 
+
+Column 2, paragraph 3, line 5: Suggest: For the frequency distribution fit function to be discussed in the next paragraph, 
+
+Page 8 
+
+Figure 7 caption, line 2: “distribution” rather than “abundance”? I suppose this is to spread out the points rather than have them arranged vertically at separations of 0.01 AU. 
+
+Page 9 
+
+Column 1, line 3: Suggest: The high velocity tail that increases with distance arises 
+
+Page 10 
+
+Figure 10 caption: Is the Kalman filter prediction the blue shaded region? If so, this could be mentioned. 
+
+Page 13 
+
+Column 2, second point: It wasn’t immediately obvious until I searched around the paper that the numbers in brackets here (12) and in the other points refer back to the similarly numbered equations. This could be mentioned specifically. Also, the next line should be “first and closest perihelia”; the second "first" added isn't necessary and confuses the meaning. Similarly in the later points. 
+--2071bcf7eb6487e8a88817ac8203ae56
+
+--2071bcf7eb6487e8a88817ac8203ae56--

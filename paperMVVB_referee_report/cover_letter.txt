@@ -1,0 +1,18 @@
+Cover letter to the editor and reply to the referee
+
+Reference: AA/2017/31831 
+
+Reply to the reviewer comments on "Solar wind predictions for the Parker Solar Probe orbit - Near-Sun extrapolations derived from an empirical solar wind model based on Helios and OMNI observations", submitted by M. S. Venzmer and V. Bothmer to Astronomy and Astrophysics, 25 August 2017.
+
+We are grateful to the referee for the thorough review of the manuscript and for the very helpful comments which we have carefully taken into account. All modifications appear as bold text in the revised version of the manuscript.
+
+
+Major changes to the manuscript:
+- We have adressed the general comments and the specific points made by the referee. We have added explanations and phrased some points more clearly.
+- A new figure has been added, providing the predicted solar wind distributions for the first and the first closest perihelion.
+- The discussion and summary sections have been combined. The equations have been moved from the summary to section 5.
+- The tables and table captions have been improved for clarification.
+- We found mismatching density values and corrected a typo in our density calculation. The error affected the densities for the first and nearest perihelia and the curves for the densities in figures 12 and 13. Corrections have been made to the abstract, section 6 and summary section: changed values 4015 to 214 and 9733 to 2951 cm-3.
+- We updated Voyager 1’s distance in the introduction and the new sunspot numbers in figure 10.
+- We have added a referee acknowledgment.
+- We considered the suggestions concerning the English and further rephrased a few sentences for better readability.
