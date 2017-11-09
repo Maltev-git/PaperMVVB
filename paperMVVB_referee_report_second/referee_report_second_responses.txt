@@ -1,81 +1,73 @@
+Cover letter to the editor
 
-Subject:
-AA/2017/31831: referee report
-From:
-aanda.paris@obspm.fr
-Date:
-11/05/17 06:18
-To:
-mvenzmer@astro.physik.uni-goettingen.de
+Reference: AA/2017/31831
 
-05/11/2017
+Reply to the reviewer's comments on the revised version of "Solar wind predictions for the Parker Solar Probe orbit - Near-Sun extrapolations derived from an empirical solar wind model based on Helios and OMNI observations", submitted by M. S. Venzmer and V. Bothmer to Astronomy and Astrophysics, 25 August 2017.
 
-Dr Malte Venzmer 
+We are grateful to the referee for the thorough review of the manuscript and for the very helpful comments which we have carefully taken into account. All modifications appear as bold text in the revised version of the manuscript.
 
-mvenzmer@astro.physik.uni-goettingen.de
+There are no major changes to the manuscript. We have adressed the referee's comments and suggestions.
 
-Our Ref. : AA/2017/31831 
 
-Dear Dr Venzmer,
+#####
 
-Your revised paper "Solar wind predictions for the Parker Solar Probe orbit. Near-Sun extrapolations derived from an empirical solar wind model based on Helios and OMNI observations" was submitted to the referee who recommends publication after revision (see enclosed report).
-
-Please take the referee's comments and suggestions into account in revising your work and send us the new version (in referee format and in printer format) at your earliest convenience. 
-
-Instructions for resubmission can be found at address https://mms-aanda.obspm.fr/is/aa/resubmit_a_paper.php. Your author ID number is 28894.
-
-- In your cover letter, please indicate precisely all the changes made in the revised version. Please also include your detailed responses keyed to the items in the report.
-- Mark all the changes clearly (using boldface) in your manuscript.
-
-With best regards,
-
-steve
-
-Steven N. Shore 
-A&A Editor
--------------------
-Referee Report
-
+Reply to the referee
 
 The authors have responded commendably to the suggestions made in my previous report, and I recommend acceptance of this paper. There were just a couple of minor points that might be considered (I’m using the version formatted for the journal): 
 
-Page 1 
-
+Page 1
 Column 1, 5 lines from bottom: Suggest: 2017, having crossed the heliopause into interstellar 
+
+- We changed it accordingly.
 
 Column 2, line 2: Suggest: 2012) currently providing observations while orbiting 
 
-Page 2, column 2, 7 pages from bottom. This sentence isn’t very clear, e.g. suggest: The occurrence frequency of these slow and fast streams varies strongly with solar activity, and their interactions lead to phenomena such as stream interaction regions which may persist for many solar rotations (“corotating” interaction regions) if the coronal source regions are quasi-stationary (Balogh et al. 1999). Or just end the sentence at “stream interaction regions”. 
+- We adopted the suggestion.
+
+Page 2, column 2, 7 pages from bottom. This sentence isn’t very clear, e.g. suggest: The occurrence frequency of these slow and fast streams varies strongly with solar activity, and their interactions lead to phenomena such as stream interaction regions which may persist for many solar rotations (“corotating” interaction regions) if the coronal source regions are quasi-stationary (Balogh et al. 1999). Or just end the sentence at “stream interaction regions”.
+
+- We adopted the suggestion.
 
 In this version of the paper, Figure 2 is positioned before Figure 1, but presumably this will be corrected in the published version. 
 
+- Yes, the order is correct in the source, but is changed by the latex-compiler and might be corrected in the published version.
+
 Page 4: The meaning of the numbers in brackets in Table 1, etc, is still rather cryptic. So to see if I understand, say for the field, then a change in the last digit (0.001) corresponds to 16 standard deviations away from mean, i.e., the standard deviation is 0.0000625? Is this the correct interpretation? 
 
-Page 6 
+- The combination of the error source (estimated standard deviation of the fit parameter) and the notation description made it confusing. The interpretation for 5.661(16) is rather 0.016 nT. We clarified the situation, writing: "The numbers in parentheses are the errors referred to the corresponding last digits of the quoted value. Their values are calculated from the estimated standard deviations of the fit parameters."
 
+Page 6 
 Column 1, 2 lines from bottom: Suggest: it appears to be a more realistic approach 
 
-Section 4, line 3: Suggest: We then examine how the fits may be extrapolated towards the Sun and in particular in to the PSP orbit. 
+- We changed it accordingly.
+
+Section 4, line 3: Suggest: We then examine how the fits may be extrapolated towards the Sun and in particular in to the PSP orbit.
+
+- We changed it accordingly.
 
 Page 7 
+Column 2, paragraph 3, line 5: Suggest: For the frequency distribution fit function to be discussed in the next paragraph,
 
-Column 2, paragraph 3, line 5: Suggest: For the frequency distribution fit function to be discussed in the next paragraph, 
+- We changed it accordingly.
 
 Page 8 
+Figure 7 caption, line 2: “distribution” rather than “abundance”? I suppose this is to spread out the points rather than have them arranged vertically at separations of 0.01 AU.
 
-Figure 7 caption, line 2: “distribution” rather than “abundance”? I suppose this is to spread out the points rather than have them arranged vertically at separations of 0.01 AU. 
+- We changed it accordingly.
 
 Page 9 
+Column 1, line 3: Suggest: The high velocity tail that increases with distance arises
 
-Column 1, line 3: Suggest: The high velocity tail that increases with distance arises 
+- We changed it accordingly.
 
 Page 10 
-
 Figure 10 caption: Is the Kalman filter prediction the blue shaded region? If so, this could be mentioned. 
 
-Page 13 
+- The shaded regions are the expected ranges. We have added an explaining note for the shaded regions.
 
+Page 13 
 Column 2, second point: It wasn’t immediately obvious until I searched around the paper that the numbers in brackets here (12) and in the other points refer back to the similarly numbered equations. This could be mentioned specifically. Also, the next line should be “first and closest perihelia”; the second "first" added isn't necessary and confuses the meaning. Similarly in the later points. 
 
-
+- We now refer to the equation numbers with 'obtained from relation (12)'.
+- Indeed 'first closest perihelion' might be confusing, so we have replaced it with '22nd perihelion'. We introduced it because there will be more perihelia at the closest distance - however with differing SSNs.
 
