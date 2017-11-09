@@ -1,0 +1,74 @@
+Cover letter to the editor
+
+Reference: AA/2017/31831
+
+Reply to the reviewer's comments on the revised version of "Solar wind predictions for the Parker Solar Probe orbit - Near-Sun extrapolations derived from an empirical solar wind model based on Helios and OMNI observations", submitted by M. S. Venzmer and V. Bothmer to Astronomy and Astrophysics, 25 August 2017.
+
+We are very grateful to the referee for the thorough review of the manuscript and for the helpful comments which we have carefully taken into account. All modifications appear as bold text in the revised version of the manuscript.
+
+We have carefully addressed the referee's comments and suggestions. No other changes have been made.
+
+
+
+#####
+
+Reply to the referee
+
+The authors have responded commendably to the suggestions made in my previous report, and I recommend acceptance of this paper. There were just a couple of minor points that might be considered (I’m using the version formatted for the journal): 
+
+Page 1
+Column 1, 5 lines from bottom: Suggest: 2017, having crossed the heliopause into interstellar 
+
+- We changed it accordingly.
+
+Column 2, line 2: Suggest: 2012) currently providing observations while orbiting 
+
+- Changed as suggested.
+
+Page 2, column 2, 7 pages from bottom. This sentence isn’t very clear, e.g. suggest: The occurrence frequency of these slow and fast streams varies strongly with solar activity, and their interactions lead to phenomena such as stream interaction regions which may persist for many solar rotations (“corotating” interaction regions) if the coronal source regions are quasi-stationary (Balogh et al. 1999). Or just end the sentence at “stream interaction regions”.
+
+- We adopted the suggestion.
+
+In this version of the paper, Figure 2 is positioned before Figure 1, but presumably this will be corrected in the published version. 
+
+- The order is correct in the source file, but was changed by the A&A latex-compiler and shall be corrected in the version to be published.
+
+Page 4: The meaning of the numbers in brackets in Table 1, etc, is still rather cryptic. So to see if I understand, say for the field, then a change in the last digit (0.001) corresponds to 16 standard deviations away from mean, i.e., the standard deviation is 0.0000625? Is this the correct interpretation? 
+
+- The combination of the error source (estimated standard deviation of the fit parameter) and the notation description was indeed confusing. The interpretation for 5.661(16) is rather 0.016 nT. We clarified this by modifying the caption as follows: "The numbers in parentheses are the errors referred to the corresponding last digits of the quoted value. They are calculated from the estimated standard deviations of the fit parameters."
+
+Page 6 
+Column 1, 2 lines from bottom: Suggest: it appears to be a more realistic approach 
+
+- We changed it accordingly.
+
+Section 4, line 3: Suggest: We then examine how the fits may be extrapolated towards the Sun and in particular in to the PSP orbit.
+
+- We changed it accordingly.
+
+Page 7 
+Column 2, paragraph 3, line 5: Suggest: For the frequency distribution fit function to be discussed in the next paragraph,
+
+- We changed it accordingly.
+
+Page 8 
+Figure 7 caption, line 2: “distribution” rather than “abundance”? I suppose this is to spread out the points rather than have them arranged vertically at separations of 0.01 AU.
+
+- We changed it accordingly.
+
+Page 9 
+Column 1, line 3: Suggest: The high velocity tail that increases with distance arises
+
+- We changed it accordingly.
+
+Page 10 
+Figure 10 caption: Is the Kalman filter prediction the blue shaded region? If so, this could be mentioned. 
+
+- Yes, the shaded regions are the expected ranges. We have added an explaining note.
+
+Page 13 
+Column 2, second point: It wasn’t immediately obvious until I searched around the paper that the numbers in brackets here (12) and in the other points refer back to the similarly numbered equations. This could be mentioned specifically. Also, the next line should be “first and closest perihelia”; the second "first" added isn't necessary and confuses the meaning. Similarly in the later points. 
+
+- We now refer to the equation numbers with 'obtained from relation (12)'.
+- Indeed 'first closest perihelion' might be confusing, so we have replaced it with '22nd perihelion'. We had phrased it like that because there will be several perihelia at the so-called closest distance.
+
