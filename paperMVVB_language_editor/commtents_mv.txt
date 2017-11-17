@@ -1,0 +1,32 @@
+
+AA/2017/31831
+Solar wind predictions for the Parker Solar Probe orbit. Near-Sun extrapolations derived from an empirical solar wind model based on Helios and OMNI observations
+M. S. Venzmer, V. Bothmer
+
+
+Reply to the language editor
+
+
+We are very grateful to the language editor Joshua Neve for his careful corrections. We considered all corrections and comments made. In the following we list the few changes to the corrections and the answers to the notes:
+
+Page 3
+three-dimaensional (3D)
+- Removed the typo and the abbreviation: "three-dimensional".
+
+Page 5
+data points with higher-time-resolution
+- Removed 'points': "data with higher-time-resolution".
+
+Page 9
+[Note 1: Please insert missing text.]
+- Corrected the wording: "Ratio of slow to fast solar wind for a SSN lagged by 3~years."
+
+Page 12
+[Note 2: The meaning of this second part of the sentence is unclear; please rephrase for improved clarity.]
+- Changed to: "Fit coefficients for the distance-dependent single lognormal function, based on Equation (4) combined with (10) from the combined Helios data. Regarding the velocity, the double lognormal function (5) is used instead."
+
+Page 17
+[Note 3: Please check that I have retained your intended meaning.]
+- That is ok.
+
+
