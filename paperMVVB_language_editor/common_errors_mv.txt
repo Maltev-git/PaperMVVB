@@ -1,0 +1,22 @@
+
+# hyphen for adjectives
+solar wind
+solar-wind parameters
+high-value tail
+
+# serial comma (it is an american thing and optional)
+a, b, c and d.
+a, b, c, and d.
+
+# comma if object is at beginning of sentence
+In the case of A, B is C.
+In order to A, B can C.
+
+# BE vs AE
+catalogue
+catalog
+
+grey
+gray
+
+
